@@ -1,0 +1,79 @@
+
+@import url("mocha.css");
+
+window  {
+  background-color: rgba(30, 30, 46, 0.89);
+  font-family: Fira Code Medium;
+  font-size: 16pt;
+  background-color: rgba(36, 32, 29, 0.5);
+}
+
+button {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 20%;  
+  border: 3px solid rgba(30, 57, 75, 0.8);
+  background-color: rgba(36, 32, 29, 0.8);
+  animation: gradient_f 20s ease-in infinite;
+  box-shadow: 0 0 10px 2px transparent;
+  transition: all 0.3s ease-in;
+  border-radius: 12px;
+  margin: 10px;
+}
+
+button:focus {
+  box-shadow: none;
+  background-size : 20%;
+}
+
+button:hover {
+  background-size: 30%;
+  border: 4px solid @base;
+  box-shadow: 0 0 10px 3px rgba(0, 0, 0, .4);
+  color: @crust;
+  background-color: rgba(36, 32, 29, 0.7);
+  transition: all 0.3s cubic-bezier(.55, 0.0, .28, 1.682), box-shadow 0.5s ease-in;
+}
+
+#shutdown {
+    background-image: image(url("./icons/power.png"));
+}
+#shutdown:hover {
+  background-image: image(url("./icons/power-hover.png"));
+}
+
+#logout {
+    background-image: image(url("./icons/logout.png"));
+
+}
+#logout:hover {
+  background-image: image(url("./icons/logout-hover.png"));
+}
+
+#reboot {
+    background-image: image(url("./icons/restart.png"));
+}
+#reboot:hover {
+  background-image: image(url("./icons/restart-hover.png"));
+}
+
+#lock {
+    background-image: image(url("./icons/lock.png"));
+}
+#lock:hover {
+  background-image: image(url("./icons/lock-hover.png"));
+}
+
+#hibernate {
+    background-image: image(url("./icons/hibernate.png"));
+}
+#hibernate:hover {
+  background-image: image(url("./icons/hibernate-hover.png"));
+}
+
+#suspend {
+  background-image: image(url("./icons/sleep.png"));
+}
+#suspend:hover {
+  background-image: image(url("./icons/sleep-hover.png"));
+}

@@ -1,0 +1,61 @@
+configuration {
+  modi:                 "drun,run,filebrowser,window";
+  dpi:                  90;
+  show-icons:           true;
+  icon-theme:           "Papirus";
+  terminal:             "footclient";
+  window-format:        "{w} · {c} · {t}";
+  drun-display-format:  "{name}";
+  disable-history:      false;
+  max-history-size:     50;
+
+  display-drun:         " Apps"; // 󰀻
+  display-run:          " Runs";
+  display-nerdy:        "󰱨 Nerdy";
+  display-emoji:        "󰱨 Emoji";
+    display-window:       " Windows";
+  display-filebrowser:  " Files";
+    display-ssh:          "󰣀 SSH";
+    display-keys:         " Keys";
+}
+
+* {
+  selected-active-foreground:  @background;
+  lightfg:                     @text;
+  separatorcolor:              @foreground;
+  urgent-foreground:           @red;
+  alternate-urgent-background: @lightbg;
+  lightbg:                     @mantle;
+  background-color:            transparent;
+  border-color:                @foreground;
+  normal-background:           @background;
+  selected-urgent-background:  @red;
+  alternate-active-background: @lightbg;
+  spacing:                     2;
+  alternate-normal-foreground: @foreground;
+  urgent-background:           @background;
+  selected-normal-foreground:  @lightbg;
+  active-foreground:           @blue;
+  background:                  @base;
+  selected-active-background:  @blue;
+  active-background:           rgba(30, 30, 46, 0.4);
+  selected-normal-background:  @lightfg;
+  alternate-normal-background: @lightbg;
+  foreground:                  @text;
+  selected-urgent-foreground:  @background;
+  normal-foreground:           @foreground;
+  alternate-urgent-foreground: @red;
+  alternate-active-foreground: @blue;
+}
+
+@import "mocha.rasi"
+
+window {
+  border: 2px;
+  border-radius: 12px;
+  margin: 5px;
+  offset-y: 0px;
+  offset-x: 0px;
+  height: 50%;
+  width: 30%;
+}

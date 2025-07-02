@@ -1,0 +1,9 @@
+@import "frappe.css";
+
+
+/*---------------Configuration Zephar WOO---------------*/
+
+.control-center {
+    background: @base;
+    opacity: 1;
+}

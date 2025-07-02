@@ -1,0 +1,9 @@
+[env]
+TERM = "xterm-256color"
+
+[window]
+opacity = 0.60
+padding  =  { x = 8, y = 6 }
+dynamic_padding = true
+startup_mode = "Maximized"
+title = "Alacritty"
