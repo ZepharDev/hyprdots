@@ -12,11 +12,18 @@ Welcome to my dotfile, I present different configurations, for example, the most
 
 # Screenshot
 
-**Rofi, this is the main configuration of Rofi, simple and basic, located at `~/.config/rofi/zephar.rasi`.**
+**This is the main Rofi configuration:**
+
+- Simple and minimal
+- Located at `~/.config/rofi/zephar.rasi`
+
 ![2025-07-02-190322_hyprshot](https://github.com/user-attachments/assets/9d7b85d9-294d-4fe4-b485-9a733885c9fd)
 
-**This is the PowerMenu configuration, built using Rofi and Bash.
-The script is located at `~/.config/scripts/power-menu.sh`, and the general Rasi theme configuration can be found at `~/.config/rofi/power-menu.rasi`.**
+**This is the PowerMenu configuration, built using Rofi and Bash:**
+
+- Script: `~/.config/scripts/power-menu.sh`
+- General Rasi theme configuration: `~/.config/rofi/power-menu.rasi`
+
 ![2025-07-02-190332_hyprshot](https://github.com/user-attachments/assets/bb2fac1b-27c5-4f71-82ac-1b4dba4b8d31)
 
 **This is the Waybar configuration:**
