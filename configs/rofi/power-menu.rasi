@@ -1,0 +1,127 @@
+configuration {
+  dpi:                  120;
+  show-icons:           false;
+  disable-history:      true;
+}
+
+@import "mocha.rasi"
+
+
+* {
+  font:                       "JetBrains Mono Nerd Font 12";
+  selected-active-foreground:  @background;
+  lightfg:                     @text;
+  separatorcolor:              @foreground;
+  urgent-foreground:           @red;
+  alternate-urgent-background: @lightbg;
+  lightbg:                     @background;
+  background-color:            transparent;
+  border-color:                @mauve;
+  normal-background:           rgba(30, 30, 46, 0.94);
+  selected-urgent-background:  @red;
+  alternate-active-background: @lightbg;
+  spacing:                     2;
+  alternate-normal-foreground: @foreground;
+  urgent-background:           @background;
+  selected-normal-foreground:  @lightbg;
+  active-foreground:           @blue;
+  background:                  @base;
+  selected-active-background:  @blue;
+  active-background:           @background;
+  selected-normal-background:  @lightfg;
+  alternate-normal-background: @lightbg;
+  foreground:                  @text;
+  selected-urgent-foreground:  @background;
+  normal-foreground:           @foreground;
+  alternate-urgent-foreground: @red;
+  alternate-active-foreground: @blue;
+}
+
+element {
+    padding: 0px;
+    cursor:  pointer;
+    spacing: 0px ;
+    border:  0;
+}
+element normal.normal {
+    background-color: @normal-background;
+    text-color:       @normal-foreground;
+}
+element normal.urgent {
+    background-color: @urgent-background;
+    text-color:       @urgent-foreground;
+}
+element normal.active {
+    background-color: @active-background;
+    text-color:       @active-foreground;
+}
+element selected.normal {
+    background-color: @selected-normal-background;
+    text-color:       @selected-normal-foreground;
+}
+element selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color:       @selected-urgent-foreground;
+}
+element selected.active {
+    background-color: @selected-active-background;
+    text-color:       @selected-active-foreground;
+}
+element alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color:       @alternate-normal-foreground;
+}
+element alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color:       @alternate-urgent-foreground;
+}
+element alternate.active {
+    background-color: @alternate-active-background;
+    text-color:       @alternate-active-foreground;
+}
+element-text {
+    background-color: transparent;
+    cursor:           inherit;
+    highlight:        inherit;
+    text-color:       inherit;
+}
+element-icon {
+    background-color: transparent;
+    size:             54;
+    cursor:           inherit;
+    text-color:       inherit;
+}
+
+window {
+  width: 12%;
+  orientation: vertical;
+  location: center;
+  anchor: center;
+  x-offset: 0px;
+  y-offset: 0px;
+  margin: 2px;
+  padding: 0px;
+  border: 2px;
+  border-radius: 2px;
+  spacing: 2px;
+  children: [ mainbox ];
+}
+
+mainbox {
+  spacing: 3px;
+  children: [ listview ];
+}
+
+listview {
+  lines: 6;
+  spacing: 0px;
+  scrollbar: false;
+  cycle: false;
+  fixed-height: true;
+  dynamic: false; // Shrinks windows to occupy search result
+  padding: 0px;
+  margin: 1px;
+  /* List view has the dash border, Remove it here */
+  border: 0px;
+  border-radius: 2px;
+}
