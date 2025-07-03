@@ -42,10 +42,3 @@ Welcome to my dotfile, I present different configurations, for example, the most
 
 ![2025-07-02-190352_hyprshot](https://github.com/user-attachments/assets/2e7d3568-37af-4b65-b31a-1361b25981ae)
 
-      /\        
-     /  \        
-    /    \      
-   /      \       
-  /   ,,   \      
- /   |  |   \     
-/_-''    ''-_\ 
