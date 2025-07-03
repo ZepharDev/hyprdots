@@ -1,4 +1,4 @@
-// vim:ft=jsonc
+// sublime-text
 {
   "layer": "top",
   "position": "top",
@@ -9,8 +9,6 @@
   "margin-bottom": 0,
   "spacing": 1,
   "reload_style_on_change": true,
-
-  // Choose the order of the modules
 
   "modules-left": [  
     "group/custom-group",
@@ -30,6 +28,7 @@
     "modules": [
       "tray",
       "hyprland/workspaces",
+      "custom/power",
     ],
   },
   "group/group-mpris": {
@@ -244,9 +243,9 @@
 
   "custom/power": {
     "format": "{icon}",
-    "format-icons": "  ", //  
+    "format-icons": " ", //  
     "exec-on-event": "true",
-    "on-click": "wlogout",
+    "on-click": "~/.config/scripts/power-menu.sh",
     "tooltip-format": "Power Menu",
   },
   "custom/pacman": {
@@ -336,3 +335,4 @@
      "max-length": 15,
    },
  } 
+
