@@ -47,25 +47,26 @@ button:hover {
     box-shadow: none;
     text-shadow: none;
     padding: 0px;
-    border-radius: 9px;
+    border-radius: 8px;
     margin-top: 3px;
     margin-bottom: 3px;
     margin-left: 0px;
     padding-left: 3px;
     padding-right: 3px;
     margin-right: 0px;
-    color: @main-fg;
+    color: @text;
     animation: ws_normal 20s ease-in-out 1;
 }
 
 #workspaces button.active {
-    background: @wb-act-bg;
-    color: @wb-act-fg;
-    border-radius: 9999px;
-    margin-left: 3px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-right: 3px;
+    min-width: 18px;
+    background: inherit;
+    color: @text;
+    border-radius: 12px;
+    margin-left: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    margin-right: 0px;
     animation: ws_active 20s ease-in-out 1;
     transition: all 0.4s cubic-bezier(.55,-0.68,.48,1.682);
 }
