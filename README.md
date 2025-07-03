@@ -30,4 +30,22 @@ Welcome to my dotfile, I present different configurations, for example, the most
 
 - A blur effect is applied via `layerrule` in `~/.config/hypr/windowrulev2.conf`
 - Main configuration: `~/.config/waybar/config.jsonc`
-- Style sheet: `~/.config/waybar/style.css`
+- Style sheet: `~/.config/waybar/style.css
+ 
+![2025-07-02-232713_hyprshot](https://github.com/user-attachments/assets/8db94c8a-551e-4550-9970-30e0b27490e2)
+
+ **This is the fastfetch system information tool output:**
+
+- Displays detailed system info like OS, kernel, uptime, packages, shell, resolution, WM, etc.
+- Command to run: `fastfetch`
+- You can capture its output as text or screenshot for your README
+
+![2025-07-02-190352_hyprshot](https://github.com/user-attachments/assets/2e7d3568-37af-4b65-b31a-1361b25981ae)
+
+      /\        
+     /  \        
+    /    \      
+   /      \       
+  /   ,,   \      
+ /   |  |   \     
+/_-''    ''-_\ 
