@@ -4,7 +4,7 @@ Welcome to my personal dotfiles repository! This collection contains my configur
 
 ---
 
-## Overview
+# Overview
 
 This repository includes configuration files for:
 
@@ -17,21 +17,6 @@ These dotfiles are designed to work on Arch Linux or Fedora-based distributions 
 
 ---
 
-## Prerequisites
-
-Before installing these dotfiles, ensure you have the following dependencies installed:
-
-- `git` - For cloning the repository
-- `zsh` - For shell configurations
-- `hyprland` - For the window manager
-- `neovim` - For the editor setup
-- `grim` and `slurp` - For screenshot capabilities
-- `yay` (or another AUR helper for Arch Linux) - For installing additional packages
-- `hyprlock` - For lock screen configurations
-
-You can install these on Arch Linux with:
-
-```bash sudo pacman -S git zsh hyprland neovim grim slurp or yay -S hyprlock``
 
 # Screenshot
 
@@ -69,7 +54,7 @@ You can install these on Arch Linux with:
 
 ## Warning: The installation script isn't polished yet and may fail up to 90%. If you want to test the settings, you'll have to do it manually. Thanks. 
     
-  
+---
 
 # Requirements
  
@@ -98,6 +83,7 @@ You can install these on Arch Linux with:
     -  Yay (alternative a Pacman)
     -  mako (alternative to Dunst or swaync)
     
+---
 
 # **Setup is still in progress. If you'd like to help, please write to me on Discord. Thanks.**
 
