@@ -65,51 +65,43 @@ You can install these on Arch Linux with:
 
 ![2025-07-02-190352_hyprshot](https://github.com/user-attachments/assets/2e7d3568-37af-4b65-b31a-1361b25981ae)
 
-## Installation
+# Installation
 
-To set up these dotfiles on your system, follow these steps:
+## Warning: The installation script isn't polished yet and may fail up to 90%. If you want to test the settings, you'll have to do it manually. Thanks. 
+    
+  
 
-1. **Clone the Repository:**
+# Requirements
+ 
+    -  Hyprlock
+    -  Kitty
+    -  Waybar
+    -  FastCat
+    -  alacritty
+    -  rofi
+    -  dmenu
+    -  zsh
+    -  powerlevel10k 
+    -  FastFetch
+    -  hyprshot
+    -  hypr
+    -  hypridle
+    -  wlogout
+    -  clipse
+    -  SwayOSD
+    -  nm-applet
+    -  hyprpaper
+    -  dunst
+    -  swaync (alternative to Dusnt)
+    -  Papirus Icon
+    -  git
+    -  Yay (alternative a Pacman)
+    -  mako (alternative to Dunst or swaync)
+    
 
-    ```bash
-    git clone https://github.com/ZepharDev/dotfiles.git ~/.dotfiles
-    cd ~/.dotfiles
-    ```
+# **Setup is still in progress. If you'd like to help, please write to me on Discord. Thanks.**
 
-2. **Run the Installation Script:**
-
-    The repository includes an `install.sh` script to automate the setup process, creating symlinks for configuration files.
-
-    ```bash
-    ./install.sh
-    ```
-
-    If you want to include GUI-related configurations (e.g., Hyprland, rofi), use:
-
-    ```bash
-    ./install.sh --gui
-    ```
-
-3. **Install Zsh Plugins:**
-
-    After installation, initialize Zsh plugins (e.g., Oh My Zsh or Zinit):
-
-    ```bash
-    exec zsh
-    ```
-
-4. **Install Neovim Plugins:**
-
-    If using Neovim with a plugin manager like Lazy.nvim, sync the plugins:
-
-    ```bash
-    nvim --headless -c 'Lazy! sync' -c 'qall'
-    ```
-
-5. **Optional: Configure Hyprlock:**
-
-    If you use `hyprlock`, ensure it’s configured correctly in `~/.config/hypr/hyprlock.conf`.  
-    Note that tak
-    ing screenshots of hyprlock may require tools like `grim` and `slurp`.
-
-   
+## 
+      
+      
+     
