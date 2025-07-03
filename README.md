@@ -6,38 +6,15 @@ If you want to suggest ideas, help or anything for its development, let me know!
 
 The dotfile will be simple, just what is necessary, some scripts, profiles, etc., all for you to make it yours.
 
-# Configuration 
+# Welcome
 
-           kitty 
-           alacritty
-           rofi
-           wlogout
-           scripts
-           wallpaper-menu
-           dunst
-           zshrc
-           fastfetch
-           hyprland
-           power-menu
-           menu-script
-           waybar
-           hyprlock
-           swayosd
-           swaync (not actually)
-           
-           
-# Blur
+Welcome to my dotfile, I present different configurations, for example, the most necessary giving a good solid base to be able to make your own dotfile, if you have suggestions, you can write me to discord.
 
-            rofi - blur
-            waybar - blur
-            wallpaper-menu - blur
-            hyprlock - blur
-            kitty - blur
-            alacritty - blur
-            sublime-text
-            discord
-            dolphin
+# Screenshot
+![2025-07-02-190322_hyprshot](https://github.com/user-attachments/assets/9d7b85d9-294d-4fe4-b485-9a733885c9fd)
 
-# Instalation            
+## rofi 
+
+
 
  
