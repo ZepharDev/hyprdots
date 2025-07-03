@@ -9,8 +9,6 @@ Welcome to my personal dotfiles repository! This collection contains my configur
 This repository includes configuration files for:
 
 - **Hyprland:** A lightweight and highly customizable Wayland compositor.
-- **Neovim:** My preferred text editor with plugins and custom settings.
-- **Zsh:** Shell configuration with plugins like Oh My Zsh or Zinit, and custom aliases.
 - **Other Tools:** Configurations for tools like tmux, rofi, and hyprlock to enhance productivity and aesthetics.
 
 These dotfiles are designed to work on Arch Linux or Fedora-based distributions but may be adapted for other Linux systems with some tweaks.
@@ -46,7 +44,6 @@ These dotfiles are designed to work on Arch Linux or Fedora-based distributions 
 
 - Displays detailed system info like OS, kernel, uptime, packages, shell, resolution, WM, etc.
 - Command to run: `fastfetch`
-- You can capture its output as text or screenshot for your README
 
 ![2025-07-02-190352_hyprshot](https://github.com/user-attachments/assets/2e7d3568-37af-4b65-b31a-1361b25981ae)
 
