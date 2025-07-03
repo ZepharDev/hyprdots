@@ -1,11 +1,4 @@
-![arch-alt-svgrepo-com](https://github.com/user-attachments/assets/9d2c2549-16b9-4527-b693-6a2cc5bb36f0)# ZepharDev Dotfiles !<?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="800px" height="800px" viewBox="0 0 226.777 226.777" enable-background="new 0 0 226.777 226.777"
-	 xml:space="preserve">
-<polygon fill="#231F20" points="117.539,15.073 0,211.704 117.539,211.704 113.127,202.671 16.492,202.671 74.474,102.253 
-	134.344,211.704 226.988,211.704 "/>
-</svg>[Uploading arch-alt-svgrepo-com.svg…]()
-
+# ZepharDev Dotfiles
 
 Welcome to my personal dotfiles repository! This collection contains my configuration files for various tools and environments to personalize my development and desktop experience. These dotfiles are tailored for a Linux environment, primarily focused on Hyprland, a dynamic tiling window manager, and other CLI tools like Neovim, Zsh, and more.
 
@@ -38,7 +31,7 @@ Before installing these dotfiles, ensure you have the following dependencies ins
 
 You can install these on Arch Linux with:
 
-```bash sudo pacman -S git zsh hyprland neovim grim slurp yay -S hyprlock``
+```bash sudo pacman -S git zsh hyprland neovim grim slurp or yay -S hyprlock``
 
 # Screenshot
 
@@ -117,15 +110,6 @@ To set up these dotfiles on your system, follow these steps:
 
     If you use `hyprlock`, ensure it’s configured correctly in `~/.config/hypr/hyprlock.conf`.  
     Note that tak
-
-   <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
-	 width="800px" height="800px" viewBox="0 0 226.777 226.777" enable-background="new 0 0 226.777 226.777"
-	 xml:space="preserve">
-<path fill="#231F20" d="M113.385,0C50.763,0,0,50.763,0,113.385s50.764,113.385,113.385,113.385s113.385-50.764,113.385-113.385
-	S176.006,0,113.385,0z M124.641,158.821L92.318,99.729l-31.305,54.214h52.174l2.382,4.878H52.109L115.568,52.66l59.092,106.161
-	H124.641z"/>
-</svg>![arch-svgrepo-com](https://github.com/user-attachments/assets/ce08def0-4d75-4923-b55d-6dfc82e613de)
-ing screenshots of hyprlock may require tools like `grim` and `slurp`.
+    ing screenshots of hyprlock may require tools like `grim` and `slurp`.
 
    
