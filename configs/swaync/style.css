@@ -1,144 +1,92 @@
-@define-color bgc rgba(0, 0, 0, 0.1);
-@define-color borderc #ebdbb2;
-@define-color textc #282828;
+@import "mocha.css";
 
-* {
-  font-family: JetBrainsMonoNerdFontMono;
-  font-weight: bold;
-  font-size: 15px;
-  border-width: 3px;
-  border-color: #ebdbb2;
-}
+/* --This configuration uses a Catppuccin palette, mocha, has blur 
+   --configuration in development.
+   --Github: https://github.com/ZepharDev */
 
-.control-center .notification-row:focus,
-.control-center .notification-row:hover {
+.control-center { 
+  background-color: @base-blur;
   opacity: 1;
-  background: @bgc;
 }
 
-.notification-row {
-  outline: none;
-  margin: 20px;
-  padding: 0;
-}
-
-.notification {
-  background: @textc;
+.notificacion-row {
+  background: @base;
+  color: @text;
+  padding: 0px;
   margin: 0px;
-  border-radius: 0px; /* Removed rounded corners */
-  border-width: 3px;
-  border-color: #ebdbb2;
+  border: 2px solid @red;
+  border-radius: 0;
 }
 
-.notification-content {
-  background: @textc;
-  padding: 7px;
-  margin: 0;
+.notification, .notification:hover {
+  color: @text;
+  background: @base-blur;
+  opacity: 1;
+  margin: 0px;
+  padding: 0px;
+  border: 2px;
+  border-radius: 2px;
 }
 
 .close-button {
-  background: @textc;
-  color: @borderc;
-  text-shadow: none;
-  padding: 0;
-  border-radius: 0px; /* Removed rounded corners */
-  margin-top: 9px;
-  margin-right: 5px;
+  background: @red;
+  border-radius: 2px;
+  border: 2px;
+  margin: 0px;
+  padding: 0px;
 }
 
 .close-button:hover {
-  box-shadow: none;
-  background: @borderc;
-  color: @textc;
-  transition: all 0.15s ease-in-out;
-  border: none;
-}
-
-.notification-action {
-  color: @bgc;
-  background: @textc;
-}
-
-.summary {
-  padding-top: 7px;
-  font-size: 13px;
-  color: @borderc;
-}
-
-.time {
-  font-size: 11px;
-  color: @borderc;
-  margin-right: 40px;
-}
-
-.body {
-  font-size: 12px;
-  color: @borderc;
-}
-
-.control-center {
-  background-color: @bgc;
-  border-radius: 0px; /* Removed rounded corners */
-}
-
-.control-center-list {
-  background: transparent;
-}
-
-.control-center-list-placeholder {
-  opacity: 0.5;
+  background-color: @red;
+  margin: 0px;
+  opacity: 1;
+  padding: 0px;
+  border: 2px;
+  border-radius: 2px;
 }
 
 .floating-notifications {
+  border: 2px;
+  border-radius: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.notification-default-action {
+  border: 2px;
+  margin: 2px;
+  padding: 1px;
+  border-radius: 0px;
+}
+
+.widget-title {
+  margin: 8px;
+  padding-top: 12px;
+  font-size: 24px;
+  border: 2px;
+  border-radius: 0px;
+}
+
+.image {
+  border: 2px;
+}
+
+.time {
   background: transparent;
-}
-
-.blank-window {
-  background: alpha(black, 0.1);
-}
- {
-  color: @borderc;
-  padding: 10px 10px;
-  margin: 10px 10px 5px 10px;
-  font-size: 1.5rem;
-}
-
-.widget-title>button {
-  font-size: 1rem;
-  color: @borderc;
-  padding: 10px;
-  text-shadow: none;
-  background: @bgc;
-  box-shadow: none;
-  border-radius: 0px; /* Removed rounded corners */
-}
-
-.widget-title>button:hover {
-  background: @borderc;
-  color: #282828;
-}
-
-.widget-label {
-  margin: 10px 10px 10px 10px;
-}
-
-.widget-label>label {
-  font-size: 1rem;
-  color: @textc;
+  color: @text;
 }
 
 .widget-mpris {
-  color: @borderc;
-  padding: 5px 5px 5px 5px;
-  margin: 10px;
-  border-radius: 0px; /* Removed rounded corners */
+  border-radius: 2px;
+  padding: 2px;
+  margin: 1px;
+  border: 2px;
+  opacity: 0.89;
 }
 
-.widget-mpris>box>button {
-  border-radius: 0px; /* Removed rounded corners */
-}
-
-.widget-mpris-player {
-  padding: 5px 5px;
-  margin: 10px;
+.widget-mpris {
+  padding: 5px;
+  margin: 2px;
+  border: 2px;
+  border-radius: 0px;
 }
