@@ -31,7 +31,7 @@ configuration {
   lightbg:                     @background;
   background-color:            transparent;
   border-color:                @foreground;
-  normal-background:           rgba(30, 30, 46, 0.94);
+  normal-background:           rgba(30, 30, 46, 0.01);
   selected-urgent-background:  @red;
   alternate-active-background: @lightbg;
   spacing:                     2;
@@ -43,15 +43,116 @@ configuration {
   selected-active-background:  @blue;
   active-background:           @background;
   selected-normal-background:  @lightfg;
-  alternate-normal-background: @lightbg;
+  alternate-normal-background: rgba(30, 30, 46, 0.01);
   foreground:                  @text;
   selected-urgent-foreground:  @background;
   normal-foreground:           @foreground;
   alternate-urgent-foreground: @red;
   alternate-active-foreground: @blue;
 }
+
+//--- Window --//
+window {
+    border: 2px;
+    border-radius: 2px;
+    height: 40%;
+    width: 40%;
+    margin: 5px;
+    x-offset: 0px;
+    y-offset: 0px;
+    padding: 0px;
+    children: [ mainbox ];
+}
+
+//--- Mainbox --//
+mainbox {
+    enabled: true;
+    orientation: horizontal;
+    spacing: 0px;
+    children: [ imagebox, listbox ];
+}
+
+//--- Listbox --//
+listbox {
+    spacing: 20px;
+    padding: 20px;
+    orientation: horizontal;
+    background-color: transparent;
+    children: [ message, listview ];
+}
+
+//--- Imagebox --//
+imagebox {
+    padding: 20px;
+    background-color: transparent;
+    orientation: horizontal;
+    border-radius: 2px;
+    background-image: url("~/Pictures/wallpapers/p25.jpg", height);
+    children: [ "entry", "dummy", "mode-switcher" ]; 
+}
+
+dummy {
+    background-color: transparent;
+}
+
+//--- Inputbar --//
+inputbar {
+    orientation: horizontal;
+    enabled:                     true;
+    padding:                     0px;
+    border-radius:               12px;
+    background-color:            @background;
+    text-color:                  @foreground;
+    children:                    [ "textbox-prompt-colon" ];
+}
+
+textbox-prompt-colon {
+  expand: false;
+  padding: 3px 18px;
+  border-radius: 1em;
+  str: " "; /* */
+}
+
+entry {
+    border-radius: 12px;
+    width: 8%;
+    expand: false;
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  @text;
+    cursor:                      text;
+    placeholder:                 "Search";
+    placeholder-color:           inherit;
+}
+
+
+//--- Mode-switcher --//
+mode-switcher{
+    border-radius: 0px;
+    enabled:                     true;
+    orientation: vertical;
+    spacing:                     8px;
+    background-color:            transparent;
+    text-color:                  @foreground;
+}
+button {
+    padding:                     15px;
+    border-radius:               10px;
+    background-color:            @alternate-normal-background;
+    text-color:                  @text;
+    cursor:                      pointer;
+}
+button selected {
+    background-color:            @background;
+    text-color:                  @foreground;
+}
+
+message {
+    background-color:            transparent;
+}
 element {
     padding: 1px;
+    background: rgba(30, 30, 46, 0.59);
     cursor:  pointer;
     spacing: 5px ;
     border:  0;
@@ -103,96 +204,4 @@ element-icon {
     size:             54;
     cursor:           inherit;
     text-color:       inherit;
-}
-
-window {
-    border: 2px;
-    border-radius: 12px;
-    height: 40%;
-    width: 40%;
-    margin: 5px;
-    offset-x: 0px;
-    padding: 0px;
-    offset-y: 0px;
-    children: [ mainbox ];
-}
-
-mainbox {
-    enabled: true;
-    orientation: horizontal;
-    spacing: 0px;
-    children: [ imagebox, listbox ];
-}
-
-listbox {
-    spacing: 20px;
-    padding: 20px;
-    orientation: horizontal;
-    background-color: transparent;
-    children: [ message, listview ];
-}
-
-imagebox {
-    padding: 20px;
-    background-color: transparent;
-    orientation: horizontal;
-    border-radius: 12px;
-    background-image: url("~/Pictures/wallpapers/wallhaven-8gx9o2.jpg", height);
-    children: [ "entry", "dummy", "mode-switcher" ];
-}
-
-dummy {
-    background-color: transparent;
-}
-
-/*****----- Inputbar -----*****/
-inputbar {
-    orientation: horizontal;
-    enabled:                     true;
-    padding:                     0px;
-    border-radius:               12px;
-    background-color:            @background;
-    text-color:                  @foreground;
-    children:                    [ "textbox-prompt-colon" ];
-}
-
-textbox-prompt-colon {
-  expand: false;
-  padding: 3px 18px;
-  border-radius: 1em;
-  str: " "; /* */
-}
-
-entry {
-    border-radius: 12px;
-    width: 8%;
-    expand: false;
-    enabled:                     true;
-    background-color:            inherit;
-    text-color:                  @text;
-    cursor:                      text;
-    placeholder:                 "Search";
-    placeholder-color:           inherit;
-}
-
-
-/*****----- Mode Switcher -----*****/
-mode-switcher{
-    border-radius: 2px;
-    enabled:                     true;
-    orientation: vertical;
-    spacing:                     8px;
-    background-color:            transparent;
-    text-color:                  @foreground;
-}
-button {
-    padding:                     15px;
-    border-radius:               10px;
-    background-color:            @alternate-normal-background;
-    text-color:                  @text;
-    cursor:                      pointer;
-}
-button selected {
-    background-color:            @background;
-    text-color:                  @foreground;
 }

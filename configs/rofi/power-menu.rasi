@@ -6,7 +6,6 @@ configuration {
 
 @import "mocha.rasi"
 
-
 * {
   font:                       "JetBrains Mono Nerd Font 12";
   selected-active-foreground:  @background;
@@ -16,8 +15,8 @@ configuration {
   alternate-urgent-background: @lightbg;
   lightbg:                     @background;
   background-color:            transparent;
-  border-color:                @mauve;
-  normal-background:           rgba(30, 30, 46, 0.94);
+  border-color:                @foreground;
+  normal-background:           rgba(30, 30, 46, 0.69);
   selected-urgent-background:  @red;
   alternate-active-background: @lightbg;
   spacing:                     2;
@@ -29,7 +28,7 @@ configuration {
   selected-active-background:  @blue;
   active-background:           @background;
   selected-normal-background:  @lightfg;
-  alternate-normal-background: @lightbg;
+  alternate-normal-background: rgba(30, 30, 46, 0.69);
   foreground:                  @text;
   selected-urgent-foreground:  @background;
   normal-foreground:           @foreground;
@@ -38,9 +37,10 @@ configuration {
 }
 
 element {
-    padding: 0px;
+    padding: 1px;
+    background: rgba(30, 30, 46, 0.59);
     cursor:  pointer;
-    spacing: 0px ;
+    spacing: 5px ;
     border:  0;
 }
 element normal.normal {
@@ -119,8 +119,8 @@ listview {
   cycle: false;
   fixed-height: true;
   dynamic: false; // Shrinks windows to occupy search result
-  padding: 0px;
-  margin: 1px;
+  padding: 0px; 
+  margin: 2px;
   /* List view has the dash border, Remove it here */
   border: 0px;
   border-radius: 2px;

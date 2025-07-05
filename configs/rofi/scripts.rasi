@@ -1,24 +1,3 @@
-configuration {
-  modi:                 "drun,run,filebrowser,window";
-  dpi:                  90;
-  show-icons:           true;
-  icon-theme:           "Papirus";
-  terminal:             "footclient";
-  window-format:        "{w} · {c} · {t}";
-  drun-display-format:  "{name}";
-  disable-history:      false;
-  max-history-size:     50;
-
-  display-drun:         " "; // 󰀻
-  display-run:          " ";
-  display-nerdy:        "󰱨 ";
-  display-emoji:        "󰱨 ";
-    display-window:     " ";
-  display-filebrowser:  " ";
-    display-ssh:          "󰣀 ";
-    display-keys:         " ";
-}
-
 @import "mocha.rasi"
 
 * {
@@ -30,8 +9,7 @@ configuration {
   alternate-urgent-background: @lightbg;
   lightbg:                     @background;
   background-color:            transparent;
-  border-color:                @foreground;
-  normal-background:           rgba(30, 30, 46, 1);
+  normal-background:           rgba(30, 30, 46, 0.94);
   selected-urgent-background:  @red;
   alternate-active-background: @lightbg;
   spacing:                     2;
@@ -39,7 +17,7 @@ configuration {
   urgent-background:           @background;
   selected-normal-foreground:  @lightbg;
   active-foreground:           @blue;
-  background:                  rgba(30, 30, 46, 0.4);
+  background:                  rgba(30, 30, 46, 0.74);
   selected-active-background:  @blue;
   active-background:           @background;
   selected-normal-background:  @lightfg;
@@ -50,80 +28,47 @@ configuration {
   alternate-urgent-foreground: @red;
   alternate-active-foreground: @blue;
 }
-element {
-    padding: 1px ;
-    cursor:  pointer;
-    spacing: 5px ;
-    border:  0;
-}
-element normal.normal {
-    background-color: @normal-background;
-    text-color:       @normal-foreground;
-}
-element normal.urgent {
-    background-color: @urgent-background;
-    text-color:       @urgent-foreground;
-}
-element normal.active {
-    background-color: @active-background;
-    text-color:       @active-foreground;
-}
-element selected.normal {
-    background-color: @selected-normal-background;
-    text-color:       @selected-normal-foreground;
-}
-element selected.urgent {
-    background-color: @selected-urgent-background;
-    text-color:       @selected-urgent-foreground;
-}
-element selected.active {
-    background-color: @selected-active-background;
-    text-color:       @selected-active-foreground;
-}
-element alternate.normal {
-    background-color: @alternate-normal-background;
-    text-color:       @alternate-normal-foreground;
-}
-element alternate.urgent {
-    background-color: @alternate-urgent-background;
-    text-color:       @alternate-urgent-foreground;
-}
-element alternate.active {
-    background-color: @alternate-active-background;
-    text-color:       @alternate-active-foreground;
-}
-element-text {
-    background-color: transparent;
-    cursor:           inherit;
-    highlight:        inherit;
-    text-color:       inherit;
-}
-element-icon {
-    background-color: transparent;
-    size:             54;
-    cursor:           inherit;
-    text-color:       inherit;
-}
 
+//--- Window --//
 window {
-    border: 2px;
-    border-radius: 12px;
-    height: 40%;
-    width: 40%;
-    margin: 5px;
-    offset-x: 0px;
-    padding: 0px;
-    offset-y: 0px;
-    children: [ mainbox ];
+  height: 45%;
+  spacing: 2px;
+  margin: 2px;
+  padding: 2px;
+  offset-x: 0px;
+  offset-y: 0px;
+  children: [ mainbox ];
 }
 
 mainbox {
-    enabled: true;
-    orientation: horizontal;
-    spacing: 0px;
-    children: [ imagebox, listbox ];
+  padding: 2px;
+  margin: 2px;
+  spacing: 1px;
+  children: [ imagebox, listbox, entry ];
 }
 
+imagebox {
+  background-color: transparent;
+  spacing: 0px;
+  border-radius: 2px;
+  margin: 0px;
+  orientation: vertical;
+  background-image: url("~/Pictures/wallpapers/p19.png", width);
+}
+
+entry {
+    border-radius: 12px;
+    expand: false;
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  @text;
+    cursor:                      text;
+    placeholder:                 "Script selected";
+    placeholder-color:           inherit;
+}
+
+
+//--- Listbox --//
 listbox {
     spacing: 20px;
     padding: 20px;
@@ -132,67 +77,14 @@ listbox {
     children: [ message, listview ];
 }
 
-imagebox {
-    padding: 20px;
-    background-color: transparent;
-    orientation: horizontal;
-    border-radius: 12px;
-    background-image: url("~/Pictures/wallpapers/wallhaven-8gx9o2.jpg", height);
-    children: [ "entry", "dummy", "mode-switcher" ];
+//--- Listview ---//
+listview {
+  columns: 3;
+  spacing: 15px;
+  margin: 15px;
+  padding: 15px;
 }
 
-dummy {
-    background-color: transparent;
-}
-
-/*****----- Inputbar -----*****/
-inputbar {
-    orientation: horizontal;
-    enabled:                     true;
-    padding:                     0px;
-    border-radius:               12px;
-    background-color:            @background;
-    text-color:                  @foreground;
-    children:                    [ "textbox-prompt-colon" ];
-}
-
-textbox-prompt-colon {
-  expand: false;
-  padding: 3px 18px;
-  border-radius: 1em;
-  str: " "; /* */
-}
-
-entry {
-    border-radius: 12px;
-    width: 8%;
-    expand: false;
-    enabled:                     true;
-    background-color:            inherit;
-    text-color:                  @text;
-    cursor:                      text;
-    placeholder:                 "Search";
-    placeholder-color:           inherit;
-}
-
-
-/*****----- Mode Switcher -----*****/
-mode-switcher{
-    border-radius: 2px;
-    enabled:                     true;
-    orientation: vertical;
-    spacing:                     8px;
+message {
     background-color:            transparent;
-    text-color:                  @foreground;
-}
-button {
-    padding:                     15px;
-    border-radius:               10px;
-    background-color:            @alternate-normal-background;
-    text-color:                  @text;
-    cursor:                      pointer;
-}
-button selected {
-    background-color:            @background;
-    text-color:                  @foreground;
 }
