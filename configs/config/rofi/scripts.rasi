@@ -1,0 +1,90 @@
+@import "mocha.rasi"
+
+* {
+  font:                       "JetBrains Mono Nerd Font 12";
+  selected-active-foreground:  @background;
+  lightfg:                     @text;
+  separatorcolor:              @foreground;
+  urgent-foreground:           @red;
+  alternate-urgent-background: @lightbg;
+  lightbg:                     @background;
+  background-color:            transparent;
+  normal-background:           rgba(30, 30, 46, 0.94);
+  selected-urgent-background:  @red;
+  alternate-active-background: @lightbg;
+  spacing:                     2;
+  alternate-normal-foreground: @foreground;
+  urgent-background:           @background;
+  selected-normal-foreground:  @lightbg;
+  active-foreground:           @blue;
+  background:                  rgba(30, 30, 46, 0.74);
+  selected-active-background:  @blue;
+  active-background:           @background;
+  selected-normal-background:  @lightfg;
+  alternate-normal-background: @lightbg;
+  foreground:                  @text;
+  selected-urgent-foreground:  @background;
+  normal-foreground:           @foreground;
+  alternate-urgent-foreground: @red;
+  alternate-active-foreground: @blue;
+}
+
+//--- Window --//
+window {
+  height: 55%;
+  spacing: 2px;
+  margin: 2px;
+  padding: 2px;
+  offset-x: 0px;
+  offset-y: 0px;
+  children: [ mainbox ];
+}
+
+mainbox {
+  padding: 2px;
+  margin: 2px;
+  spacing: 1px;
+  children: [ imagebox, listbox, entry ];
+}
+
+imagebox {
+  background-color: transparent;
+  spacing: 0px;
+  border-radius: 2px;
+  margin: 0px;
+  orientation: vertical;
+  background-image: url(""~/.local/share/wallpapers/w-15.jpg"", width);
+}
+
+entry {
+    border-radius: 12px;
+    expand: false;
+    enabled:                     true;
+    background-color:            inherit;
+    text-color:                  @text;
+    cursor:                      text;
+    placeholder:                 "Script selected";
+    placeholder-color:           inherit;
+}
+
+
+//--- Listbox --//
+listbox {
+    spacing: 20px;
+    padding: 20px;
+    orientation: horizontal;
+    background-color: transparent;
+    children: [ message, listview ];
+}
+
+//--- Listview ---//
+listview {
+  columns: 3;
+  spacing: 15px;
+  margin: 15px;
+  padding: 15px;
+}
+
+message {
+    background-color:            transparent;
+}

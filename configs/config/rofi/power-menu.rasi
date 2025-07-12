@@ -1,0 +1,7 @@
+@import "mocha.rasi"
+
+* {
+    font: "JetBrains Mono Nerd Font 40";
+    background: @base;
+    text-color: @text;
+}
