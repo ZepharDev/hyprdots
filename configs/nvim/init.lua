@@ -1,28 +1,26 @@
--- Configuración básica de Neovim
+
 -- init.lua
 
 -- Establecer el líder para mapeos personalizados
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
+-- Show line numbers
+vim.opt.relativenumber = true  -- Relative line numbers
+vim.opt.tabstop = 2            -- 2 spaces per tab
+vim.opt.shiftwidth = 2         -- 2 spaces for indentation
+vim.opt.expandtab = true       -- Convert tabs to spaces
+vim.opt.smartindent = true     -- Smart indentation
+vim.opt.wrap = false           -- Do not wrap lines
+vim.opt.cursorline = true      -- Highlight current line
+vim.opt.termguicolors = true   -- True color support
+vim.opt.mouse = "a"            -- Enable mouse
+vim.opt.clipboard = "unnamedplus" -- Use system clipboard
+vim.opt.ignorecase = true      -- Ignore case in searches
+vim.opt.smartcase = true       -- Case-sensitive if uppercase in search
+vim.opt.updatetime = 300       -- Faster update time (in ms)
+vim.opt.timeoutlen = 500       -- Timeout length for mappings
 
--- Configuraciones generales
-vim.opt.number = true          -- Mostrar números de línea
-vim.opt.relativenumber = true  -- Números de línea relativos
-vim.opt.tabstop = 2            -- 2 espacios por tabulación
-vim.opt.shiftwidth = 2         -- 2 espacios para indentación
-vim.opt.expandtab = true       -- Convertir tabs en espacios
-vim.opt.smartindent = true     -- Indentación inteligente
-vim.opt.wrap = false           -- No envolver líneas
-vim.opt.cursorline = true      -- Resaltar la línea actual
-vim.opt.termguicolors = true   -- Soporte para colores verdaderos
-vim.opt.mouse = "a"            -- Habilitar el ratón
-vim.opt.clipboard = "unnamedplus" -- Usar portapapeles del sistema
-vim.opt.ignorecase = true      -- Ignorar mayúsculas en búsquedas
-vim.opt.smartcase = true       -- Sensible a mayúsculas si hay mayúsculas en la búsqueda
-vim.opt.updatetime = 300       -- Tiempo de actualización más rápido (en ms)
-vim.opt.timeoutlen = 500       -- Tiempo de espera para mapeos
-
--- Configuración del gestor de plugins: lazy.nvim
+-- Plugin manager configuration: lazy.nvim
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -36,9 +34,9 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
--- Lista de plugins
+-- plugins list
 require("lazy").setup({
-  -- Tema (colores)
+  -- Theme (colors)
   {
     "catppuccin/nvim",
     name = "catppuccin",
@@ -46,7 +44,7 @@ require("lazy").setup({
     priority = 1000,
     config = function()
       require("catppuccin").setup({
-        flavour = "mocha", -- Usar la variante mocha
+        flavour = "mocha", -- Use the mocha variant
         term_colors = true,
         transparent_background = false,
         integrations = {
@@ -59,7 +57,7 @@ require("lazy").setup({
       vim.cmd([[colorscheme catppuccin]])
     end,
   },
-  -- Barra de estado
+  -- Status bar
   {
     "nvim-lualine/lualine.nvim",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -73,7 +71,7 @@ require("lazy").setup({
       })
     end,
   },
-  -- Árbol de archivos
+  -- file tree
   {
     "nvim-tree/nvim-tree.lua",
     dependencies = { "nvim-tree/nvim-web-devicons" },
@@ -96,7 +94,7 @@ require("lazy").setup({
       })
     end,
   },
-  -- Autocompletado
+  -- Autocomplete
   {
     "hrsh7th/nvim-cmp",
     dependencies = {
@@ -129,18 +127,17 @@ require("lazy").setup({
       })
     end,
   },
-  -- Soporte para LSP
+  -- LSP support
   {
     "neovim/nvim-lspconfig",
     config = function()
       local lspconfig = require("lspconfig")
-      -- Ejemplo de configuración para algunos servidores LSP
       lspconfig.pyright.setup {} -- Python
       lspconfig.tsserver.setup {} -- TypeScript/JavaScript
       lspconfig.clangd.setup {} -- C/C++
     end,
   },
-  -- Resaltado de sintaxis mejorado
+  -- Enhanced syntax highlighting
   {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
@@ -158,15 +155,14 @@ require("lazy").setup({
   },
 })
 
--- Mapeos de teclas
+-- Key mapins 
 vim.keymap.set("n", "<leader>e", ":NvimTreeToggle<CR>", { desc = "Toggle file explorer" })
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Find files" })
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Live grep" })
 vim.keymap.set("n", "<leader>w", ":w<CR>", { desc = "Save file" })
 vim.keymap.set("n", "<leader>q", ":q<CR>", { desc = "Quit" })
 
--- Configuración adicional para Telescope (búsqueda fuzzy)
-local ok, telescope = pcall(require, "telescope")
+-- Additional configuration for Telescope (fuzzy finding)
 if ok then
   telescope.setup({
     defaults = {
@@ -180,7 +176,7 @@ if ok then
   })
 end
 
--- Configuración para diagnósticos de LSP
+-- Diagnostic configuration LSP
 vim.diagnostic.config({
   virtual_text = true,
   signs = true,
@@ -188,7 +184,7 @@ vim.diagnostic.config({
   severity_sort = true,
 })
 
--- Mapeos para diagnósticos
+-- diagnostic mapins
 vim.keymap.set("n", "<leader>gd", vim.lsp.buf.definition, { desc = "Go to definition" })
 vim.keymap.set("n", "<leader>gr", vim.lsp.buf.references, { desc = "Go to references" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "Code action" })
