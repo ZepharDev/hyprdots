@@ -24,14 +24,17 @@ source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 source ~/powerlevel10k/powerlevel10k.zsh-theme
 
+# --These are the aliases from the zshrc.
+
 alias ls='exa --icons --color=always'
-alias win='hyprctl clients'
 alias pac='sudo pacman'
 alias cl='clear'
 alias ff='fastfetch'
 alias mkd='mkdir'
 alias nn='nano'
-alias sr="shred"
 alias clock="peaclock"
 alias wf="wf-recorder"
+alias nv="nvim"
+
 source ~/powerlevel10k/powerlevel10k.zsh-theme
+
