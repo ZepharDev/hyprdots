@@ -29,9 +29,21 @@ Star the repo to keep up with the latest updates and improvements
 - mpd
 - Pipewire
 - nm-applet
-- pavuncontrol
 - hyprshot
 - hyprpaper
+
+# Alias
+
+- nano --> nn
+- nvim --> nv
+- fastfetch --> ff
+- mkdir --> mkd
+- pacman --> pac
+- pealock --> clock
+- wf-recorder --> wf
+- exa --> ls
+- clear --> cl
+
 
 # Installation 
 
