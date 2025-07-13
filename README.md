@@ -10,7 +10,6 @@ Star the repo to keep up with the latest updates and improvements
 - Waybar
 - Rofi (wayland)
 - Kitty
-- SwayOSD
 - Zsh
 - SwayOSD 
 - SwayNC
