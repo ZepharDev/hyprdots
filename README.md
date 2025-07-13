@@ -58,4 +58,10 @@ I'll be working hard to provide an automatic installation script
 ![Powered by Arch Linux](https://img.shields.io/badge/Powered%20by-Arch_Linux-8bd5fa?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e)
 ![Crafted by ZepharDev](https://img.shields.io/badge/Crafted%20by-ZepharDev-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e)
 
-[![ZepharMocha](https://img.shields.io/badge/Made%20with%20Mocha%20by-ZepharDev-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=coffee&logoColor=white)]
+---
+
+[![Zephar](https://img.shields.io/badge/Designed%20by-ZepharDev-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=arch-linux&logoColor=white)]
+[![Workflow](https://img.shields.io/badge/Workflow-HyprMocha-89b4fa?style=for-the-badge&labelColor=1e1e2e&logo=gnu-bash&logoColor=white)]
+[![Readme](https://img.shields.io/badge/Philosophy-Minimal%20%26%20Clean-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logo=markdown&logoColor=white)]
+
+---
