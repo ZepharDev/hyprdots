@@ -1,3 +1,5 @@
+[![Hyprdots Repo Stats](https://github-readme-stats.vercel.app/api/pin/?username=ZepharDev&repo=hyprdots&show_owner=true&theme=default&title_color=cba6f7&text_color=cdd6f4&icon_color=89b4fa&bg_color=1e1e2e&hide_border=true)]
+
 # Hyprdots 
 
 Welcome to my personal configurations, I hope you like the settings
