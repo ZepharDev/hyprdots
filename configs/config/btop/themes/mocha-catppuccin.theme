@@ -1,0 +1,23 @@
+# Mocha Catppuccin theme for btop
+# Colors based on Catppuccin Mocha palette
+
+theme[main_bg]="#1E1E2E"        # Base (background)
+theme[main_fg]="#CDD6F4"        # Text (foreground)
+theme[cpu]="#F5E0DC"            # CPU bars
+theme[mem]="#A6E3A1"            # Memory bars
+theme[net]="#F9E2AF"            # Network bars
+theme[proc]="#CBA6F7"           # Process list highlight
+theme[selected_bg]="#313244"     # Selected item background
+theme[selected_fg]="#F5E0DC"     # Selected item foreground
+theme[title]="#89B4FA"          # Titles
+theme[hi_fg]="#F38BA8"          # Highlighted text
+theme[graph_text]="#B4BEFE"     # Graph text
+theme[meter_bg]="#45475A"       # Meter background
+theme[border]="#585B70"         # Borders
+theme[div_line]="#6C7086"       # Dividing lines
+theme[free]="#94E2D5"           # Free memory
+theme[used]="#F2CDCD"           # Used memory
+theme[cached]="#A6E3A1"         # Cached memory
+theme[available]="#89DCEB"      # Available memory
+theme[io_read]="#FAB387"         # I/O read
+theme[io_write]="#F9E2AF"        # I/O write
