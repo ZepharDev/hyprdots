@@ -60,14 +60,5 @@ I'll be working hard to provide an automatic installation script
   <img src="https://img.shields.io/badge/Crafted%20by-ZepharDev-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e">
   <img src="https://img.shields.io/badge/Philosophy-Minimal%20%26%20Clean-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logo=markdown&logoColor=white">
 </p>
-
-<p align="center">
-  <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white">
-  <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white">
-  <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white">
-  <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white">
-</p>
-
-<p align="center">
   <img src="https://img.shields.io/badge/License-GNU%20GPLv3-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=gnu&logoColor=white" alt="License: GPL v3">
 </p>
