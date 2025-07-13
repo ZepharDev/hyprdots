@@ -5,11 +5,6 @@
   <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white">
 </p>
 
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Hyprdots%20by-ZepharDev-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />
-</p>
-
 # Hyprdots 
 
 Welcome to my personal configurations, I hope you like the settings
