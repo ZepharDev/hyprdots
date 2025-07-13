@@ -1,8 +1,4 @@
-![start](https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white)
-
-![Hyprdots Commits](https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white)
-
-![Hyprdots Last Commit](https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white)
+![start](https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white) --> ![Hyprdots Commits](https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white) --> ![Hyprdots Last Commit](https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white)
 
 ![Hyprdots Forks](https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white)
 
