@@ -18,14 +18,6 @@ Star the repo to keep up with the latest updates and improvements
 </p>
 
 
-<h2 align="center" style="color:#cba6f7; margin-bottom:0.5em;">Requirements</h2>
-
-<p align="center" style="color:#f5c2e7; font-size:16px; line-height:1.6; max-width:800px; margin:auto; letter-spacing:0.05em;">
-  Hyprland &nbsp;&middot;&nbsp; Waybar &nbsp;&middot;&nbsp; Rofi (Wayland) &nbsp;&middot;&nbsp; Kitty &nbsp;&middot;&nbsp; Zsh &nbsp;&middot;&nbsp; SwayOSD &nbsp;&middot;&nbsp; SwayNC &nbsp;&middot;&nbsp; Hyprlock &nbsp;&middot;&nbsp; btop &nbsp;&middot;&nbsp; NetworkManager <br>
-  Dmenu &nbsp;&middot;&nbsp; nvim &nbsp;&middot;&nbsp; wlogout &nbsp;&middot;&nbsp; dunst &nbsp;&middot;&nbsp; yay &nbsp;&middot;&nbsp; FastFetch &nbsp;&middot;&nbsp; Nerd Font &nbsp;&middot;&nbsp; cava &nbsp;&middot;&nbsp; hypridle &nbsp;&middot;&nbsp; clipse <br>
-  mpd &nbsp;&middot;&nbsp; Pipewire &nbsp;&middot;&nbsp; nm-applet &nbsp;&middot;&nbsp; hyprshot &nbsp;&middot;&nbsp; hyprpaper*
-</p>
-
 # Alias
 
 - nano --> nn
