@@ -40,15 +40,3 @@ I'll be working hard to provide an automatic installation script
 <p align="center">
   <img src="https://img.shields.io/badge/Built%20with-Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Powered%20by-Arch_Linux-8bd5fa?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Crafted%20by-ZepharDev-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/License-GNU%20GPLv3-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=gnu&logoColor=white" />
 </p>
-
-<h2 align="center">Requirements</h2>
-
-<p align="center">
-  Hyprland · Waybar · Rofi (Wayland) · Kitty · Zsh · SwayOSD · SwayNC · Hyprlock · btop · NetworkManager · Dmenu · nvim · wlogout · dunst · yay · FastFetch · Nerd Font · cava · hypridle · clipse · mpd · Pipewire · nm-applet · hyprshot · hyprpaper *
-</p>
-
-<p align="center">
-  <svg width="50%" height="5">
-    <rect width="100%" height="5" fill="#cba6f7"/>
-  </svg>
-</p>
