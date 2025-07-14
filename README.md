@@ -18,6 +18,41 @@ Star the repo to keep up with the latest updates and improvements
 </p>
 
 
+<p align="center" style="margin-top:0.3em;">
+  <img src="https://img.shields.io/badge/Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" alt="Hyprland" />
+  <img src="https://img.shields.io/badge/Waybar-8bd5fa?style=for-the-badge&logo=waybar&logoColor=white&labelColor=1e1e2e" alt="Waybar" />
+  <img src="https://img.shields.io/badge/Rofi-F5C2E7?style=for-the-badge&logo=rofi&logoColor=white&labelColor=1e1e2e" alt="Rofi" />
+  <img src="https://img.shields.io/badge/Kitty-cba6f7?style=for-the-badge&logo=kitty&logoColor=white&labelColor=1e1e2e" alt="Kitty" />
+  <img src="https://img.shields.io/badge/Zsh-89b4fa?style=for-the-badge&logo=zsh&logoColor=white&labelColor=1e1e2e" alt="Zsh" />
+  <img src="https://img.shields.io/badge/SwayOSD-8bd5fa?style=for-the-badge&labelColor=1e1e2e" alt="SwayOSD" />
+</p>
+<p align="center" style="margin-top:0.2em;">
+  <img src="https://img.shields.io/badge/SwayNC-f5c2e7?style=for-the-badge&labelColor=1e1e2e" alt="SwayNC" />
+  <img src="https://img.shields.io/badge/Hyprlock-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="Hyprlock" />
+  <img src="https://img.shields.io/badge/btop-89b4fa?style=for-the-badge&labelColor=1e1e2e" alt="btop" />
+  <img src="https://img.shields.io/badge/NetworkManager-8bd5fa?style=for-the-badge&labelColor=1e1e2e" alt="NetworkManager" />
+  <img src="https://img.shields.io/badge/Dmenu-f5c2e7?style=for-the-badge&labelColor=1e1e2e" alt="Dmenu" />
+  <img src="https://img.shields.io/badge/nvim-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=neovim&logoColor=white" alt="nvim" />
+</p>
+<p align="center" style="margin-top:0.2em;">
+  <img src="https://img.shields.io/badge/wlogout-89b4fa?style=for-the-badge&labelColor=1e1e2e" alt="wlogout" />
+  <img src="https://img.shields.io/badge/dunst-8bd5fa?style=for-the-badge&labelColor=1e1e2e" alt="dunst" />
+  <img src="https://img.shields.io/badge/yay-f5c2e7?style=for-the-badge&labelColor=1e1e2e" alt="yay" />
+  <img src="https://img.shields.io/badge/FastFetch-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="FastFetch" />
+  <img src="https://img.shields.io/badge/Nerd_Font-89b4fa?style=for-the-badge&labelColor=1e1e2e" alt="Nerd Font" />
+  <img src="https://img.shields.io/badge/cava-8bd5fa?style=for-the-badge&labelColor=1e1e2e" alt="cava" />
+</p>
+<p align="center" style="margin-top:0.2em;">
+  <img src="https://img.shields.io/badge/hypridle-f5c2e7?style=for-the-badge&labelColor=1e1e2e" alt="hypridle" />
+  <img src="https://img.shields.io/badge/clipse-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="clipse" />
+  <img src="https://img.shields.io/badge/mpd-89b4fa?style=for-the-badge&labelColor=1e1e2e" alt="mpd" />
+  <img src="https://img.shields.io/badge/Pipewire-8bd5fa?style=for-the-badge&labelColor=1e1e2e" alt="Pipewire" />
+  <img src="https://img.shields.io/badge/nm-applet-f5c2e7?style=for-the-badge&labelColor=1e1e2e" alt="nm-applet" />
+  <img src="https://img.shields.io/badge/hyprshot-cba6f7?style=for-the-badge&labelColor=1e1e2e" alt="hyprshot" />
+  <img src="https://img.shields.io/badge/hyprpaper-89b4fa?style=for-the-badge&labelColor=1e1e2e" alt="hyprpaper" />
+</p>
+
+
 # Alias
 
 - nano --> nn
