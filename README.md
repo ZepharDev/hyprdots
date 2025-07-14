@@ -5,13 +5,13 @@
   <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white">
 </p>
 
-<h1 align="center">Requeriments</h1>
+<h1 align="center">Hyprdots</h1>
 
 Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
-<h1 align="center">hyprdots</h1>
+<h1 align="center">Requeriments</h1>
 
 - Hyprland
 - Waybar
