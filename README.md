@@ -12,7 +12,7 @@ The configurations are still in development, so please be patient, l'll be impro
 Star the repo to keep up with the latest updates and improvements
 
 
-<h1 align="center"># Requirements</h1>
+<h1 align="center"-> Requirements</h1>
 
 <p align="center">
   <code>Hyprland</code> &nbsp; | &nbsp;
