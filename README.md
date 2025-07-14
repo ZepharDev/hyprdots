@@ -11,47 +11,33 @@ Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
-<h1 align="center"># Requirements</h1>
+# Requirements
 
-<p align="center">
-  <code>Hyprland</code> — <code>yay -S hyprland</code><br>
-  <code>Waybar</code> — <code>pacman -S waybar</code><br>
-  <code>Rofi (Wayland)</code> — <code>yay -S rofi-lbonn-wayland</code><br>
-  <code>Kitty</code> — <code>pacman -S kitty</code><br>
-  <code>Zsh</code> — <code>pacman -S zsh</code><br>
-  <code>SwayOSD</code> — <code>yay -S swayosd</code><br>
-  <code>SwayNC</code> — <code>yay -S swaync</code><br>
-  <code>Hyprlock</code> — <code>yay -S hyprlock</code><br>
-  <code>btop</code> — <code>pacman -S btop</code><br>
-  <code>NetworkManager</code> — <code>pacman -S networkmanager</code><br>
-  <code>Dmenu</code> — <code>pacman -S dmenu</code><br>
-  <code>nvim</code> — <code>pacman -S neovim</code><br>
-  <code>wlogout</code> — <code>yay -S wlogout</code><br>
-  <code>dunst</code> — <code>pacman -S dunst</code><br>
-  <code>yay</code> — <code>pacman -S yay</code><br>
-  <code>FastFetch</code> — <code>yay -S fastfetch</code><br>
-  <code>Nerd Font</code> — <code>yay -S nerd-fonts</code><br>
-  <code>cava</code> — <code>pacman -S cava</code><br>
-  <code>hypridle</code> — <code>yay -S hypridle</code><br>
-  <code>clipse</code> — <code>yay -S clipse</code><br>
-  <code>mpd</code> — <code>pacman -S mpd</code><br>
-  <code>Pipewire</code> — <code>pacman -S pipewire</code><br>
-  <code>nm-applet</code> — <code>pacman -S network-manager-applet</code><br>
-  <code>hyprshot</code> — <code>yay -S hyprshot</code><br>
-  <code>hyprpaper*</code> — <code>yay -S hyprpaper</code>
-</p>
-<p align="center">
-  <code>nano → nn</code> &nbsp; | &nbsp;
-  <code>nvim → nv</code> &nbsp; | &nbsp;
-  <code>fastfetch → ff</code> &nbsp; | &nbsp;
-  <code>mkdir → mkd</code> &nbsp; | &nbsp;
-  <code>pacman → pac</code> &nbsp; | &nbsp;
-  <code>pealock → clock</code> &nbsp; | &nbsp;
-  <code>wf-recorder → wf</code> &nbsp; | &nbsp;
-  <code>exa → ls</code> &nbsp; | &nbsp;
-  <code>clear → cl</code>
-</p>
-
+- Hyprland — [hyprland.org](https://hyprland.org/)
+- Waybar — [GitHub](https://github.com/Alexays/Waybar)
+- Rofi (Wayland) — [GitHub](https://github.com/lbonn/rofi)
+- Kitty — [sw.kovidgoyal.net/kitty](https://sw.kovidgoyal.net/kitty/)
+- Zsh — [www.zsh.org](https://www.zsh.org/)
+- SwayOSD — [GitHub](https://github.com/ErikReider/SwayOSD)
+- SwayNC — [GitHub](https://github.com/ErikReider/SwayNotificationCenter)
+- Hyprlock — [GitHub](https://github.com/hyprwm/Hyprlock)
+- btop — [GitHub](https://github.com/aristocratos/btop)
+- NetworkManager — [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager)
+- Dmenu — [tools.suckless.org](https://tools.suckless.org/dmenu/)
+- nvim — [neovim.io](https://neovim.io/)
+- wlogout — [GitHub](https://github.com/ArtsyMacaw/wlogout)
+- dunst — [GitHub](https://github.com/dunst-project/dunst)
+- yay — [GitHub](https://github.com/Jguer/yay)
+- FastFetch — [GitHub](https://github.com/fastfetch-cli/fastfetch)
+- Nerd Font — [www.nerdfonts.com](https://www.nerdfonts.com/)
+- cava — [GitHub](https://github.com/karlstav/cava)
+- hypridle — [GitHub](https://github.com/hyprwm/hypridle)
+- clipse — *(link no disponible, especifícalo si aplica)*
+- mpd — [www.musicpd.org](https://www.musicpd.org/)
+- Pipewire — [pipewire.org](https://pipewire.org/)
+- nm-applet — [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager#nm-applet)
+- hyprshot — [GitHub](https://github.com/HyprWM/hyprshot)
+- hyprpaper — [GitHub](https://github.com/hyprwm/hyprpaper)
 
 # Installation 
 
