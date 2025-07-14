@@ -37,7 +37,14 @@ Star the repo to keep up with the latest updates and improvements
 - Pipewire
 - nm-applet
 - hyprshot
-- hyprpaper
+- hyprpaper 
+
+
+<h2 align="center">Requirements</h2>
+
+<p align="center">
+  Hyprland · Waybar · Rofi (Wayland) · Kitty · Zsh · SwayOSD · SwayNC · Hyprlock · btop · NetworkManager · Dmenu · nvim · wlogout · dunst · yay · FastFetch · Nerd Font · cava · hypridle · clipse · mpd · Pipewire · nm-applet · hyprshot · hyprpaper*
+</p>
 
 # Alias
 
