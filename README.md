@@ -11,33 +11,10 @@ Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
-<h1 align="center">Requeriments</h1>
+<h2 align="center">Requeriments</h2>
 
 <p align="center">
   Hyprland · Waybar · Rofi (Wayland) · Kitty · Zsh · SwayOSD · SwayNC · Hyprlock · btop · NetworkManager · Dmenu · nvim · wlogout · dunst · yay · FastFetch · Nerd Font · cava · hypridle · clipse · mpd · Pipewire · nm-applet · hyprshot · hyprpaper*
-</p>
-
-<h2 align="center">Requirements</h2>
-
-<p align="center">
-  Hyprland &nbsp;•&nbsp; Waybar &nbsp;•&nbsp; Rofi (Wayland) &nbsp;•&nbsp; Kitty &nbsp;•&nbsp; Zsh &nbsp;•&nbsp; SwayOSD &nbsp;•&nbsp; SwayNC &nbsp;•&nbsp; Hyprlock &nbsp;•&nbsp; btop &nbsp;•&nbsp; NetworkManager <br/>
-  Dmenu &nbsp;•&nbsp; nvim &nbsp;•&nbsp; wlogout &nbsp;•&nbsp; dunst &nbsp;•&nbsp; yay &nbsp;•&nbsp; FastFetch &nbsp;•&nbsp; Nerd Font &nbsp;•&nbsp; cava &nbsp;•&nbsp; hypridle &nbsp;•&nbsp; clipse <br/>
-  mpd &nbsp;•&nbsp; Pipewire &nbsp;•&nbsp; nm-applet &nbsp;•&nbsp; hyprshot &nbsp;•&nbsp; hyprpaper*
-</p>
-
-<h2 align="center">Requirements</h2>
-
-<p align="center">
-  <svg viewBox="0 0 1000 30" width="100%" height="30">
-    <text font-size="16" fill="#cba6f7">
-      <textPath href="#path">
-        Hyprland · Waybar · Rofi (Wayland) · Kitty · Zsh · SwayOSD · SwayNC · Hyprlock · btop · NetworkManager · Dmenu · nvim · wlogout · dunst · yay · FastFetch · Nerd Font · cava · hypridle · clipse · mpd · Pipewire · nm-applet · hyprshot · hyprpaper *
-      </textPath>
-    </text>
-    <path id="path" d="M0,15 H2000" fill="none">
-      <animate attributeName="d" from="M0,15 H2000" to="M-1000,15 H1000" dur="15s" repeatCount="indefinite" />
-    </path>
-  </svg>
 </p>
 
 # Alias
