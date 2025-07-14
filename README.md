@@ -11,7 +11,7 @@ Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
-# Requeriments
+<h1 align="center">hyprdots</h1>
 
 - Hyprland
 - Waybar
