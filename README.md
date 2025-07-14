@@ -46,6 +46,14 @@ Star the repo to keep up with the latest updates and improvements
   Hyprland · Waybar · Rofi (Wayland) · Kitty · Zsh · SwayOSD · SwayNC · Hyprlock · btop · NetworkManager · Dmenu · nvim · wlogout · dunst · yay · FastFetch · Nerd Font · cava · hypridle · clipse · mpd · Pipewire · nm-applet · hyprshot · hyprpaper*
 </p>
 
+<h2 align="center">Requirements</h2>
+
+<p align="center">
+  Hyprland &nbsp;•&nbsp; Waybar &nbsp;•&nbsp; Rofi (Wayland) &nbsp;•&nbsp; Kitty &nbsp;•&nbsp; Zsh &nbsp;•&nbsp; SwayOSD &nbsp;•&nbsp; SwayNC &nbsp;•&nbsp; Hyprlock &nbsp;•&nbsp; btop &nbsp;•&nbsp; NetworkManager <br/>
+  Dmenu &nbsp;•&nbsp; nvim &nbsp;•&nbsp; wlogout &nbsp;•&nbsp; dunst &nbsp;•&nbsp; yay &nbsp;•&nbsp; FastFetch &nbsp;•&nbsp; Nerd Font &nbsp;•&nbsp; cava &nbsp;•&nbsp; hypridle &nbsp;•&nbsp; clipse <br/>
+  mpd &nbsp;•&nbsp; Pipewire &nbsp;•&nbsp; nm-applet &nbsp;•&nbsp; hyprshot &nbsp;•&nbsp; hyprpaper*
+</p>
+
 # Alias
 
 - nano --> nn
