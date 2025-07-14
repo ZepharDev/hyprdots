@@ -48,18 +48,19 @@ Star the repo to keep up with the latest updates and improvements
   <img src="https://img.shields.io/badge/hyprpaper-89b4fa?style=for-the-badge&labelColor=1e1e2e" alt="hyprpaper" />
 </p>
 
+<h1 align="center">Alias</h1>
 
-# Alias
-
-- nano --> nn
-- nvim --> nv
-- fastfetch --> ff
-- mkdir --> mkd
-- pacman --> pac
-- pealock --> clock
-- wf-recorder --> wf
-- exa --> ls
-- clear --> cl
+<p align="center">
+  <code>nano → nn</code> &nbsp; | &nbsp;
+  <code>nvim → nv</code> &nbsp; | &nbsp;
+  <code>fastfetch → ff</code> &nbsp; | &nbsp;
+  <code>mkdir → mkd</code> &nbsp; | &nbsp;
+  <code>pacman → pac</code> &nbsp; | &nbsp;
+  <code>pealock → clock</code> &nbsp; | &nbsp;
+  <code>wf-recorder → wf</code> &nbsp; | &nbsp;
+  <code>exa → ls</code> &nbsp; | &nbsp;
+  <code>clear → cl</code>
+</p>
 
 
 # Installation 
