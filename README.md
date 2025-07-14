@@ -11,12 +11,8 @@ Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
-<h2 align="center">Requeriments</h2>
 
-<p align="center">
-  Hyprland · Waybar · Rofi (Wayland) · Kitty · Zsh · SwayOSD · SwayNC · Hyprlock · btop · NetworkManager · Dmenu · nvim · wlogout · dunst · yay · FastFetch · Nerd Font · cava · hypridle · clipse · mpd · Pipewire · nm-applet · hyprshot · hyprpaper*
-</p>
-
+<h1 align="center">Requeriments</h1>
 
 <p align="center" style="margin-top:0.3em;">
   <img src="https://img.shields.io/badge/Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" alt="Hyprland" />
