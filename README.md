@@ -11,38 +11,35 @@ Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
-
-<h1 align="center"-> Requirements</h1>
+<h1 align="center"># Requirements</h1>
 
 <p align="center">
-  <code>Hyprland</code> &nbsp; | &nbsp;
-  <code>Waybar</code> &nbsp; | &nbsp;
-  <code>Rofi (Wayland)</code> &nbsp; | &nbsp;
-  <code>Kitty</code> &nbsp; | &nbsp;
-  <code>Zsh</code> &nbsp; | &nbsp;
-  <code>SwayOSD</code> &nbsp; | &nbsp;
-  <code>SwayNC</code> &nbsp; | &nbsp;
-  <code>Hyprlock</code> &nbsp; | &nbsp;
-  <code>btop</code> &nbsp; | &nbsp;
-  <code>NetworkManager</code> &nbsp; | &nbsp;
-  <code>Dmenu</code> &nbsp; | &nbsp;
-  <code>nvim</code> &nbsp; | &nbsp;
-  <code>wlogout</code> &nbsp; | &nbsp;
-  <code>dunst</code> &nbsp; | &nbsp;
-  <code>yay</code> &nbsp; | &nbsp;
-  <code>FastFetch</code> &nbsp; | &nbsp;
-  <code>Nerd Font</code> &nbsp; | &nbsp;
-  <code>cava</code> &nbsp; | &nbsp;
-  <code>hypridle</code> &nbsp; | &nbsp;
-  <code>clipse</code> &nbsp; | &nbsp;
-  <code>mpd</code> &nbsp; | &nbsp;
-  <code>Pipewire</code> &nbsp; | &nbsp;
-  <code>nm-applet</code> &nbsp; | &nbsp;
-  <code>hyprshot</code> &nbsp; | &nbsp;
-  <code>hyprpaper*</code>
+  <code>Hyprland</code> — <code>yay -S hyprland</code><br>
+  <code>Waybar</code> — <code>pacman -S waybar</code><br>
+  <code>Rofi (Wayland)</code> — <code>yay -S rofi-lbonn-wayland</code><br>
+  <code>Kitty</code> — <code>pacman -S kitty</code><br>
+  <code>Zsh</code> — <code>pacman -S zsh</code><br>
+  <code>SwayOSD</code> — <code>yay -S swayosd</code><br>
+  <code>SwayNC</code> — <code>yay -S swaync</code><br>
+  <code>Hyprlock</code> — <code>yay -S hyprlock</code><br>
+  <code>btop</code> — <code>pacman -S btop</code><br>
+  <code>NetworkManager</code> — <code>pacman -S networkmanager</code><br>
+  <code>Dmenu</code> — <code>pacman -S dmenu</code><br>
+  <code>nvim</code> — <code>pacman -S neovim</code><br>
+  <code>wlogout</code> — <code>yay -S wlogout</code><br>
+  <code>dunst</code> — <code>pacman -S dunst</code><br>
+  <code>yay</code> — <code>pacman -S yay</code><br>
+  <code>FastFetch</code> — <code>yay -S fastfetch</code><br>
+  <code>Nerd Font</code> — <code>yay -S nerd-fonts</code><br>
+  <code>cava</code> — <code>pacman -S cava</code><br>
+  <code>hypridle</code> — <code>yay -S hypridle</code><br>
+  <code>clipse</code> — <code>yay -S clipse</code><br>
+  <code>mpd</code> — <code>pacman -S mpd</code><br>
+  <code>Pipewire</code> — <code>pacman -S pipewire</code><br>
+  <code>nm-applet</code> — <code>pacman -S network-manager-applet</code><br>
+  <code>hyprshot</code> — <code>yay -S hyprshot</code><br>
+  <code>hyprpaper*</code> — <code>yay -S hyprpaper</code>
 </p>
-<h1 align="center">Alias</h1>
-
 <p align="center">
   <code>nano → nn</code> &nbsp; | &nbsp;
   <code>nvim → nv</code> &nbsp; | &nbsp;
