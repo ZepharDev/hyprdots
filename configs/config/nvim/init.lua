@@ -1,4 +1,3 @@
--- Basic Neovim configuration
 -- init.lua
 
 -- Set leader keys for custom mappings
