@@ -1,36 +1,36 @@
 #!/bin/bash
 
-# Rofi theme path (ajusta a tu ruta si es necesario)
-ROFI_THEME="$HOME/.config/rofi/mpd-theme.rasi"
+# Rofi theme path
+rofi_theme="$HOME/.config/rofi/mpd-theme.rasi"
 
 # Detecta reproductores disponibles
-PLAYER=$(playerctl -l | head -n 1)
+player=$(playerctl -l | head -n 1)
 
 # Info actual
-TITLE=$(playerctl -p "$PLAYER" metadata title)
-ARTIST=$(playerctl -p "$PLAYER" metadata artist)
-ALBUM=$(playerctl -p "$PLAYER" metadata album)
-ARTURL=$(playerctl -p "$PLAYER" metadata mpris:artUrl | sed 's/^file:\/\///')
+title=$(playerctl -p "$player" metadata title)
+artist=$(playerctl -p "$player" metadata artist)
+album=$(playerctl -p "$player" metadata album)
+artUrl=$(playerctl -p "$player" metadata mpris:artUrl | sed 's/^file:\/\///')
 
 # Texto descriptivo en el menú
-INFO="🎵 $TITLE — $ARTIST [$ALBUM]"
+info="🎵 $title — $artist [$album]"
 
 # Opciones del menú
-OPTIONS="$INFO\n󰒭 Next\n▶ Play\n󰒮 Previous\n Stop\n📤 Show Info"
+options="$info\n󰒭 Next\n▶ Play\n󰒮 Previous\n Stop\n📤 Show Info"
 
 # Mostrar Rofi
-CHOICE=$(echo -e "$OPTIONS" | rofi -dmenu -config "$ROFI_THEME" -p "🎶 Control ($PLAYER)" -i)
+choice=$(echo -e "$options" | rofi -dmenu -config "$rofi_theme" -p "🎶 Control ($player)" -i)
 
-case "$CHOICE" in
-    "󰒭 Next") playerctl -p "$PLAYER" next ;;
-    "▶ Play") playerctl -p "$PLAYER" play ;;
-    "󰒮 Previous") playerctl -p "$PLAYER" previous ;;
-    " Stop") playerctl -p "$PLAYER" stop ;;
+case "$choice" in
+    "󰒭 Next") playerctl -p "$player" next ;;
+    "▶ Play") playerctl -p "$player" play ;;
+    "󰒮 Previous") playerctl -p "$player" previous ;;
+    " Stop") playerctl -p "$player" stop ;;
     "📤 Show Info")
-        if [[ -f "$ARTURL" ]]; then
-            notify-send "🎶 $TITLE" "$ARTIST — $ALBUM" --icon="$ARTURL"
+        if [[ -f "$artUrl" ]]; then
+            notify-send "🎶 $title" "$artist — $album" --icon="$artUrl"
         else
-            notify-send "🎶 $TITLE" "$ARTIST — $ALBUM"
+            notify-send "🎶 $title" "$artist — $album"
         fi
         ;;
 esac

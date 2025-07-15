@@ -22,8 +22,7 @@ error_handler() {
 
 # Being able to selected a wallpaper
 WALL=$(find "$WALLPAPER_DIR" -type f \( -iname "*.jpg" -o -iname "*.png" -o -iname "*.jpeg" \) -printf "%f\n" | \
-  rofi -dmenu -config ~/.config/rofi/wallpaper.rasi -i -p "Wallpaper" -theme-str 'window {width: 50%;}')
-
+ #    rofi -dmenu -config ~/.config/rofi/wallpaper.rasi -i -p "Wallpaper" -theme-str 'window {width: 50%;}')
 
 # Verify
 [ -z "$WALL" ] && exit 0

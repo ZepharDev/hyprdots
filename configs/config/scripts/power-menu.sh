@@ -3,13 +3,15 @@
 user="$(whoami)"
 host="$(hostname)"
 rofi_theme="$HOME/.config/rofi/power-menu.rasi"
+uptime="$(uptime)"
 
-options="  \n  \n  \n  \n 󰍃 \n   "
+options="  \n   \n   \n   \n  󰍃 \n    "
 
 rofi_cmd() {
   rofi -dmenu \
     -p " $user@$host" \
-    -theme $rofi_theme 
+    -config $rofi_theme \
+    -theme-str 'window {width: 50%;}'
 }
 
 selected=$(echo -e "$options" | rofi_cmd) || {
@@ -18,12 +20,12 @@ selected=$(echo -e "$options" | rofi_cmd) || {
 }
 
 declare -A actions=(
-  ["  "]="systemctl poweroff"
-  ["  "]="systemctl reboot"
-  ["  "]="systemctl suspend"
-  ["  "]="systemctl hibernate"
-  [" 󰍃 "]="systemctl dispatch exit"
-  ["   "]="hyprlock"
+  ["   "]="systemctl poweroff"
+  ["   "]="systemctl reboot"
+  ["   "]="systemctl suspend"
+  ["   "]="systemctl hibernate"
+  ["  󰍃 "]="systemctl dispatch exit"
+  ["    "]="hyprlock"
 )
 
 run() {
@@ -31,5 +33,5 @@ run() {
   [[ -n "$cmd" ]] && $cmd || exit 0
   [[ $? -ne 0 ]] && log_error "Failed to execute: $cmd"
 }
-
+i
 run "$selected"
