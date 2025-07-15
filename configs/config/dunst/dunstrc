@@ -1,0 +1,32 @@
+[global]
+    font = Inter 12
+    frame_width = 0
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 12
+    text_icon_padding = 8
+    corner_radius = 10
+    transparency = 20
+    notification_height = 0
+    max_icon_size = 48
+    offset = 20x20
+    width = 320
+    indicate_hidden = yes
+    word_wrap = yes
+
+[style normal]
+    background = "#1e1e2e"
+    foreground = "#cdd6f4"
+    highlight = "#f38ba8"
+
+[style critical]
+    background = "#1e1e2e"
+    foreground = "#f38ba8"
+    highlight = "#f5e0dc"
+
+[style low]
+    background = "#1e1e2e"
+    foreground = "#bac2de"
+
+[icons]
+    fallback_icon = true
