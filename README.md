@@ -51,7 +51,7 @@ Star the repo to keep up with the latest updates and improvements
 git clone https://github.com/ZepharDev/hyprdots.git   && cd ~/.config/hyprdots && bash setup.sh
 ```
 
-
+I can't guarantee that the script will work at all; it may have bugs. Please be careful. I'll be improving it and releasing versions. There are multiple options. 
 
 ---
 
