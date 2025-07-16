@@ -43,7 +43,13 @@ Star the repo to keep up with the latest updates and improvements
 
 <p align="center">
   <img src="https://img.shields.io/badge/Warning-Read%20Carefully-f38ba8?style=for-the-badge&labelColor=1e1e2e&logo=alert&logoColor=white" />
-</p>```
+</p>
+
+Clone this repository:
+```bash
+git clone https://github.com/ZepharDev/hyprdots.git   && cd ~/.config/hyprdots && bash setup.sh```
+
+
 
 ---
 
