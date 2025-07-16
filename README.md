@@ -11,7 +11,7 @@ Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
-# Requirements
+<h1 align=center>Requeriments</h1>
 
 - Hyprland — [hyprland.org](https://hyprland.org/)
 - Waybar — [GitHub](https://github.com/Alexays/Waybar)
@@ -41,9 +41,9 @@ Star the repo to keep up with the latest updates and improvements
 
 # Installation 
 
-
-
-1- ```git clone https://github.com/ZepharDev/hyprdots && cd hyprdots && bash setup.sh```
+<p align="center">
+  <img src="https://img.shields.io/badge/Warning-Read%20Carefully-f38ba8?style=for-the-badge&labelColor=1e1e2e&logo=alert&logoColor=white" />
+</p>```
 
 ---
 
