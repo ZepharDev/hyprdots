@@ -55,7 +55,22 @@ I can't guarantee that the script will work at all; it may have bugs. Please be 
 
 ---
 
-<h1 align="right">Advertence</h1>
+<h1 align="center">Advertence</h1>
+
+This is my personal configuration, so that's why you see LibreWolf in keybinds and myprograms. For example, $browser = librewolf. If you want to use Firefox instead, you'll have to manually modify the file. However, if you give me some time to further develop the script, I could make that easier.
+
+Still, the absolute path where you can set Firefox (or any browser you want) is:
+~/.config/hypr/core/myprograms.conf
+
+You can access it in several ways, like the one shown below. You can edit it with nvim (I hope you do), or with nano.
+
+If you've already applied the configurations, you can access it via zsh using nn. You would just need to change:
+$browser = librewolf
+to:
+$browser = firefox
+(Just to clarify, you can use any browser you prefer.)
+
+I'm improving the configurations—menu updates are coming soon, so please be patient...
 
 <p align="center">
   <img src="https://img.shields.io/badge/Built%20with-Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Powered%20by-Arch_Linux-8bd5fa?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Crafted%20by-ZepharDev-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/License-GNU%20GPLv3-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=gnu&logoColor=white" />
