@@ -39,13 +39,13 @@ Star the repo to keep up with the latest updates and improvements
 - hyprshot — [GitHub](https://github.com/HyprWM/hyprshot)
 - hyprpaper — [GitHub](https://github.com/hyprwm/hyprpaper)
 
-# Installation 
+<h1 align=center>Installation</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Warning-Read%20Carefully-f38ba8?style=for-the-badge&labelColor=1e1e2e&logo=alert&logoColor=white" />
 </p>
 
-<2 align=center>Automatic installation</h2>
+<h2 align=center>Automatic installation</h2>
 
 ```bash
 git clone https://github.com/ZepharDev/hyprdots.git   && cd ~/.config/hyprdots && bash setup.sh
