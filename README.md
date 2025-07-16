@@ -46,6 +46,7 @@ Star the repo to keep up with the latest updates and improvements
 </p>
 
 Clone this repository:
+
 ```bash
 git clone https://github.com/ZepharDev/hyprdots.git   && cd ~/.config/hyprdots && bash setup.sh```
 
