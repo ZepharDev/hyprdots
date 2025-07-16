@@ -32,7 +32,6 @@ Star the repo to keep up with the latest updates and improvements
 - cava — [GitHub](https://github.com/karlstav/cava)
 - hypridle — [GitHub](https://github.com/hyprwm/hypridle)
 - clipse — [Github](https://github.com/savedra1/clipse)
-- mpd — [www.musicpd.org](https://www.musicpd.org/)
 - Pipewire — [pipewire.org](https://pipewire.org/)
 - nm-applet — [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager#nm-applet)
 - hyprshot — [GitHub](https://github.com/HyprWM/hyprshot)
