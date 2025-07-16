@@ -62,8 +62,8 @@ Still, the absolute path where you can set Firefox (or any browser you want) is:
 
 You can access it in several ways, like the one shown below. You can edit it with nvim (I hope you do), or with nano. 
 
-```
-bash nvim ~/.config/hypr/core/myprograms.conf
+```bash
+nvim ~/.config/hypr/core/myprograms.conf
 ```
 
 If you've already applied the configurations, you can access it via zsh using nn. You would just need to change:
