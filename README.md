@@ -41,8 +41,9 @@ Star the repo to keep up with the latest updates and improvements
 
 # Installation 
 
-For now, there is no automatic update with a script, so if you want to test the configuration you'll have to do it manually
-I'll be working hard to provide an automatic installation script
+
+
+1- ``git clone https://github.com/ZepharDev/hyprdots && cd hyprdots && bash setup.sh``
 
 ---
 
