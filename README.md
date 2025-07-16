@@ -50,7 +50,7 @@ Clone this repository:
 ```bash
 git clone https://github.com/ZepharDev/hyprdots.git   && cd ~/.config/hyprdots && bash setup.sh```
 
-
+Be careful 
 
 ---
 
