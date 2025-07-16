@@ -1,4 +1,4 @@
-@import "~/.local/share/catppuccin/mocha.css";
+@import "mocha.css"
 
 * {
     min-height: 0;
