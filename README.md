@@ -29,7 +29,6 @@ Star the repo to keep up with the latest updates and improvements
 - dunst — [GitHub](https://github.com/dunst-project/dunst)
 - yay — [GitHub](https://github.com/Jguer/yay)
 - FastFetch — [GitHub](https://github.com/fastfetch-cli/fastfetch)
-- Nerd Font — [www.nerdfonts.com](https://www.nerdfonts.com/)
 - cava — [GitHub](https://github.com/karlstav/cava)
 - hypridle — [GitHub](https://github.com/hyprwm/hypridle)
 - clipse — [Github](https://github.com/savedra1/clipse)
@@ -62,7 +61,11 @@ This is my personal configuration, so that's why you see LibreWolf in keybinds a
 Still, the absolute path where you can set Firefox (or any browser you want) is:
 ~/.config/hypr/core/myprograms.conf
 
-You can access it in several ways, like the one shown below. You can edit it with nvim (I hope you do), or with nano.
+You can access it in several ways, like the one shown below. You can edit it with nvim (I hope you do), or with nano. 
+
+```
+bash nvim ~/.config/hypr/core/myprograms.conf
+```
 
 If you've already applied the configurations, you can access it via zsh using nn. You would just need to change:
 $browser = librewolf
@@ -71,6 +74,8 @@ $browser = firefox
 (Just to clarify, you can use any browser you prefer.)
 
 I'm improving the configurations—menu updates are coming soon, so please be patient...
+
+<h1 align="center">Zephar</h1>
 
 <p align="center">
   <img src="https://img.shields.io/badge/Built%20with-Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Powered%20by-Arch_Linux-8bd5fa?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Crafted%20by-ZepharDev-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/License-GNU%20GPLv3-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=gnu&logoColor=white" />
