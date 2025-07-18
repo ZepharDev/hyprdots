@@ -1,3 +1,24 @@
+<div align="center">
+
+  <a href="https://github.com/ZepharDev/hyprdots/stargazers">
+    <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white" alt="Stars Badge"/>
+  </a>
+
+  <a href="https://github.com/ZepharDev/hyprdots/network/members">
+    <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white" alt="Forks Badge"/>
+  </a>
+
+  <a href="https://github.com/ZepharDev/hyprdots/commits">
+    <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Total%20Commits&labelColor=1e1e2e&logo=git&logoColor=white" alt="Total Commits Badge"/>
+  </a>
+
+  <a href="https://github.com/ZepharDev/hyprdots/commits">
+    <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=8bd5fa&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white" alt="Last Commit Badge"/>
+  </a>
+
+</div>
+
+
 <p align="center">
   <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white">
   <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white">
