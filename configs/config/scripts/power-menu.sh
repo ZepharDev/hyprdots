@@ -5,11 +5,11 @@ host="$(hostname)"
 rofi_theme="$HOME/.config/rofi/power-menu.rasi"
 uptime="$(uptime)"
 
-options="  \n   \n   \n   \n  󰍃 \n    "
+options="  Power Off \n  Reboot \n  Suspend \n   Hibernate \n 󰍃 Logout \n    Lock "
 
 rofi_cmd() {
   rofi -dmenu \
-    -p " $user@$host" \
+    -p " $user@$host" \
     -config $rofi_theme \
     -theme-str 'window {width: 50%;}'
 }
@@ -20,12 +20,12 @@ selected=$(echo -e "$options" | rofi_cmd) || {
 }
 
 declare -A actions=(
-  ["   "]="systemctl poweroff"
-  ["   "]="systemctl reboot"
-  ["   "]="systemctl suspend"
-  ["   "]="systemctl hibernate"
-  ["  󰍃 "]="systemctl dispatch exit"
-  ["    "]="hyprlock"
+  ["  Power Off "]="systemctl poweroff"
+  ["  Reboot "]="systemctl reboot"
+  ["   Suspend "]="systemctl suspend"
+  ["   Hibernate "]="systemctl hibernate"
+  [" 󰍃 Logout "]="systemctl dispatch exit"
+  ["   Lock "]="hyprlock"
 )
 
 run() {
