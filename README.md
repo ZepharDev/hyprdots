@@ -84,12 +84,6 @@ $browser = firefox
 
 I'm improving the configurations—menu updates are coming soon, so please be patient...
 
-<h1 align="center">Zephar</h1>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Built%20with-Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Powered%20by-Arch_Linux-8bd5fa?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/Crafted%20by-ZepharDev-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />&#32;<img src="https://img.shields.io/badge/License-GNU%20GPLv3-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=gnu&logoColor=white" />
-</p>
-
 <hr>
 
 <div align="center">
@@ -105,7 +99,6 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
   </p>
 
   <p>
-    <img src="https://img.shields.io/badge/License-MIT-a6e3a1?style=for-the-badge&logo=open-source-initiative&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/License-GNU_GPLv3-f5c2e7?style=for-the-badge&logo=gnu&logoColor=white&labelColor=1e1e2e" />
   </p>
 
