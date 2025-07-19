@@ -1,8 +1,8 @@
 <h1 align="center" style="color:#cba6f7; margin-bottom:0.2em;">
-  ZepgarDev: Crafting Minimal, Coherent Workflows
+  ZepharDev: Crafting Minimal, Coherent Workflows
 </h1>
 <p align="center" style="color:#cdd6f4; font-size:16px; margin-top:0;">
-  <b>Hyprdots • Cybersecurity • OSINT • Philosophy</b>
+  <b>Hyprdots • Cybersecurity • OSINT • Philosophy • Hyprland • Programming </b>
 </p>
 
 
@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white">
   <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white">
   <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white">
-  <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white">
+ <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white">
 </p>
 
 <h1 align="center">Hyprdots</h1>
