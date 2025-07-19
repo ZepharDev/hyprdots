@@ -1,22 +1,9 @@
-<div align="center">
-
-  <a href="https://github.com/ZepharDev/hyprdots/stargazers" style="margin-right: 15px;">
-    <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white" alt="Stars"/>
-  </a>
-
-  <a href="https://github.com/ZepharDev/hyprdots/network/members" style="margin-right: 15px;">
-    <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white" alt="Forks"/>
-  </a>
-
-  <a href="https://github.com/ZepharDev/hyprdots/commits" style="margin-right: 15px;">
-    <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white" alt="Commits"/>
-  </a>
-
-  <a href="https://github.com/ZepharDev/hyprdots/commits">
-    <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=8bd5fa&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white" alt="Last Commit"/>
-  </a>
-
-</div>
+<h1 align="center" style="color:#cba6f7; margin-bottom:0.2em;">
+  ZEPHARDEV: Crafting Minimal, Coherent Workflows
+</h1>
+<p align="center" style="color:#cdd6f4; font-size:16px; margin-top:0;">
+  <b>Hyprdots • Cybersecurity • OSINT • Philosophy</b>
+</p>
 
 
 <p align="center">
