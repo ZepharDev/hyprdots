@@ -1,10 +1,6 @@
 <h1 align="center" style="color:#cba6f7; margin-bottom:0.2em;">
   ZepharDev: 🍁 Crafting Minimal, Coherent Workflows
 </h1>
-<p align="center" style="color:#cdd6f4; font-size:16px; margin-top:0;">
-  <b>Hyprdots • Cybersecurity • OSINT • Philosophy • Hyprland • Programming </b>
-</p>
-
 
 <p align="center">
   <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white">
