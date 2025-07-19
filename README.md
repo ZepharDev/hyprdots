@@ -2,8 +2,6 @@
   ZepharDev: 🍁 Crafting Minimal, Coherent Workflows
 </h1>
 
-<h1 align="center" style="color:#cba6f7;">Hyprdots · Stats</h1>
-
 <p align="center">
   <a href="https://github.com/ZepharDev/hyprdots/stargazers">
     <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white" style="margin: 0 10px;">
