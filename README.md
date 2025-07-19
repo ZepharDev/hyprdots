@@ -2,37 +2,25 @@
   ZepharDev: 🍁 Crafting Minimal, Coherent Workflows
 </h1>
 
-<div align="center" style="background-color:#1e1e2e; padding:20px 40px; border-radius:12px; display:inline-flex; gap:30px; box-shadow: 0 4px 12px rgba(203,166,247,0.25);">
+<h1 align="center" style="color:#cba6f7;">Hyprdots · Stats</h1>
 
-  <a href="https://github.com/ZepharDev/hyprdots/stargazers" style="text-decoration:none; color:#cba6f7; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div style="text-align:center;">
-      <div style="font-size:32px;">⭐</div>
-      <div style="font-size:14px; letter-spacing:1.2px;">Stars</div>
-    </div>
+<p align="center">
+  <a href="https://github.com/ZepharDev/hyprdots/stargazers">
+    <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white" style="margin: 0 10px;">
   </a>
 
-  <a href="https://github.com/ZepharDev/hyprdots/network/members" style="text-decoration:none; color:#89b4fa; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div style="text-align:center;">
-      <div style="font-size:32px;">🍴</div>
-      <div style="font-size:14px; letter-spacing:1.2px;">Forks</div>
-    </div>
+  <a href="https://github.com/ZepharDev/hyprdots/network/members">
+    <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white" style="margin: 0 10px;">
   </a>
 
-  <a href="https://github.com/ZepharDev/hyprdots/commits" style="text-decoration:none; color:#f5c2e7; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div style="text-align:center;">
-      <div style="font-size:32px;">📝</div>
-      <div style="font-size:14px; letter-spacing:1.2px;">Commits</div>
-    </div>
+  <a href="https://github.com/ZepharDev/hyprdots/commits">
+    <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=8bd5fa&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white" style="margin: 0 10px;">
   </a>
 
-  <a href="https://github.com/ZepharDev/hyprdots/commits" style="text-decoration:none; color:#8bd5fa; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
-    <div style="text-align:center;">
-      <div style="font-size:32px;">⏰</div>
-      <div style="font-size:14px; letter-spacing:1.2px;">Last Commit</div>
-    </div>
+  <a href="https://github.com/ZepharDev/hyprdots/commits">
+    <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white" style="margin: 0 10px;">
   </a>
-
-</div>
+</p>
 <h1 align="center">Hyprdots</h1>
 
 Welcome to my personal configurations, I hope you like the settings
