@@ -10,10 +10,10 @@
     <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white" style="margin: 0 10px;">
   </a>
   <a href="https://github.com/ZepharDev/hyprdots/commits">
-    <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=eba0ac&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white" style="margin: 0 10px;">
+    <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=f5e0dc&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white" style="margin: 0 10px;">
   </a>
   <a href="https://github.com/ZepharDev/hyprdots/commits">
-    <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white" style="margin: 0 10px;">
+    <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f2cdcd&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white" style="margin: 0 10px;">
   </a>
 </p>
 <h1 align="center">Hyprdots</h1>
