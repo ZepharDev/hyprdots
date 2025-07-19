@@ -15,6 +15,24 @@ Welcome to my personal configurations, I hope you like the settings
 The configurations are still in development, so please be patient, l'll be improving the techniques over time
 Star the repo to keep up with the latest updates and improvements
 
+
+
+<h1 align="center" style="color:#f5c2e7; font-size:2.5em; margin-bottom:0.2em;">
+  ZEPHARDEV · Minimal Workflow Designer
+</h1>
+
+<p align="center" style="color:#b4befe; font-size:1.1em; margin-top:0;">
+  <b>Hyprdots</b> | <b>Cybersecurity</b> | <b>OSINT</b> | <b>Philosophy</b>
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/License-GNU%20GPLv3-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=gnu&logoColor=white" style="margin:0 8px;">
+  <img src="https://img.shields.io/badge/License-MIT-89b4fa?style=for-the-badge&labelColor=1e1e2e&logo=open-source-initiative&logoColor=white" style="margin:0 8px;">
+</p>
+
+<p align="center" style="color:#a6adc8; font-size:0.95em;">
+  Clarity over clutter. Purpose over noise.  
+</p>
 <h1 align=center>Requeriments</h1>
 
 - Hyprland — [hyprland.org](https://hyprland.org/)
