@@ -1,5 +1,5 @@
 <h1 align="center" style="color:#cba6f7; margin-bottom:0.2em;">
-  ZEPHARDEV: Crafting Minimal, Coherent Workflows
+  ZepgarDev: Crafting Minimal, Coherent Workflows
 </h1>
 <p align="center" style="color:#cdd6f4; font-size:16px; margin-top:0;">
   <b>Hyprdots • Cybersecurity • OSINT • Philosophy</b>
