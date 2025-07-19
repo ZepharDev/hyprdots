@@ -2,13 +2,37 @@
   ZepharDev: 🍁 Crafting Minimal, Coherent Workflows
 </h1>
 
-<p align="center">
-  <img src="https://img.shields.io/github/stars/ZepharDev/hyprdots?color=cba6f7&style=for-the-badge&label=Stars&labelColor=1e1e2e&logo=github&logoColor=white">
-  <img src="https://img.shields.io/github/commit-activity/y/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Commits&labelColor=1e1e2e&logo=git&logoColor=white">
-  <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f5c2e7&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=github&logoColor=white">
- <img src="https://img.shields.io/github/forks/ZepharDev/hyprdots?color=89b4fa&style=for-the-badge&label=Forks&labelColor=1e1e2e&logo=github&logoColor=white">
-</p>
+<div align="center" style="background-color:#1e1e2e; padding:20px 40px; border-radius:12px; display:inline-flex; gap:30px; box-shadow: 0 4px 12px rgba(203,166,247,0.25);">
 
+  <a href="https://github.com/ZepharDev/hyprdots/stargazers" style="text-decoration:none; color:#cba6f7; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="text-align:center;">
+      <div style="font-size:32px;">⭐</div>
+      <div style="font-size:14px; letter-spacing:1.2px;">Stars</div>
+    </div>
+  </a>
+
+  <a href="https://github.com/ZepharDev/hyprdots/network/members" style="text-decoration:none; color:#89b4fa; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="text-align:center;">
+      <div style="font-size:32px;">🍴</div>
+      <div style="font-size:14px; letter-spacing:1.2px;">Forks</div>
+    </div>
+  </a>
+
+  <a href="https://github.com/ZepharDev/hyprdots/commits" style="text-decoration:none; color:#f5c2e7; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="text-align:center;">
+      <div style="font-size:32px;">📝</div>
+      <div style="font-size:14px; letter-spacing:1.2px;">Commits</div>
+    </div>
+  </a>
+
+  <a href="https://github.com/ZepharDev/hyprdots/commits" style="text-decoration:none; color:#8bd5fa; font-weight:700; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    <div style="text-align:center;">
+      <div style="font-size:32px;">⏰</div>
+      <div style="font-size:14px; letter-spacing:1.2px;">Last Commit</div>
+    </div>
+  </a>
+
+</div>
 <h1 align="center">Hyprdots</h1>
 
 Welcome to my personal configurations, I hope you like the settings
@@ -17,22 +41,6 @@ Star the repo to keep up with the latest updates and improvements
 
 
 
-<h1 align="center" style="color:#f5c2e7; font-size:2.5em; margin-bottom:0.2em;">
-  ZEPHARDEV · Minimal Workflow Designer
-</h1>
-
-<p align="center" style="color:#b4befe; font-size:1.1em; margin-top:0;">
-  <b>Hyprdots</b> | <b>Cybersecurity</b> | <b>OSINT</b> | <b>Philosophy</b>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/License-GNU%20GPLv3-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=gnu&logoColor=white" style="margin:0 8px;">
-  <img src="https://img.shields.io/badge/License-MIT-89b4fa?style=for-the-badge&labelColor=1e1e2e&logo=open-source-initiative&logoColor=white" style="margin:0 8px;">
-</p>
-
-<p align="center" style="color:#a6adc8; font-size:0.95em;">
-  Clarity over clutter. Purpose over noise.  
-</p>
 <h1 align=center>Requeriments</h1>
 
 - Hyprland — [hyprland.org](https://hyprland.org/)
