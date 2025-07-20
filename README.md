@@ -56,7 +56,7 @@ Star the repo to keep up with the latest updates and improvements
 <h2 align=center>Automatic installation</h2>
 
 ```bash
-git clone https://github.com/ZepharDev/hyprdots.git && cd ~/hyprdots && bash setup.sh
+git clone https://github.com/ZepharDev/hyprdots.git && cd ~/hyprdots && bash setup-v1.sh
 ```
 
 I can't guarantee that the script will work at all; it may have bugs. Please be careful. I'll be improving it and releasing versions. There are multiple options. 
@@ -86,18 +86,16 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
 
 <hr>
 
-<div align="center">
+<div align="left">
   <p>
     <img src="https://img.shields.io/badge/Built_with-Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/Powered_by-Arch_Linux-b4befe?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/Crafted_by-ZepharDev-cba6f7?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />
   </p>
-
   <p>
     <img src="https://img.shields.io/badge/WO-Workflow_Optimization-9399b2?style=for-the-badge&logo=awesome&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/TW-True_Work-74c7ec?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=1e1e2e" />
   </p>
-
   <p>
     <img src="https://img.shields.io/badge/License-GNU_GPLv3-f5c2e7?style=for-the-badge&logo=gnu&logoColor=white&labelColor=1e1e2e" />
   </p>
