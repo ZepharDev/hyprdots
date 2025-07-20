@@ -86,7 +86,7 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
 
 <hr>
 
-<div align="left">
+<div align="center">
   <p>
     <img src="https://img.shields.io/badge/Built_with-Hyprland-89b4fa?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/Powered_by-Arch_Linux-b4befe?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />
