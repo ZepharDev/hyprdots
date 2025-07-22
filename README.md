@@ -14,3 +14,8 @@
   </a>
 </p>
 <h1 align="center">Hyprdots · Keybinds 🍁</h1>
+
+- mainMod = SUPER
+
+- super + A = exec pavucontrol
+- super + C = exec clipshit in alacritty
