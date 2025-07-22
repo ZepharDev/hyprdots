@@ -15,7 +15,18 @@
 </p>
 <h1 align="center">Hyprdots · Keybinds 🍁</h1>
 
-- mainMod = SUPER
 
-- super + A = exec pavucontrol
-- super + C = exec clipshit in alacritty
+| Keys                                                 | Action                          |
+| :--------------------------------------------------- | :------------------------------ |
+| <kbd>SUPER</kbd> + <kbd>Q</kbd>                       | Kill window focused            |
+| <kbd>SUPER</kbd> + <kbd>C</kbd>                       | Open clipboard           |
+| <kbd>SUPER</kbd> + <kbd>Delete</kbd>                 | kill hyprland session           |
+| <kbd>SUPER</kbd> + <kbd>W</kbd>                      | toggle float                    |
+| <kbd>SUPER</kbd> + <kbd>G</kbd>                      | toggle group                    |
+| <kbd>Shift</kbd> + <kbd>F11</kbd>                    | toggle fullscreen               |
+| <kbd>SUPER</kbd> + <kbd>L</kbd>                      | lock screen                     |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd>   | toggle pin on focused window    |
+| <kbd>ALT</kbd> + <kbd>CTRL</kbd> + <kbd>Delete</kbd> | logout menu                     |
+| <kbd>ALT</kbd> + <kbd>Control_R</kbd>                | toggle waybar and reload config |
+| <kbd>SUPER</kbd> + <kbd>J</kbd>                      | toggle split                    |
+
