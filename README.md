@@ -20,13 +20,13 @@
 | :--------------------------------------------------- | :------------------------------ |
 | <kbd>SUPER</kbd> + <kbd>Q</kbd>                       | Kill window focused            |
 | <kbd>SUPER</kbd> + <kbd>C</kbd>                       | Open clipboard           |
-| <kbd>SUPER</kbd> + <kbd>Delete</kbd>                 | kill hyprland session           |
-| <kbd>SUPER</kbd> + <kbd>W</kbd>                      | toggle float                    |
-| <kbd>SUPER</kbd> + <kbd>G</kbd>                      | toggle group                    |
-| <kbd>Shift</kbd> + <kbd>F11</kbd>                    | toggle fullscreen               |
+| <kbd>SUPER</kbd> + <kbd>M</kbd>                 | kill hyprland session           |
+| <kbd>SUPER</kbd> + <kbd>W</kbd>                      | open browser                    |
+| <kbd>SUPER</kbd> + <kbd>A</kbd>                      | Open pavunconntrol                    |
+| <kbd>Shift</kbd> + <kbd>R</kbd>                    | Exec rofi launch              |
 | <kbd>SUPER</kbd> + <kbd>L</kbd>                      | lock screen                     |
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd>   | toggle pin on focused window    |
-| <kbd>ALT</kbd> + <kbd>CTRL</kbd> + <kbd>Delete</kbd> | logout menu                     |
-| <kbd>ALT</kbd> + <kbd>Control_R</kbd>                | toggle waybar and reload config |
-| <kbd>SUPER</kbd> + <kbd>J</kbd>                      | toggle split                    |
+| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd>   | toggle fullscreen   |
+| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>  Q</kbd> | logout menu                     |
+| <kbd>SUPER</kbd> + <kbd>K</kbd>                | Open rofi wallpapers menu |
+| <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 
