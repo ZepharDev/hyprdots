@@ -25,8 +25,8 @@
 | <kbd>SUPER</kbd> + <kbd>A</kbd>                      | Open pavunconntrol                    |
 | <kbd>Shift</kbd> + <kbd>R</kbd>                    | Exec rofi launch              |
 | <kbd>SUPER</kbd> + <kbd>L</kbd>                      | lock screen                     |
-| <kbd>SUPER</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd>   | toggle fullscreen   |
-| <kbd>SUPER</kbd> + <kbd>CTRL</kbd> + <kbd>  Q</kbd> | logout menu                     |
-| <kbd>SUPER</kbd> + <kbd>K</kbd>                | Open rofi wallpapers menu |
+| <kbd>SUPER</kbd> + <kbd>F</kbd>                      | toggle floating             |
+| <kbd>SUPER</kbd> + <kbd>J</kbd>                      | toggle split                     |
+| <kbd>SUPER</kbd> + <kbd>K</kbd>                      |  Open float alacritty         |
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 
