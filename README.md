@@ -27,3 +27,14 @@
 
 <img width="1366" height="768" alt="2025-07-22-213450_hyprshot" src="https://github.com/user-attachments/assets/7d1941cf-213f-49c0-97a0-96af894a63ac" />
 
+<h1 align="center">Music Player Menu rofi</h1>
+
+<img width="1366" height="768" alt="2025-07-19-105721_hyprshot" src="https://github.com/user-attachments/assets/015510c2-4f8e-47dc-a7ba-61776b597afc" />
+
+<h1 align="center">Hyprlock</h1>
+
+<img width="854" height="475" alt="2025-07-19-112108_hyprshot" src="https://github.com/user-attachments/assets/cf2569ca-99c2-42d1-b28d-f2f13c2db7ca" />
+
+<h1 align="center">FastFetch</h1>
+
+<img width="1366" height="768" alt="2025-07-22-222412_hyprshot" src="https://github.com/user-attachments/assets/1e708b46-73f7-4429-af56-97969b222245" />
