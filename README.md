@@ -96,3 +96,51 @@
 <p align="center" style="color:#cba6f7; font-weight: 600; margin-top: 14px;">
   Clear. Sharp. Consistent.
 </p>
+
+<h2 align="center" style="color:#cba6f7; font-weight: 700; letter-spacing: 3px; margin-bottom: 1rem;">
+  KEYBINDS
+</h2>
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px; max-width: 600px; margin: auto;">
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">SUPER + Q</div>
+    <div style="color:#f5c2e7;">Kill window focused</div>
+  </div>
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">SUPER + C</div>
+    <div style="color:#f5c2e7;">Open clipboard</div>
+  </div>
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">SUPER + M</div>
+    <div style="color:#f5c2e7;">Kill Hyprland session</div>
+  </div>
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">SUPER + W</div>
+    <div style="color:#f5c2e7;">Open browser</div>
+  </div>
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">SUPER + A</div>
+    <div style="color:#f5c2e7;">Open pavucontrol</div>
+  </div>
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">Shift + R</div>
+    <div style="color:#f5c2e7;">Exec rofi launch</div>
+  </div>
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">SUPER + L</div>
+    <div style="color:#f5c2e7;">Lock screen</div>
+  </div>
+
+  <div style="background:#1e1e2e; border-radius: 8px; padding: 12px 16px; width: 280px; box-shadow: 0 0 8px #cba6f7;">
+    <div style="font-weight: 700; color:#89b4fa; margin-bottom: 6px;">SUPER + F</div>
+    <div style="color:#f5c2e7;">Toggle floating</div>
+  </div>
+
+</div>
