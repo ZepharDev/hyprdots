@@ -144,3 +144,49 @@
   </div>
 
 </div>
+
+<h1 align="center">Hyprdots Keybinds</h1>
+
+<div align="center" style="display:grid; grid-template-columns:1fr 1fr; gap:12px; max-width:600px;">
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#89b4fa; color:#1e1e2e; padding:4px 8px; border-radius:4px;">SUPER + Q</kbd><br>
+    Kill focused window
+  </div>
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#f5c2e7; color:#1e1e2e; padding:4px 8px; border-radius:4px;">SUPER + C</kbd><br>
+    Open clipboard
+  </div>
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#cba6f7; color:#1e1e2e; padding:4px 8px; border-radius:4px;">SUPER + M</kbd><br>
+    Kill Hyprland session
+  </div>
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#89b4fa; color:#1e1e2e; padding:4px 8px; border-radius:4px;">SUPER + W</kbd><br>
+    Open browser
+  </div>
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#f5c2e7; color:#1e1e2e; padding:4px 8px; border-radius:4px;">SUPER + A</kbd><br>
+    Open pavucontrol
+  </div>
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#cba6f7; color:#1e1e2e; padding:4px 8px; border-radius:4px;">Shift + R</kbd><br>
+    Exec Rofi launcher
+  </div>
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#89b4fa; color:#1e1e2e; padding:4px 8px; border-radius:4px;">SUPER + L</kbd><br>
+    Lock screen
+  </div>
+
+  <div style="background:#1e1e2e; padding:12px; border-radius:8px; text-align:center;">
+    <kbd style="background:#f5c2e7; color:#1e1e2e; padding:4px 8px; border-radius:4px;">SUPER + F</kbd><br>
+    Toggle floating
+  </div>
+
+</div>
