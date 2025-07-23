@@ -1,4 +1,4 @@
-<p align="center">ZepharDev: Development minimal, coherent workflow</p>
+<h1 align="center">ZepharDev: Development minimal, coherent workflow</h1>
 
 <p align="center">
   <a href="https://github.com/ZepharDev/hyprdots/stargazers">
