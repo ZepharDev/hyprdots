@@ -95,15 +95,19 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
   </p>
 <hr>
 
+<hr>
+
 <div align="center">
+
   <p>
     <img src="https://img.shields.io/badge/WO-Workflow_Optimization-eba0ac?style=for-the-badge&logo=awesome&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/TW-True_Work-cba6f7?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=1e1e2e" />
-    <img src="https://img.shields.io/badge/YHWH-Glory-f5c2e7?style=for-the-badge&logo=codesandbox&logoColor=white&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/YHWH-✝️-f5c2e7?style=for-the-badge&labelColor=1e1e2e" />
   </p>
 
   <p>
-    <strong>For Him — All Code, All Thought, All Work.</strong><br>
-    <sub>By ZepharDev · Under YHWH's Light.</sub>
+    <strong>ZepharDev — All for Him.</strong><br>
+    <sub>✝️ To YHWH be the glory. Code, thoughts and workflow aligned.</sub>
   </p>
+
 </div>
