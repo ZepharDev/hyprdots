@@ -1,4 +1,4 @@
-<h1 align="center">ZepharDev: Development minimal, coherent workflow</h1>
+<h1 align="center">ZepharDev: </h1>
 
 <p align="center">
   <a href="https://github.com/ZepharDev/hyprdots/stargazers">
@@ -14,3 +14,16 @@
     <img src="https://img.shields.io/github/last-commit/ZepharDev/hyprdots?color=f9e2af&style=for-the-badge&label=Last%20Commit&labelColor=1e1e2e&logo=clockify&logoColor=white" style="margin: 0 10px;">
   </a>
 </p>
+
+<h1 align="center">Wlogout</h1> 
+
+<img width="1366" height="768" alt="2025-07-20-163910_hyprshot" src="https://github.com/user-attachments/assets/d08b163a-07e7-4ea1-8896-c77a302dd92c" />
+
+<h1 align="center">Rofi</h1>
+
+<img width="1366" height="768" alt="2025-07-17-203951_hyprshot" src="https://github.com/user-attachments/assets/11d291ae-f510-4306-9434-11ac7c1868d3" />
+
+<h1 align="center">Cava & peaclock</h1>
+
+<img width="1366" height="768" alt="2025-07-22-213450_hyprshot" src="https://github.com/user-attachments/assets/7d1941cf-213f-49c0-97a0-96af894a63ac" />
+
