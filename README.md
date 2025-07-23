@@ -93,11 +93,17 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
     <img src="https://img.shields.io/badge/Powered_by-Arch_Linux-f5c2e7?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/Crafted_by-ZepharDev-f9e2af?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />
   </p>
+<hr>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/WO-Workflow_Optimization-eba0ac?style=for-the-badge&logo=awesome&logoColor=white&labelColor=1e1e2e" />
-  <img src="https://img.shields.io/badge/TW-True_Work-cba6f7?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=1e1e2e" />
-</p>
-<p align="center">
-  <img src="https://img.shields.io/badge/License-GNU_GPLv3-f5c2e7?style=for-the-badge&logo=gnu&logoColor=white&labelColor=1e1e2e" />
-</p>
+<div align="center">
+  <p>
+    <img src="https://img.shields.io/badge/WO-Workflow_Optimization-eba0ac?style=for-the-badge&logo=awesome&logoColor=white&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/TW-True_Work-cba6f7?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/YHWH-Glory-f5c2e7?style=for-the-badge&logo=codesandbox&logoColor=white&labelColor=1e1e2e" />
+  </p>
+
+  <p>
+    <strong>For Him — All Code, All Thought, All Work.</strong><br>
+    <sub>By ZepharDev · Under YHWH's Light.</sub>
+  </p>
+</div>
