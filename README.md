@@ -97,5 +97,49 @@
     <span style="color:#f5c2e7; margin: 0 10px;">✦</span>
     Toggle floating
   </p>
-
 </div>
+
+<h1 align="center">Keybinds</h1>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th style="text-align:center; color:#cba6f7;">Keys</th>
+      <th style="text-align:center; color:#f5c2e7;">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>Q</kbd></td>
+      <td align="center">Kill focused window</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>C</kbd></td>
+      <td align="center">Open clipboard</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>M</kbd></td>
+      <td align="center">Kill Hyprland session</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>W</kbd></td>
+      <td align="center">Open browser</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>A</kbd></td>
+      <td align="center">Open pavucontrol</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>Shift</kbd> + <kbd>R</kbd></td>
+      <td align="center">Exec rofi launcher</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>L</kbd></td>
+      <td align="center">Lock screen</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>F</kbd></td>
+      <td align="center">Toggle floating</td>
+    </tr>
+  </tbody>
+</table>
