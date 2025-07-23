@@ -93,6 +93,8 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
     <img src="https://img.shields.io/badge/Crafted_by-ZepharDev-f9e2af?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />
   </p>
 
+---
+
 <div align="center">
   <p>
     <img src="https://img.shields.io/badge/✝%20Christ_First-eba0ac?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
