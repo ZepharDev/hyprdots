@@ -45,3 +45,57 @@
 | <kbd>SUPER</kbd> + <kbd>J</kbd>  | Toggle split layout         |
 | <kbd>SUPER</kbd> + <kbd>K</kbd>  | Open floating Alacritty     |
 | <kbd>SUPER</kbd> + <kbd>P</kbd>  | Dwindle windows             |
+
+<h1 align="center">Keybinds</h1>
+
+<div align="center">
+
+  <p>
+    <kbd>SUPER</kbd> + <kbd>Q</kbd>
+    <span style="color:#cba6f7; margin: 0 10px;">✦</span>
+    Kill focused window
+  </p>
+
+  <p>
+    <kbd>SUPER</kbd> + <kbd>C</kbd>
+    <span style="color:#f5c2e7; margin: 0 10px;">✦</span>
+    Open clipboard
+  </p>
+
+  <p>
+    <kbd>SUPER</kbd> + <kbd>M</kbd>
+    <span style="color:#89b4fa; margin: 0 10px;">✦</span>
+    Kill Hyprland session
+  </p>
+
+  <p>
+    <kbd>SUPER</kbd> + <kbd>W</kbd>
+    <span style="color:#cba6f7; margin: 0 10px;">✦</span>
+    Open browser
+  </p>
+
+  <p>
+    <kbd>SUPER</kbd> + <kbd>A</kbd>
+    <span style="color:#f5c2e7; margin: 0 10px;">✦</span>
+    Open pavucontrol
+  </p>
+
+  <p>
+    <kbd>Shift</kbd> + <kbd>R</kbd>
+    <span style="color:#89b4fa; margin: 0 10px;">✦</span>
+    Exec rofi launcher
+  </p>
+
+  <p>
+    <kbd>SUPER</kbd> + <kbd>L</kbd>
+    <span style="color:#cba6f7; margin: 0 10px;">✦</span>
+    Lock screen
+  </p>
+
+  <p>
+    <kbd>SUPER</kbd> + <kbd>F</kbd>
+    <span style="color:#f5c2e7; margin: 0 10px;">✦</span>
+    Toggle floating
+  </p>
+
+</div>
