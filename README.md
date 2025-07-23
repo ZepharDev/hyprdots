@@ -31,45 +31,53 @@
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 <h1 align="center">⟡ Hyprdots Keybinds ⟡</h1>
 
-<table align="center" style="width:80%; margin:auto; text-align:center;">
+<p align="center">
+  <sub>Efficient. Clear. Consistent.</sub>
+</p>
+
+<table align="center">
   <thead>
     <tr>
-      <th style="background:#cba6f7; color:#1e1e2e; padding:10px; border-radius:5px;">Keys</th>
-      <th style="background:#89b4fa; color:#1e1e2e; padding:10px; border-radius:5px;">Action</th>
+      <th>Key</th>
+      <th>Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><b>SUPER + Q</b></td>
+      <td><kbd>SUPER</kbd> + <kbd>Q</kbd></td>
       <td>Kill focused window</td>
     </tr>
     <tr>
-      <td><b>SUPER + C</b></td>
+      <td><kbd>SUPER</kbd> + <kbd>C</kbd></td>
       <td>Open clipboard</td>
     </tr>
     <tr>
-      <td><b>SUPER + M</b></td>
+      <td><kbd>SUPER</kbd> + <kbd>M</kbd></td>
       <td>Kill Hyprland session</td>
     </tr>
     <tr>
-      <td><b>SUPER + W</b></td>
+      <td><kbd>SUPER</kbd> + <kbd>W</kbd></td>
       <td>Open browser</td>
     </tr>
     <tr>
-      <td><b>SUPER + A</b></td>
+      <td><kbd>SUPER</kbd> + <kbd>A</kbd></td>
       <td>Open pavucontrol</td>
     </tr>
     <tr>
-      <td><b>Shift + R</b></td>
+      <td><kbd>Shift</kbd> + <kbd>R</kbd></td>
       <td>Run Rofi</td>
     </tr>
     <tr>
-      <td><b>SUPER + L</b></td>
+      <td><kbd>SUPER</kbd> + <kbd>L</kbd></td>
       <td>Lock screen</td>
     </tr>
     <tr>
-      <td><b>SUPER + F</b></td>
+      <td><kbd>SUPER</kbd> + <kbd>F</kbd></td>
       <td>Toggle floating</td>
     </tr>
   </tbody>
 </table>
+
+<p align="center">
+  <sub>Keep it sharp. Keep it minimal.</sub>
+</p>
