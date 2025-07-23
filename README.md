@@ -30,23 +30,44 @@
 | <kbd>SUPER</kbd> + <kbd>K</kbd>                      |  Open float alacritty         |
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 
-
-<h1 align="center">Keybinds</h1>
+<h1 align="center">⟡ Hyprdots Keybinds ⟡</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Keybinds–Precision_floats-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logo=keyboard&logoColor=white" alt="Keybinds Badge" />
+  <img src="https://img.shields.io/badge/Keybinds%20Map-Pure%20Control-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=codio&logoColor=white" alt="Keybinds Badge" />
 </p>
 
-<div align="center">
-  <ul style="list-style:none; padding:0; margin:0; max-width:360px; line-height:1.8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#cdd6f4;">
-    <li><code>SUPER + Q</code> → Kill focused window</li>
-    <li><code>SUPER + C</code> → Open clipboard manager</li>
-    <li><code>SUPER + M</code> → Kill Hyprland session</li>
-    <li><code>SUPER + W</code> → Launch web browser</li>
-    <li><code>SUPER + A</code> → Open pavucontrol</li>
-    <li><code>Shift + R</code> → Run Rofi launcher</li>
-    <li><code>SUPER + L</code> → Lock screen</li>
-    <li><code>SUPER + F</code> → Toggle floating window</li>
-  </ul>
+<div align="center" style="display: inline-block; text-align: left; background-color: #1e1e2e; border-radius: 12px; padding: 20px; max-width: 400px;">
+
+  <div style="margin-bottom: 10px; background: #cba6f7; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>SUPER + Q</b> → Kill focused window
+  </div>
+
+  <div style="margin-bottom: 10px; background: #89b4fa; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>SUPER + C</b> → Open clipboard manager
+  </div>
+
+  <div style="margin-bottom: 10px; background: #f5c2e7; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>SUPER + M</b> → Kill Hyprland session
+  </div>
+
+  <div style="margin-bottom: 10px; background: #cba6f7; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>SUPER + W</b> → Launch web browser
+  </div>
+
+  <div style="margin-bottom: 10px; background: #89b4fa; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>SUPER + A</b> → Open pavucontrol
+  </div>
+
+  <div style="margin-bottom: 10px; background: #f5c2e7; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>Shift + R</b> → Run Rofi launcher
+  </div>
+
+  <div style="margin-bottom: 10px; background: #cba6f7; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>SUPER + L</b> → Lock screen
+  </div>
+
+  <div style="background: #89b4fa; padding: 8px 12px; border-radius: 8px; color: #1e1e2e;">
+    <b>SUPER + F</b> → Toggle floating window
+  </div>
+
 </div>
-```0
