@@ -98,16 +98,12 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
 <hr>
 
 <div align="center">
-
   <p>
-    <img src="https://img.shields.io/badge/YHWH-✝️-cba6f7?style=for-the-badge&labelColor=1e1e2e" />
-    <img src="https://img.shields.io/badge/Faith-✟-eba0ac?style=for-the-badge&labelColor=1e1e2e" />
-    <img src="https://img.shields.io/badge/Grace-✚-f5c2e7?style=for-the-badge&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/✝️%20Faith-eba0ac?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
+    <img src="https://img.shields.io/badge/✨%20Grace-cba6f7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
+    <img src="https://img.shields.io/badge/Glory_to-YHWH-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
   </p>
-
   <p>
-    <strong>ZepharDev — All Glory to YHWH.</strong><br>
-    <sub>✝️ Redeemed. Purposed. Faithful in code and life.</sub>
+    <sub>Minimal, coherent & devoted — all for Him.</sub>
   </p>
-
 </div>
