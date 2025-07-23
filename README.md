@@ -30,19 +30,3 @@
 | <kbd>SUPER</kbd> + <kbd>K</kbd>                      |  Open float alacritty         |
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 
-# Keybinds
-
-| Keys                         | Action                      |
-|:----------------------------:|:---------------------------:|
-| <kbd>SUPER</kbd> + <kbd>Q</kbd>  | Close focused window        |
-| <kbd>SUPER</kbd> + <kbd>C</kbd>  | Open clipboard manager      |
-| <kbd>SUPER</kbd> + <kbd>M</kbd>  | Terminate Hyprland session  |
-| <kbd>SUPER</kbd> + <kbd>W</kbd>  | Open web browser            |
-| <kbd>SUPER</kbd> + <kbd>A</kbd>  | Open pavucontrol            |
-| <kbd>Shift</kbd> + <kbd>R</kbd>  | Launch Rofi launcher        |
-| <kbd>SUPER</kbd> + <kbd>L</kbd>  | Lock screen                 |
-| <kbd>SUPER</kbd> + <kbd>F</kbd>  | Toggle floating window      |
-| <kbd>SUPER</kbd> + <kbd>J</kbd>  | Toggle split layout         |
-| <kbd>SUPER</kbd> + <kbd>K</kbd>  | Open floating Alacritty     |
-| <kbd>SUPER</kbd> + <kbd>P</kbd>  | Dwindle windows             |
-
