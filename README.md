@@ -85,7 +85,6 @@ $browser = firefox
 
 I'm improving the configurations—menu updates are coming soon, so please be patient...
 
-<hr>
 
 <div align="center">
   <p>
@@ -93,17 +92,14 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
     <img src="https://img.shields.io/badge/Powered_by-Arch_Linux-f5c2e7?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/Crafted_by-ZepharDev-f9e2af?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />
   </p>
-<hr>
-
-<hr>
 
 <div align="center">
   <p>
-    <img src="https://img.shields.io/badge/✝️%20Faith-eba0ac?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
-    <img src="https://img.shields.io/badge/✨%20Grace-cba6f7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
-    <img src="https://img.shields.io/badge/Glory_to-YHWH-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
+    <img src="https://img.shields.io/badge/✝%20Christ_First-eba0ac?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
+    <img src="https://img.shields.io/badge/✟%20Soli_Deo_Gloria-cba6f7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
+    <img src="https://img.shields.io/badge/☧%20Faith-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
   </p>
   <p>
-    <sub>Minimal, coherent & devoted — all for Him.</sub>
+    <sub>Code and craft — for Christ alone. YHWH reigns.</sub>
   </p>
 </div>
