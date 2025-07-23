@@ -54,3 +54,31 @@
 | `Shift` + `R`           | Exec Rofi launcher    |
 | `SUPER` + `L`           | Lock screen           |
 | `SUPER` + `F`           | Toggle floating       |
+
+<h1 align="center">⌨️ Hyprdots — Keybinds</h1>
+
+<p align="center">
+  ──────────────
+</p>
+
+<p align="center">
+  <code>SUPER + Q</code> &nbsp; Kill focused window  
+  <br/>
+  <code>SUPER + C</code> &nbsp; Open clipboard  
+  <br/>
+  <code>SUPER + M</code> &nbsp; Kill Hyprland session  
+  <br/>
+  <code>SUPER + W</code> &nbsp; Open browser  
+  <br/>
+  <code>SUPER + A</code> &nbsp; Open pavucontrol  
+  <br/>
+  <code>Shift + R</code> &nbsp; Exec Rofi launcher  
+  <br/>
+  <code>SUPER + L</code> &nbsp; Lock screen  
+  <br/>
+  <code>SUPER + F</code> &nbsp; Toggle floating
+</p>
+
+<p align="center">
+  ──────────────
+</p>
