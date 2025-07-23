@@ -25,8 +25,57 @@
 | <kbd>SUPER</kbd> + <kbd>A</kbd>                      | Open pavunconntrol                    |
 | <kbd>Shift</kbd> + <kbd>R</kbd>                    | Exec rofi launch              |
 | <kbd>SUPER</kbd> + <kbd>L</kbd>                      | lock screen                     |
-| <kbd>SUPER</kbd> + <kbd>F</kbd>                      | toggle floating             |
+| <kbd>SUPER</kbd> + <kbd>F</kbd>                      | toggle floating              |
 | <kbd>SUPER</kbd> + <kbd>J</kbd>                      | toggle split                     |
 | <kbd>SUPER</kbd> + <kbd>K</kbd>                      |  Open float alacritty         |
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 
+
+<h1 align="center">Keybinds</h1>
+
+<p align="center">
+  <sub>Practical · Minimal · Clear</sub>
+</p>
+
+<table align="center">
+  <thead>
+    <tr>
+      <th style="text-align:left; padding: 8px;">Keys</th>
+      <th style="text-align:left; padding: 8px;">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><kbd>SUPER</kbd> + <kbd>Q</kbd></td>
+      <td>Kill focused window</td>
+    </tr>
+    <tr>
+      <td><kbd>SUPER</kbd> + <kbd>C</kbd></td>
+      <td>Open clipboard</td>
+    </tr>
+    <tr>
+      <td><kbd>SUPER</kbd> + <kbd>M</kbd></td>
+      <td>Kill Hyprland session</td>
+    </tr>
+    <tr>
+      <td><kbd>SUPER</kbd> + <kbd>W</kbd></td>
+      <td>Open browser</td>
+    </tr>
+    <tr>
+      <td><kbd>SUPER</kbd> + <kbd>A</kbd></td>
+      <td>Open pavucontrol</td>
+    </tr>
+    <tr>
+      <td><kbd>Shift</kbd> + <kbd>R</kbd></td>
+      <td>Exec Rofi launcher</td>
+    </tr>
+    <tr>
+      <td><kbd>SUPER</kbd> + <kbd>L</kbd></td>
+      <td>Lock screen</td>
+    </tr>
+    <tr>
+      <td><kbd>SUPER</kbd> + <kbd>F</kbd></td>
+      <td>Toggle floating</td>
+    </tr>
+  </tbody>
+</table>
