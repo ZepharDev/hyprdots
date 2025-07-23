@@ -31,50 +31,45 @@
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 <h1 align="center">⟡ Hyprdots Keybinds ⟡</h1>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Keybinds%20Reference-Clean%20Workflow-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=keyboard&logoColor=white" alt="Keybinds Badge">
-</p>
-
-<div align="center" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 15px; max-width: 800px; margin: 0 auto;">
-
-  <div style="background: #cba6f7; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>SUPER + Q</b><br>
-    Kill focused window
-  </div>
-
-  <div style="background: #89b4fa; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>SUPER + C</b><br>
-    Open clipboard
-  </div>
-
-  <div style="background: #f5c2e7; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>SUPER + M</b><br>
-    Kill Hyprland session
-  </div>
-
-  <div style="background: #cba6f7; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>SUPER + W</b><br>
-    Open browser
-  </div>
-
-  <div style="background: #89b4fa; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>SUPER + A</b><br>
-    Open pavucontrol
-  </div>
-
-  <div style="background: #f5c2e7; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>Shift + R</b><br>
-    Run Rofi
-  </div>
-
-  <div style="background: #cba6f7; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>SUPER + L</b><br>
-    Lock screen
-  </div>
-
-  <div style="background: #89b4fa; color: #1e1e2e; padding: 15px; border-radius: 10px; font-family: monospace;">
-    <b>SUPER + F</b><br>
-    Toggle floating
-  </div>
-
-</div>
+<table align="center" style="width:80%; margin:auto; text-align:center;">
+  <thead>
+    <tr>
+      <th style="background:#cba6f7; color:#1e1e2e; padding:10px; border-radius:5px;">Keys</th>
+      <th style="background:#89b4fa; color:#1e1e2e; padding:10px; border-radius:5px;">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><b>SUPER + Q</b></td>
+      <td>Kill focused window</td>
+    </tr>
+    <tr>
+      <td><b>SUPER + C</b></td>
+      <td>Open clipboard</td>
+    </tr>
+    <tr>
+      <td><b>SUPER + M</b></td>
+      <td>Kill Hyprland session</td>
+    </tr>
+    <tr>
+      <td><b>SUPER + W</b></td>
+      <td>Open browser</td>
+    </tr>
+    <tr>
+      <td><b>SUPER + A</b></td>
+      <td>Open pavucontrol</td>
+    </tr>
+    <tr>
+      <td><b>Shift + R</b></td>
+      <td>Run Rofi</td>
+    </tr>
+    <tr>
+      <td><b>SUPER + L</b></td>
+      <td>Lock screen</td>
+    </tr>
+    <tr>
+      <td><b>SUPER + F</b></td>
+      <td>Toggle floating</td>
+    </tr>
+  </tbody>
+</table>
