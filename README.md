@@ -100,14 +100,14 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
 <div align="center">
 
   <p>
-    <img src="https://img.shields.io/badge/WO-Workflow_Optimization-eba0ac?style=for-the-badge&logo=awesome&logoColor=white&labelColor=1e1e2e" />
-    <img src="https://img.shields.io/badge/TW-True_Work-cba6f7?style=for-the-badge&logo=github-actions&logoColor=white&labelColor=1e1e2e" />
-    <img src="https://img.shields.io/badge/YHWH-✝️-f5c2e7?style=for-the-badge&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/YHWH-✝️-cba6f7?style=for-the-badge&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/Faith-✟-eba0ac?style=for-the-badge&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/Grace-✚-f5c2e7?style=for-the-badge&labelColor=1e1e2e" />
   </p>
 
   <p>
-    <strong>ZepharDev — All for Him.</strong><br>
-    <sub>✝️ To YHWH be the glory. Code, thoughts and workflow aligned.</sub>
+    <strong>ZepharDev — All Glory to YHWH.</strong><br>
+    <sub>✝️ Redeemed. Purposed. Faithful in code and life.</sub>
   </p>
 
 </div>
