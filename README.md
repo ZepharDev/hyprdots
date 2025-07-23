@@ -31,27 +31,22 @@
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 
 
-<h1 align="center">Key Workflow — Hyprdots</h1>
+<h1 align="center">Keybinds</h1>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Keys-Mapped%20with%20Precision-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=keyboard&logoColor=white" />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Controls-Hyper%20Productivity-89b4fa?style=for-the-badge&labelColor=1e1e2e&logo=workflow&logoColor=white" />
+  <img src="https://img.shields.io/badge/Keybinds–Precision_floats-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logo=keyboard&logoColor=white" alt="Keybinds Badge" />
 </p>
 
 <div align="center">
-
-<pre>
-[ SUPER + Q ]   →   Kill focused window
-[ SUPER + C ]   →   Open clipboard manager
-[ SUPER + M ]   →   Kill Hyprland session
-[ SUPER + W ]   →   Launch web browser
-[ SUPER + A ]   →   Open pavucontrol
-[ Shift + R ]   →   Run Rofi launcher
-[ SUPER + L ]   →   Lock screen
-[ SUPER + F ]   →   Toggle floating window
-</pre>
-
+  <ul style="list-style:none; padding:0; margin:0; max-width:360px; line-height:1.8; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color:#cdd6f4;">
+    <li><code>SUPER + Q</code> → Kill focused window</li>
+    <li><code>SUPER + C</code> → Open clipboard manager</li>
+    <li><code>SUPER + M</code> → Kill Hyprland session</li>
+    <li><code>SUPER + W</code> → Launch web browser</li>
+    <li><code>SUPER + A</code> → Open pavucontrol</li>
+    <li><code>Shift + R</code> → Run Rofi launcher</li>
+    <li><code>SUPER + L</code> → Lock screen</li>
+    <li><code>SUPER + F</code> → Toggle floating window</li>
+  </ul>
 </div>
+```0
