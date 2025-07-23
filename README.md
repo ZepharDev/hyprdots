@@ -29,55 +29,70 @@
 | <kbd>SUPER</kbd> + <kbd>J</kbd>                      | toggle split                     |
 | <kbd>SUPER</kbd> + <kbd>K</kbd>                      |  Open float alacritty         |
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
-<h1 align="center">⟡ Hyprdots Keybinds ⟡</h1>
 
-<p align="center">
-  <sub>Efficient. Clear. Consistent.</sub>
-</p>
+<h2 align="center" style="margin-bottom: 8px; color:#cba6f7; font-weight: 700; letter-spacing: 2px;">
+  HYPRDOTS KEYBINDS
+</h2>
 
-<table align="center">
+<table align="center" style="border-collapse: separate; border-spacing: 0 12px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 14px; color: #f5c2e7; max-width: 500px;">
   <thead>
     <tr>
-      <th>Key</th>
-      <th>Action</th>
+      <th style="text-align: left; padding-bottom: 8px; border-bottom: 2px solid #cba6f7;">Keys</th>
+      <th style="text-align: left; padding-bottom: 8px; border-bottom: 2px solid #cba6f7;">Action</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <td><kbd>SUPER</kbd> + <kbd>Q</kbd></td>
-      <td>Kill focused window</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">SUPER</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">Q</kbd>
+      </td>
+      <td style="padding-left: 12px;">Kill window focused</td>
     </tr>
     <tr>
-      <td><kbd>SUPER</kbd> + <kbd>C</kbd></td>
-      <td>Open clipboard</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">SUPER</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">C</kbd>
+      </td>
+      <td style="padding-left: 12px;">Open clipboard</td>
     </tr>
     <tr>
-      <td><kbd>SUPER</kbd> + <kbd>M</kbd></td>
-      <td>Kill Hyprland session</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">SUPER</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">M</kbd>
+      </td>
+      <td style="padding-left: 12px;">Kill Hyprland session</td>
     </tr>
     <tr>
-      <td><kbd>SUPER</kbd> + <kbd>W</kbd></td>
-      <td>Open browser</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">SUPER</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">W</kbd>
+      </td>
+      <td style="padding-left: 12px;">Open browser</td>
     </tr>
     <tr>
-      <td><kbd>SUPER</kbd> + <kbd>A</kbd></td>
-      <td>Open pavucontrol</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">SUPER</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">A</kbd>
+      </td>
+      <td style="padding-left: 12px;">Open pavucontrol</td>
     </tr>
     <tr>
-      <td><kbd>Shift</kbd> + <kbd>R</kbd></td>
-      <td>Run Rofi</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">Shift</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">R</kbd>
+      </td>
+      <td style="padding-left: 12px;">Exec rofi launch</td>
     </tr>
     <tr>
-      <td><kbd>SUPER</kbd> + <kbd>L</kbd></td>
-      <td>Lock screen</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">SUPER</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">L</kbd>
+      </td>
+      <td style="padding-left: 12px;">Lock screen</td>
     </tr>
     <tr>
-      <td><kbd>SUPER</kbd> + <kbd>F</kbd></td>
-      <td>Toggle floating</td>
+      <td style="padding: 6px 12px; background-color: #1e1e2e; border-radius: 6px;">
+        <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">SUPER</kbd> + <kbd style="background:#89b4fa; color:#1e1e2e; padding: 3px 6px; border-radius:4px; font-weight:700;">F</kbd>
+      </td>
+      <td style="padding-left: 12px;">Toggle floating</td>
     </tr>
   </tbody>
 </table>
 
-<p align="center">
-  <sub>Keep it sharp. Keep it minimal.</sub>
+<p align="center" style="color:#cba6f7; font-weight: 600; margin-top: 14px;">
+  Clear. Sharp. Consistent.
 </p>
