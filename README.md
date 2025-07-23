@@ -31,54 +31,27 @@
 | <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
 
 
-## Keybinds
-
-| Keys                    | Action                |
-| ----------------------- | --------------------- |
-| `SUPER` + `Q`           | Kill focused window   |
-| `SUPER` + `C`           | Open clipboard        |
-| `SUPER` + `M`           | Kill Hyprland session |
-| `SUPER` + `W`           | Open browser          |
-| `SUPER` + `A`           | Open pavucontrol      |
-| `Shift` + `R`           | Exec Rofi launcher    |
-| `SUPER` + `L`           | Lock screen           |
-| `SUPER` + `F`           | Toggle floating       |## Keybinds
-
-| Keys                    | Action                |
-| ----------------------- | --------------------- |
-| `SUPER` + `Q`           | Kill focused window   |
-| `SUPER` + `C`           | Open clipboard        |
-| `SUPER` + `M`           | Kill Hyprland session |
-| `SUPER` + `W`           | Open browser          |
-| `SUPER` + `A`           | Open pavucontrol      |
-| `Shift` + `R`           | Exec Rofi launcher    |
-| `SUPER` + `L`           | Lock screen           |
-| `SUPER` + `F`           | Toggle floating       |
-
-<h1 align="center">⌨️ Hyprdots — Keybinds</h1>
+<h1 align="center">Key Workflow — Hyprdots</h1>
 
 <p align="center">
-  ──────────────
+  <img src="https://img.shields.io/badge/Keys-Mapped%20with%20Precision-cba6f7?style=for-the-badge&labelColor=1e1e2e&logo=keyboard&logoColor=white" />
 </p>
 
 <p align="center">
-  <code>SUPER + Q</code> &nbsp; Kill focused window  
-  <br/>
-  <code>SUPER + C</code> &nbsp; Open clipboard  
-  <br/>
-  <code>SUPER + M</code> &nbsp; Kill Hyprland session  
-  <br/>
-  <code>SUPER + W</code> &nbsp; Open browser  
-  <br/>
-  <code>SUPER + A</code> &nbsp; Open pavucontrol  
-  <br/>
-  <code>Shift + R</code> &nbsp; Exec Rofi launcher  
-  <br/>
-  <code>SUPER + L</code> &nbsp; Lock screen  
-  <br/>
-  <code>SUPER + F</code> &nbsp; Toggle floating
+  <img src="https://img.shields.io/badge/Controls-Hyper%20Productivity-89b4fa?style=for-the-badge&labelColor=1e1e2e&logo=workflow&logoColor=white" />
 </p>
 
-<p align="center">
-  ──────────────
-</p>
+<div align="center">
+
+<pre>
+[ SUPER + Q ]   →   Kill focused window
+[ SUPER + C ]   →   Open clipboard manager
+[ SUPER + M ]   →   Kill Hyprland session
+[ SUPER + W ]   →   Launch web browser
+[ SUPER + A ]   →   Open pavucontrol
+[ Shift + R ]   →   Run Rofi launcher
+[ SUPER + L ]   →   Lock screen
+[ SUPER + F ]   →   Toggle floating window
+</pre>
+
+</div>
