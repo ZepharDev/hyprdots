@@ -52,9 +52,7 @@ Star the repo to keep up with the latest updates and improvements
 
 <h1 align=center>Installation</h1>
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Warning-Read%20Carefully-f38ba8?style=for-the-badge&labelColor=1e1e2e&logo=alert&logoColor=white" />
-</p>
+
 
 <h2 align=center>Automatic installation</h2>
 
@@ -101,6 +99,28 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
   </p>
   <p>
     <img src="https://img.shields.io/badge/License-GNU_GPLv3-f5c2e7?style=for-the-badge&logo=gnu&logoColor=white&labelColor=1e1e2e" />
+  </p>
+
+  <p>
+    <strong>ZepharDev — Minimal, coherent, built on Hyprland.</strong><br>
+    <sub>For Him · YHWH · WO · TW</sub>
+  </p>
+</div>
+
+<hr>
+
+<div align="center">
+  <p>
+    <img src="https://img.shields.io/badge/Built_with-Hyprland-cba6f7?style=for-the-badge&logo=windowsterminal&logoColor=white&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/Powered_by-Arch_Linux-f5c2e7?style=for-the-badge&logo=linux&logoColor=white&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/Crafted_by-ZepharDev-f9e2af?style=for-the-badge&logo=codeforces&logoColor=white&labelColor=1e1e2e" />
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/WO-Workflow_Optimization-eba0ac?style=for-the-badge&logo=vercel&logoColor=white&labelColor=1e1e2e" />
+    <img src="https://img.shields.io/badge/TW-True_Work-cba6f7?style=for-the-badge&logo=dotnet&logoColor=white&labelColor=1e1e2e" />
+  </p>
+  <p>
+    <img src="https://img.shields.io/badge/License-GNU_GPLv3-f5c2e7?style=for-the-badge&logo=scale&logoColor=white&labelColor=1e1e2e" />
   </p>
 
   <p>
