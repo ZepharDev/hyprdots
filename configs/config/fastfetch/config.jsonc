@@ -1,91 +1,60 @@
-
 {
-    "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-    "logo": {
-        "type": "file",
-        "source": "~/.config/fastfetch/logo.txt",
-        "color": {
-            "1": "#CBA6F7", // Mauve
-            "2": "#FAB387", // Peach
-            "3": "#89B4FA"  // Blue
-        },
-        "padding": {
-            "top": 2,
-            "left": 2,
-            "right": 8
-        }
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/schema.json",
+  "logo": {
+    "type": "small",
+  },
+  "display": {
+    "color": {
+      "keys": "#f5e0dc", // Rosewater for labels
+      "output": "#b4befe" // Lavender for values
     },
-    "display": {
-        "key": {
-            "width": 18,
-            "color": "#CBA6F7", // Mauve for keys
-            "outputColor": "#CDD6F4"
-        },
-        "color": {
-            "keys": "#CBA6F7", // Mauve
-            "title": "#FAB387", // Peach
-            "output": "#CDD6F4" // Text
-        },
-        "constants": [
-          "─────────────"
-        ]
-
+  },
+  "modules": [
+    {
+      "type": "title",
+      "key": "   User",
+      "outputColor": "#cba6f7",
+      "keyColor": "#f5e0dc"
     },
-    "modules": [
-        {
-            "type": "title",
-            "key": "┌  User",
-            "format": "{user-name}@{host-name}"
-        },
-                {   
-            "type": "custom",
-            "key": "├  Github",
-            "format": "ZepharDev"
-        },
-        {
-            "type": "custom",
-            "key": "└  Reddit",
-            "format": "Zephar WO"
-        },
-        {
-            "type": "os",
-            "key": "┌  OS"
-        },
-        {
-            "type": "kernel",
-            "key": "├  Kernel"
-        },
-        {
-            "type": "packages",
-            "key": "├  Packages"
-        },
-        {
-            "type": "shell",
-            "key": "├  Shell"
-        },
-        {
-            "type": "wm",
-            "key": "└   WM"
-        },
-        {
-            "type": "cpu",
-            "key": "┌ 󰍛 CPU"
-        },
-        {
-            "type": "gpu",
-            "key": "├ 󰍜 GPU"
-        },
-        {
-            "type": "memory",
-            "key": "├ 󰍛 Memory"
-        },
-        {
-            "type": "disk",
-            "key": "├ 󰋊 Disk"
-        },
-        {
-            "type": "battery",
-            "key": "└ 󰂀 Baterry"
-        },
-    ]
+    {
+      "type": "os",
+      "key": "   OS         ",
+      "keyColor": "#f5e0dc", // Rosewater
+      "format": "{pretty-name} {version} ({arch})",
+      "outputColor": "#b4befe" // Lavender
+    },
+    {
+      "type": "kernel",
+      "key": "   Kernel     ",
+      "keyColor": "#f5e0dc", // Rosewater
+      "format": "{release}",
+      "outputColor": "#89b4fa" // Blue
+    },
+    {
+      "type": "cpu",
+      "key": "   CPU        ",
+      "keyColor": "#f5e0dc", // Rosewater
+      "format": "{name} ({core-count} cores)",
+      "outputColor": "#a6e3a1" // Green
+    },
+    {
+      "type": "memory",
+      "key": "   Memory     ",
+      "keyColor": "#f5e0dc", // Rosewater
+      "outputColor": "#fab387" // Peach
+    },
+    {
+      "type": "disk",
+      "key": "   Disk       ",
+      "keyColor": "#f5e0dc", // Rosewater
+      "outputColor": "#f9e2af" // Yellow
+    },
+    {
+      "type": "uptime",
+      "key": "   Uptime     ",
+      "keyColor": "#f5e0dc", // Rosewater
+      "format": "{days}d {hours}h {minutes}m",
+      "outputColor": "#94e2d5" // Teal
+    }
+  ]
 }
