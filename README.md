@@ -44,4 +44,8 @@
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a015aabd-07ad-46de-bdfa-51933d2d29e1" />
 
+<h1 align="center">SwayNC</h1>
+
+<img width="1366" height="768" alt="2025-07-13-111730_hyprshot" src="https://github.com/user-attachments/assets/eaf172b5-0474-40c1-913b-f3588b5c928f" />
+
 
