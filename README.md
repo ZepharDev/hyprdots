@@ -37,4 +37,5 @@
 
 <h1 align="center">🪾 FastFetch</h1>
 
-<img width="1366" height="768" alt="2025-07-22-222412_hyprshot" src="https://github.com/user-attachments/assets/1e708b46-73f7-4429-af56-97969b222245" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2f45dce9-1c62-457f-a8e4-4af6e78caf93" />
+
