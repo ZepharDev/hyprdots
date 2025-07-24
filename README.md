@@ -29,7 +29,8 @@
 
 <h1 align="center">🗝️ Music Player Menu rofi</h1>
 
-<img width="1366" height="768" alt="2025-07-19-105721_hyprshot" src="https://github.com/user-attachments/assets/015510c2-4f8e-47dc-a7ba-61776b597afc" />
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cbbe8f2d-2f13-40d9-a99c-17b13356366e" />
+
 
 <h1 align="center">🌻 Hyprlock</h1>
 
@@ -38,4 +39,9 @@
 <h1 align="center">🪾 FastFetch</h1>
 
 <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2f45dce9-1c62-457f-a8e4-4af6e78caf93" />
+
+<h1 align="center">Hyprshot Menu</h1>
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a015aabd-07ad-46de-bdfa-51933d2d29e1" />
+
 
