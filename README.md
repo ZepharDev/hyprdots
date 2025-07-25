@@ -50,7 +50,13 @@ Star the repo to keep up with the latest updates and improvements
 - hyprshot — [GitHub](https://github.com/HyprWM/hyprshot)
 - hyprpaper — [GitHub](https://github.com/hyprwm/hyprpaper)
 
-<h1 align=center>Installation</h1>
+<h1 align="center">Installation</h1>
+
+An automated script with multiple options to install the configurations. I don't recommend using the configuration unless you're convinced to use the configurations. 
+
+<h2 align="center">Advertence 🦅</h2>
+
+**THE INSTALLATION SCRIPT IS STILL UNDER DEVELOPMENT, SO I DO NOT RECOMMEND USING IT. IF YOU WANT TO TEST THE SETTINGS, USE THE SCRIPT, BUT NOT THE OPTION THAT SAYS FULL SETUP, CHOOSE THE MANUAL SELECTION OPTION, THERE YOU CAN SELECT WHAT TO INSTALL, WHETHER WAYBAR, NVIM, ETC. IF YOU WANT MORE INFORMATION, YOU CAN CONTACT ME VIA REDDIT OR GMAIL, THE "UNINSTALL, RESCUE" OPTIONS STILL DO NOT WORK COMPLETELY, PLEASE DO NOT RUN THE CODE WITHOUT KNOWING WHAT IT DOES, IF YOU FIND AN ERROR, YOU CAN NOTIFY ME IN THE EMAIL**
 
 
 
