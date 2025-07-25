@@ -1,4 +1,4 @@
-<h1 align="center">Advertence</h1>
+<h2 align="center">Advertence</h2>
 
 This is my personal configuration, so that's why you see LibreWolf in keybinds and myprograms. For example, $browser = librewolf. If you want to use Firefox instead, you'll have to manually modify the file. However, if you give me some time to further develop the script, I could make that easier.
 
@@ -19,7 +19,7 @@ $browser = firefox
 
 I'm improving the configurations—menu updates are coming soon, so please be patient...
 
-<h1 align="center">windowrulev2</h1>
+<h2 align="center">windowrulev2</h2>
 
 Window rules are applied in the way that feels right, if there is a window that you would like to add rules to, the command
 
