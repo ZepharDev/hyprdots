@@ -17,113 +17,97 @@
   </a>
 </p>
 
-| Keys                                                 | Action                          |
-| :--------------------------------------------------- | :------------------------------ |
-| <kbd>SUPER</kbd> + <kbd>Q</kbd>                       | Kill window focused            |
-| <kbd>SUPER</kbd> + <kbd>C</kbd>                       | Open clipboard           |
-| <kbd>SUPER</kbd> + <kbd>M</kbd>                 | kill hyprland session           |
-| <kbd>SUPER</kbd> + <kbd>W</kbd>                      | open browser                    |
-| <kbd>SUPER</kbd> + <kbd>A</kbd>                      | Open pavunconntrol                    |
-| <kbd>Shift</kbd> + <kbd>R</kbd>                    | Exec rofi launch              |
-| <kbd>SUPER</kbd> + <kbd>L</kbd>                      | lock screen                     |
-| <kbd>SUPER</kbd> + <kbd>F</kbd>                      | toggle floating              |
-| <kbd>SUPER</kbd> + <kbd>J</kbd>                      | toggle split                     |
-| <kbd>SUPER</kbd> + <kbd>K</kbd>                      |  Open float alacritty         |
-| <kbd>SUPER</kbd> + <kbd>P</kbd>                      | dwindle                   |
-
-
-<h1 align="center">Keybinds Reference</h1>
+<h1 align="center">🗝️ Hyprdots — Keybinds 🍂</h1>
 
 ---
 
-## 🔑 Core Controls
+## 🍁 Core Actions
 
-| Keys                                | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>SUPER</kbd> + <kbd>D</kbd>     | Open terminal              |
-| <kbd>SUPER</kbd> + <kbd>Q</kbd>     | Kill focused window        |
-| <kbd>SUPER</kbd> + <kbd>M</kbd>     | Exit Hyprland session      |
-| <kbd>SUPER</kbd> + <kbd>L</kbd>     | Lock screen (Hyprlock)     |
-| <kbd>SUPER</kbd> + <kbd>F</kbd>     | Toggle fullscreen          |
-| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Toggle floating          |
-| <kbd>SUPER</kbd> + <kbd>P</kbd>     | Pseudo split window        |
-| <kbd>SUPER</kbd> + <kbd>J</kbd>     | Toggle split mode          |
-| <kbd>SUPER</kbd> + <kbd>K</kbd>     | Wallpaper menu             |
-
----
-
-## 📂 Apps & Scripts
-
-| Keys                                | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>SUPER</kbd> + <kbd>W</kbd>     | Open browser               |
-| <kbd>SUPER</kbd> + <kbd>R</kbd>     | Rofi launcher              |
-| <kbd>SUPER</kbd> + <kbd>E</kbd>     | File manager (Thunar)      |
-| <kbd>SUPER</kbd> + <kbd>N</kbd>     | Notifications center       |
-| <kbd>SUPER</kbd> + <kbd>X</kbd>     | Power menu                 |
-| <kbd>SUPER</kbd> + <kbd>A</kbd>     | Audio control (Pavucontrol)|
-| <kbd>SUPER</kbd> + <kbd>C</kbd>     | Clipboard (Clipse)         |
-| <kbd>SUPER</kbd> + <kbd>T</kbd>     | Float terminal (Alacritty) |
-| <kbd>SUPER</kbd> + <kbd>G</kbd>     | Open gallery               |
-| <kbd>SUPER</kbd> + <kbd>H</kbd>     | Screenshot with Hyprshot   |
-| <kbd>SUPER</kbd> + <kbd>Y</kbd>     | Music player (Spotify)     |
-| <kbd>SUPER</kbd> + <kbd>I</kbd>     | Secondary music player     |
+| Keys                                | Action                          |
+| :---------------------------------- | :------------------------------ |
+| <kbd>SUPER</kbd> + <kbd>D</kbd>     | Open Terminal                   |
+| <kbd>SUPER</kbd> + <kbd>Q</kbd>     | Kill Focused Window             |
+| <kbd>SUPER</kbd> + <kbd>M</kbd>     | Exit Hyprland Session           |
+| <kbd>SUPER</kbd> + <kbd>L</kbd>     | Lock Screen                     |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Toggle Fullscreen     |
+| <kbd>SUPER</kbd> + <kbd>F</kbd>     | Toggle Floating                 |
+| <kbd>SUPER</kbd> + <kbd>P</kbd>     | Pseudo Split                    |
+| <kbd>SUPER</kbd> + <kbd>J</kbd>     | Toggle Split Mode               |
+| <kbd>SUPER</kbd> + <kbd>K</kbd>     | Wallpaper Script Menu           |
 
 ---
 
-## 📐 Window Navigation
+## 🌊 Applications & Scripts
 
-| Keys                                | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>SUPER</kbd> + <kbd>←</kbd>     | Move focus left            |
-| <kbd>SUPER</kbd> + <kbd>→</kbd>     | Move focus right           |
-| <kbd>SUPER</kbd> + <kbd>↑</kbd>     | Move focus up              |
-| <kbd>SUPER</kbd> + <kbd>↓</kbd>     | Move focus down            |
+| Keys                                | Action                          |
+| :---------------------------------- | :------------------------------ |
+| <kbd>SUPER</kbd> + <kbd>W</kbd>     | Open Browser                    |
+| <kbd>SUPER</kbd> + <kbd>R</kbd>     | Rofi Launcher                   |
+| <kbd>SUPER</kbd> + <kbd>E</kbd>     | File Manager                    |
+| <kbd>SUPER</kbd> + <kbd>N</kbd>     | Notification Center             |
+| <kbd>SUPER</kbd> + <kbd>X</kbd>     | Power Menu                      |
+| <kbd>SUPER</kbd> + <kbd>A</kbd>     | Audio Control (Pavucontrol)     |
+| <kbd>SUPER</kbd> + <kbd>C</kbd>     | Clipboard (Clipse in Alacritty) |
+| <kbd>SUPER</kbd> + <kbd>T</kbd>     | Float Terminal                  |
+| <kbd>SUPER</kbd> + <kbd>G</kbd>     | Open Gallery                    |
+| <kbd>SUPER</kbd> + <kbd>H</kbd>     | Screenshot (Hyprshot)           |
+| <kbd>SUPER</kbd> + <kbd>Y</kbd>     | Music Player                    |
+| <kbd>SUPER</kbd> + <kbd>I</kbd>     | Music Player (Alt)              |
 
 ---
 
-## 🗂️ Workspaces
+## 🌴 Window Focus
 
-| Keys                                | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>SUPER</kbd> + <kbd>1</kbd>-<kbd>0</kbd> | Switch workspace 1–10 |
-| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd>-<kbd>0</kbd> | Move window to workspace |
+| Keys                                | Action                          |
+| :---------------------------------- | :------------------------------ |
+| <kbd>SUPER</kbd> + <kbd>←</kbd>     | Move Focus Left                 |
+| <kbd>SUPER</kbd> + <kbd>→</kbd>     | Move Focus Right                |
+| <kbd>SUPER</kbd> + <kbd>↑</kbd>     | Move Focus Up                   |
+| <kbd>SUPER</kbd> + <kbd>↓</kbd>     | Move Focus Down                 |
+
+---
+
+## ❄️ Workspaces
+
+| Keys                                | Action                          |
+| :---------------------------------- | :------------------------------ |
+| <kbd>SUPER</kbd> + <kbd>1</kbd>–<kbd>0</kbd> | Switch Workspace 1–10     |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>1</kbd>–<kbd>0</kbd> | Send to Workspace |
 
 Special:
-| Keys                                | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>SUPER</kbd> + <kbd>S</kbd>     | Toggle scratchpad workspace |
-| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Send to scratchpad |
-
-Scroll:
-| Keys                                | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>SUPER</kbd> + <kbd>Mouse Up</kbd> | Prev workspace           |
-| <kbd>SUPER</kbd> + <kbd>Mouse Down</kbd> | Next workspace          |
+| Keys                                | Action                          |
+| :---------------------------------- | :------------------------------ |
+| <kbd>SUPER</kbd> + <kbd>S</kbd>     | Toggle Scratchpad               |
+| <kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> | Send to Scratchpad     |
+| <kbd>SUPER</kbd> + <kbd>Mouse Up</kbd> | Next Workspace             |
+| <kbd>SUPER</kbd> + <kbd>Mouse Down</kbd> | Prev Workspace            |
 
 ---
 
-## 🖱️ Mouse & Multimedia
+## 🌪️ Mouse & Multimedia
 
-| Keys                                | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>SUPER</kbd> + <kbd>Drag Left</kbd> | Move window (LMB)        |
-| <kbd>SUPER</kbd> + <kbd>Drag Right</kbd> | Resize window (RMB)      |
-
-| Multimedia Key                      | Action                     |
-| :---------------------------------- | :------------------------- |
-| <kbd>Audio +</kbd>                  | Volume up (wpctl)          |
-| <kbd>Audio -</kbd>                  | Volume down (wpctl)        |
-| <kbd>Mute</kbd>                     | Toggle mute                |
-| <kbd>Mic Mute</kbd>                 | Toggle mic mute            |
-| <kbd>Brightness +</kbd>             | Increase brightness        |
-| <kbd>Brightness -</kbd>             | Decrease brightness        |
-| <kbd>Audio Next</kbd>               | Next track (playerctl)     |
-| <kbd>Audio Prev</kbd>               | Previous track             |
-| <kbd>Play/Pause</kbd>               | Play/Pause                 |
+| Keys                                | Action                          |
+| :---------------------------------- | :------------------------------ |
+| <kbd>SUPER</kbd> + <kbd>Drag LMB</kbd> | Move Window                   |
+| <kbd>SUPER</kbd> + <kbd>Drag RMB</kbd> | Resize Window                 |
+| <kbd>Audio +</kbd>                  | Volume Up (wpctl)               |
+| <kbd>Audio -</kbd>                  | Volume Down                     |
+| <kbd>Mute</kbd>                     | Toggle Mute                     |
+| <kbd>Mic Mute</kbd>                 | Toggle Mic Mute                 |
+| <kbd>Brightness +</kbd>             | Increase Brightness             |
+| <kbd>Brightness -</kbd>             | Decrease Brightness             |
+| <kbd>Audio Next</kbd>               | Next Track (playerctl)          |
+| <kbd>Audio Prev</kbd>               | Previous Track                  |
+| <kbd>Play/Pause</kbd>               | Play / Pause                    |
 
 ---
 
+## 🦅 Final Note
+
+> _Hyprdots — built minimal, for pure workflow.  
+> 🗝️ **All Glory to YHWH**._
+
+---
 
 <div align="center">
   <p>
@@ -131,14 +115,3 @@ Scroll:
     <img src="https://img.shields.io/badge/Powered_by-Arch_Linux-f5c2e7?style=for-the-badge&logo=arch-linux&logoColor=white&labelColor=1e1e2e" />
     <img src="https://img.shields.io/badge/Crafted_by-ZepharDev-f9e2af?style=for-the-badge&logo=github&logoColor=white&labelColor=1e1e2e" />
   </p>
-
-<div align="center">
-  <p>
-    <img src="https://img.shields.io/badge/✝%20Christ_First-eba0ac?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
-    <img src="https://img.shields.io/badge/✟%20Soli_Deo_Gloria-cba6f7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
-    <img src="https://img.shields.io/badge/☧%20Faith-f5c2e7?style=for-the-badge&labelColor=1e1e2e&logoColor=white" />
-  </p>
-  <p>
-    <sub>Code and craft — for Christ alone. YHWH reigns.</sub>
-  </p>
-</div>
