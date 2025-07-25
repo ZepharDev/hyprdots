@@ -24,4 +24,7 @@ I'm improving the configurations—menu updates are coming soon, so please be pa
 Window rules are applied in the way that feels right, if there is a window that you would like to add rules to, the command
 
 ```bash
-windowrulev2 = float, class
+windowrulev2 = float, class:^(dolphin)$
+```
+
+Here, for example, we define the application or window named "dolphin" to float in the center of the screen. You can find more information in the official hyprland documentation or the wiki.
