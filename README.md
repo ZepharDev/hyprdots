@@ -48,6 +48,12 @@
 
 <img width="1366" height="768" alt="2025-07-13-111730_hyprshot" src="https://github.com/user-attachments/assets/eaf172b5-0474-40c1-913b-f3588b5c928f" />
 
+<h1 align="center">Power Menu</h1>
+
+<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7179b1c7-1f93-4c18-a135-6b9d59ba2b15" />
+
+---
+
 <div align="center">
   <p>
     <img src="https://img.shields.io/badge/Built_with-Hyprland-cba6f7?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />
