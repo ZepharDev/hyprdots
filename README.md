@@ -56,9 +56,7 @@ An automated script with multiple options to install the configurations. I don't
 
 <h2 align="center">Advertence 🦅</h2>
 
-**THE INSTALLATION SCRIPT IS STILL UNDER DEVELOPMENT, SO I DO NOT RECOMMEND USING IT. IF YOU WANT TO TEST THE SETTINGS, USE THE SCRIPT, BUT NOT THE OPTION THAT SAYS FULL SETUP, CHOOSE THE MANUAL SELECTION OPTION, THERE YOU CAN SELECT WHAT TO INSTALL, WHETHER WAYBAR, NVIM, ETC. IF YOU WANT MORE INFORMATION, YOU CAN CONTACT ME VIA REDDIT OR GMAIL, THE "UNINSTALL, RESCUE" OPTIONS STILL DO NOT WORK COMPLETELY, PLEASE DO NOT RUN THE CODE WITHOUT KNOWING WHAT IT DOES, IF YOU FIND AN ERROR, YOU CAN NOTIFY ME IN THE EMAIL**
-
-
+the installation script is still under development, so i do not recommend using it. if you want to test the settings, use the script, but not the option that says full setup, choose the manual selection option, there you can select what to install, whether waybar, nvim, etc. if you want more information, you can contact me via reddit or mail, the "uninstall, rescue" options still do not work completely, please do not run the code without knowing what it does, if you find an error, you can notify me in the email. these are my personal settings, so everything is set to the most comfortable fit for me. thank you.
 
 <h2 align=center>Automatic installation</h2>
 
