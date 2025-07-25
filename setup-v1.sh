@@ -35,7 +35,9 @@ repo_url="https://github.com/zephardev/hyprdots.git"
 repo_dir="$HOME/hyprdots"
 backup_dir="$HOME/.hyprdots.bak"
 config_src="$repo_dir/configs/config"
+local_dest="$HOME/.local" 
 config_dest="$HOME/.config"
+local_src="$repo_dir/config/local"
 
 # Defining components for selective installation
 components=(
@@ -101,7 +103,19 @@ check_dependencies() {
   fi
   read -p "Press Enter to continue..."
 }
-
+# HELP !!!! 
+# Function to install .local contents
+install_local() {
+  echo -e "${bold}${mocha_overlay2}Installing .local contents...${reset}"
+  if [ -d "$local_src" ]; then
+    mkdir -p "$local_dest"
+    # Copy contents of local_src to local_dest, preserving directory structure
+    cp -r "$local_src/"* "$local_dest/"
+    echo -e "${mocha_green}Installed .local contents (wallpapers, Catppuccin, etc.)${reset}"
+  else
+    echo -e "${mocha_red}Source directory $local_src not found${reset}"
+  fi
+}
 # Function to create backup
 create_backup() {
   local target_dir="$1"
@@ -115,6 +129,10 @@ create_backup() {
       cp -r "$config_dest/$component" "$backup_target/"
       echo -e "${mocha_overlay2}Backed up $component${reset}"
     fi
+    if [ -d "$local_dest" ]; then
+    cp -r "$local_dest" "$backup_target/local"
+    echo -e "${mocha_overlay2}Backed up .local contents${reset}"
+  fi
   done
 }
 
@@ -140,7 +158,9 @@ install_setup() {
       echo -e "${mocha_green}Installed $component${reset}"
     fi
   done
-  
+
+  install_local
+
   echo -e "${bold}${mocha_green}Installation complete!${reset}"
   read -p "Press Enter to continue..."
 }
