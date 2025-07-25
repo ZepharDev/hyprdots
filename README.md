@@ -28,40 +28,39 @@ Star the repo to keep up with the latest updates and improvements
 
 ## 🗝️ Core Environment
 
-- Hyprland ✦ — [hyprland.org](https://hyprland.org)
-- Waybar ──╼ [GitHub](https://github.com/Alexays/Waybar)
-- Rofi (Wayland) ╰─▶ [GitHub](https://github.com/lbonn/rofi)
-- Kitty Terminal ≡ [Kitty](https://sw.kovidgoyal.net/kitty/)
+- Hyprland ⇌ [hyprland.org](https://hyprland.org)
+- Waybar ⇌ [GitHub](https://github.com/Alexays/Waybar)
+- Rofi (Wayland) ⇌ [GitHub](https://github.com/lbonn/rofi)
+- Kitty Terminal ⇌ [Kitty](https://sw.kovidgoyal.net/kitty/)
 - Zsh ⇌ [www.zsh.org](https://www.zsh.org/)
 
 ---
 
 ## 🗂️ System & Widgets
 
-- SwayOSD ⇢ [GitHub](https://github.com/ErikReider/SwayOSD)
-- SwayNC ⇢ [GitHub](https://github.com/ErikReider/SwayNotificationCenter)
-- Hyprlock ⇢ [GitHub](https://github.com/hyprwm/Hyprlock)
-- hypridle ⇢ [GitHub](https://github.com/hyprwm/hypridle)
-- hyprpaper ⇢ [GitHub](https://github.com/hyprwm/hyprpaper)
-- hyprshot ⇢ [GitHub](https://github.com/HyprWM/hyprshot)
-- wlogout ⇢ [GitHub](https://github.com/ArtsyMacaw/wlogout)
+- SwayOSD ⇌ [GitHub](https://github.com/ErikReider/SwayOSD)
+- SwayNC ⇌ [GitHub](https://github.com/ErikReider/SwayNotificationCenter)
+- Hyprlock ⇌ [GitHub](https://github.com/hyprwm/Hyprlock)
+- hypridle ⇌ [GitHub](https://github.com/hyprwm/hypridle)
+- hyprpaper ⇌ [GitHub](https://github.com/hyprwm/hyprpaper)
+- hyprshot ⇌ [GitHub](https://github.com/HyprWM/hyprshot)
+- wlogout ⇌ [GitHub](https://github.com/ArtsyMacaw/wlogout)
 
 ---
 
 ## ⚙️ Utilities & Tools
 
-- btop ✧ [GitHub](https://github.com/aristocratos/btop)
-- FastFetch ✧ [GitHub](https://github.com/fastfetch-cli/fastfetch)
-- cava ✧ [GitHub](https://github.com/karlstav/cava)
-- clipse ✧ [GitHub](https://github.com/savedra1/clipse)
-- yay ✧ [GitHub](https://github.com/Jguer/yay)
-- Dmenu ✧ [tools.suckless.org](https://tools.suckless.org/dmenu/)
-- nvim ✧ [neovim.io](https://neovim.io/)
-- Pipewire ✧ [pipewire.org](https://pipewire.org/)
-- NetworkManager ✧ [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager)
-- nm-applet ✧ [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager#nm-applet)
-- dunst ✧ [GitHub](https://github.com/dunst-project/dunst)
-
+- btop ⇌ [GitHub](https://github.com/aristocratos/btop)
+- FastFetch ⇌ [GitHub](https://github.com/fastfetch-cli/fastfetch)
+- cava ⇌ [GitHub](https://github.com/karlstav/cava)
+- clipse ⇌ [GitHub](https://github.com/savedra1/clipse)
+- yay ⇌ [GitHub](https://github.com/Jguer/yay)
+- Dmenu ⇌ [tools.suckless.org](https://tools.suckless.org/dmenu/)
+- nvim ⇌ [neovim.io](https://neovim.io/)
+- Pipewire ⇌ [pipewire.org](https://pipewire.org/)
+- NetworkManager ⇌ [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager)
+- nm-applet ⇌ [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager#nm-applet)
+- dunst ⇌ [GitHub](https://github.com/dunst-project/dunst)
 <h1 align="center">Installation</h1>
 
 An automated script with multiple options to install the configurations. I don't recommend using the configuration unless you're convinced to use the configurations. 
