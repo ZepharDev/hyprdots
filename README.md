@@ -66,6 +66,8 @@ git clone https://github.com/ZepharDev/hyprdots.git && cd ~/hyprdots && bash set
 
 I can't guarantee that the script will work at all; it may have bugs. Please be careful. I'll be improving it and releasing versions. There are multiple options. 
 
+---
+
 <div align="center">
   <p>
     <img src="https://img.shields.io/badge/Built_with-Hyprland-cba6f7?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />
