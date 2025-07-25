@@ -1,0 +1,67 @@
+/* Crafted by: zephardev 
+* Dotfiles: https.//github.com/zephardev/hyprdots
+* Rofi wallpapers selected :D 
+* Configuration of script: ~/.config/scripts/wallpaper.sh
+* Minimal and coherent
+* Crafting minimal, coherent workflows 
+* Licence: GNU GPLV3 
+*/ 
+
+
+@import "mocha.rasi"
+
+* {
+  font-family: "JetBrains Mono Nerd Font 12";
+  foreground: @text;
+  background: @base;
+  alternate-normal-background: @normal-background; 
+  normal-background: rgba(30, 30, 46, 0.0);
+}
+
+//---Window --// 
+
+window {
+  width: 30%;
+  height: 40%;
+
+  margin: 2px;
+  padding: 2px;
+  spacing: 3px;
+
+  orientation: vertical;
+  anchor: center;
+  location: center;
+
+  x-offset: 4px;
+  y-offset: 4px;
+
+  children: [ mainbox ];
+}
+
+//--- Mainbox --// 
+
+mainbox {
+  enabled: true;
+  orientation: vertical;
+  margin: 0px 2px;
+  padding: 0px;
+  spacing: 2px;
+
+  children: [ listview ];
+}
+
+//--- listview --// 
+
+listview {
+  lines: 6;
+  columns: 1;
+  margin: 0.3em; 
+  padding: 1px;
+  spacing: 1;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 1px;
+  spacing: 1;
+  border-color: transparent;
+  background-color: transparent;
+}

@@ -1,0 +1,79 @@
+@import "mocha.rasi"
+
+* {
+  font: "JetBrains Mono Nerd Font 14";
+  background: @base;
+  foreground: @text;
+  normal-background: rgba(30, 30, 46, 0.20);
+  alternate-normal-background: @normal-background;
+}
+
+//--- Window --// 
+
+window {
+  height: 40%;
+  orientation: vertical;
+  location: center;
+  anchor: center;
+
+  border: 2px;
+  border-radius: 2px;
+  margin: 4px;
+  padding: 4px;
+  x-offset: 0;
+  y-offset: 0;
+  spacing: 4px;
+
+  children: [ mainbox ];
+}
+
+mainbox {
+  enabled: true;
+
+  margin: 0px;
+  padding: 0px;
+  orientation: vertical;
+
+  children: [ imagebox, listview ];
+}
+
+imagebox {
+  background-image: url("~/.local/share/wallpapers/w-37.jpg", width);
+  background: transparent;
+
+  border-radius: 2px;
+
+  padding: -4px;
+  margin: 0px;
+
+  children: [ textbox-prompt-colon ];
+}
+
+listview {
+  lines: 1;
+  columns: 5;
+
+  border: 2px;
+  border-radius: 2px;
+  border-color: transparent;
+
+  padding: 2px;
+  margin: 4px;
+  spacing: 2px;
+  dynamic: false;
+  scrollbar: false;
+}
+
+textbox-prompt-colon {
+  expand: false;
+  padding: 4em 12px;
+  border-radius: 1em;
+  str: "  Hyprshot";
+  text-color: @text;
+}
+
+element {
+  margin: 1em 2px;
+  padding: 15px 2px;
+  border-radius: 4em;
+}

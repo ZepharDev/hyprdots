@@ -1,0 +1,75 @@
+@import "mocha.rasi"
+
+* {
+  font: "JetBrainsMono Nerd Font 12";
+  background-color: @base;
+  text-color: @text;
+  border-color: @mauve;
+  active-background: @lavender;
+  urgent-background: @red;
+  selected-background: @blue;
+  alternate-normal-background: @mantle;
+}
+
+configuration {
+  modi: "drun,run";
+  show-icons: true;
+  icon-theme: "Papirus";
+  drun-icon-theme: "Papirus";
+  lines: 5;
+}
+
+window {
+  transparency: "real";
+  background-color: @base;
+  border: 2px;
+  border-radius: 8px;
+  width: 300px;
+  padding: 10px;
+}
+
+mainbox {
+  background-color: @base;
+  padding: 0px;
+}
+
+inputbar {
+  enabled: false;
+}
+
+listview {
+  background-color: @base;
+  padding: 5px;
+  spacing: 5px;
+  dynamic: false;
+}
+
+element {
+  background-color: @mantle;
+  text-color: @text;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+element selected {
+  background-color: @blue;
+  text-color: @base;
+  border: 1px;
+  border-color: @lavender;
+}
+
+element-text {
+  text-color: inherit;
+}
+
+element-icon {
+  size: 16px;
+  padding-right: 5px;
+}
+
+entry {
+  text-color: @text;
+  placeholder: "Power Menu";
+  placeholder-color: @subtext1;
+}
+

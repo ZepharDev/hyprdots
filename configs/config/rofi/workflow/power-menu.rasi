@@ -1,0 +1,118 @@
+@import "mocha.rasi"
+
+* {
+  font:              "JetBrains Mono Nerd Font 16";
+  background-color:   transparent;
+  background: rgba(30, 30, 46, 0.98);
+  foreground: @text;
+  normal-background: @background;
+  alternate-normal-background: @background;
+}
+
+window {
+  width: 55%;
+  height: 55%;
+  
+  border-radius: 0.30em;
+  padding: 5px;
+  margin: 4px;
+  spacing: 2px;
+  orientation: horizontal;
+  location: center;
+  anchor: center;
+
+  children: [ mainbox ];
+}
+
+mainbox {
+  enabled: true;
+  margin: 0px;
+  padding: 0px;
+  orientation: vertical;
+  border-color: transparent;
+
+  children: [ imagebox, listview ];
+}
+
+//--- imagebox --//
+
+imagebox {
+  background-color: transparent;
+  background-image: url("~/.local/share/wallpapers/w-36.jpg", width); 
+
+  padding: 0px;
+  margin: 0px;
+
+  border-radius: 0px;
+  children: [ textbox-prompt-colon, prompt ];
+}
+
+//--- listview --//
+
+listview {
+  lines: 1;
+  columns: 6;
+  cycle: false;
+  dynamic: false;
+  spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  scrollbar: false;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+
+//--- textbox-prompt-colon --// 
+
+textbox-prompt-colon {
+  enabled: true;
+  expand: false;
+  margin: 4em 0.30em;
+  border-color: transparent;
+  background-color: transparent;
+  padding: 10px;
+  str: " Hyprland";
+  text-color: @text;
+}
+
+prompt {
+    enabled:                     true;
+    margin:                      4.5em 20em;
+    border-radius:               100%;
+    padding: 4px 6px;
+    background-color:            @base;
+    text-color:                  @foreground;
+}
+
+message {
+    enabled:                     true;
+    margin:                      0px 15px 15px 15px;
+    padding:                     15px;
+    border-radius:               100%;
+    border-color: transparent;
+    background-color:            @surface0;
+    text-color:                  @foreground;
+}
+
+//--- elements --// 
+
+element {
+  margin: 1.2em 0em;
+  padding: 1em 1em;
+  border-radius: 20em;
+}
+
+element selected.normal {
+  background-color: rgba(203, 166, 247, 0.50);
+
+}
+
+element-text {
+  font: "feather bold 28";
+  background-color: transparent;
+  cursor: inherit;
+  text-color: inherit;
+  vertical-align: 0.5;
+  horizontal-align: 0.5;
+}
