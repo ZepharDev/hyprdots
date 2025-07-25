@@ -48,7 +48,7 @@ Star the repo to keep up with the latest updates and improvements
 - Pipewire — [pipewire.org](https://pipewire.org/)
 - nm-applet — [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager#nm-applet)
 - hyprshot — [GitHub](https://github.com/HyprWM/hyprshot)
-- hyprpaper — [GitHub](https://github.com/hyprwm/hyprpaper)
+- hyprpaper 🕸️— [GitHub](https://github.com/hyprwm/hyprpaper)
 
 <h1 align="center">Installation</h1>
 
