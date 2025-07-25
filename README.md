@@ -89,7 +89,7 @@
 | `XF86AudioPlay` | Play/Pause |
 | `XF86AudioPrev` | Previous Track |
 
---
+---
 
 <div align="center">
   <p>
