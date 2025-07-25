@@ -1,0 +1,90 @@
+@import "mocha.rasi"
+
+* {
+  font:              "JetBrains Mono Nerd Font 16";
+  background-color:   transparent;
+  background: rgba(30, 30, 46, 0.98);
+  foreground: @text;
+  normal-background: @background;
+  alternate-normal-background: @background;
+  selected-active-background: @mauve;
+}
+
+window {
+  width: 55%;
+  height: 50%;
+  
+  border-radius: 0.30em;
+  padding: 5px;
+  margin: 4px;
+  spacing: 2px;
+  orientation: horizontal;
+  location: center;
+  anchor: center;
+
+  children: [ mainbox ];
+}
+
+mainbox {
+  enabled: true;
+  margin: 0px;
+  padding: 0px;
+  orientation: vertical;
+  
+
+  children: [ imagebox, listview ];
+}
+
+//--- imagebox --//
+
+imagebox {
+  background-color: transparent;
+  background-image: url("~/.local/share/wallpapers/w-36.jpg", width); 
+
+  padding: 0px;
+  margin: 0px;
+
+  border-radius: 0px;
+  children: [ textbox-prompt-colon, message ];
+}
+
+//--- listview --//
+
+listview {
+  lines: 1;
+  columns: 5;
+  cycle: false;
+  dynamic: false;
+  spacing: 0px;
+  margin: 0px;
+  padding: 0px;
+  scrollbar: false;
+
+  background-color: transparent;
+  border-color: transparent;
+}
+
+//--- textbox-prompt-colon --// 
+
+textbox-prompt-colon {
+  expand: false;
+  padding: 3px 12px;
+  border-radius: 2em;
+  str: "󰎆 Music";
+  text-color: @text;
+}
+
+
+//--- elements --// 
+
+element {
+  margin: 1.8em 2px;
+  padding: 15px 5px;
+  border-radius: 0em;
+}
+
+element selected.normal {
+  border-radius: 12em;
+  background: @mauve;
+}
+

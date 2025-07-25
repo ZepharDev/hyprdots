@@ -88,14 +88,15 @@ imagebox {
     orientation: horizontal;
     border-radius: 2px;
     background-image: url("~/.local/share/wallpapers/14-w.jpg", height);
-    children: [ "entry", "dummy", "mode-switcher" ]; 
+    children: [ entry, dummy, mode-switcher ];
 }
 
 dummy {
     background-color: transparent;
 }
 
-//--- Inputbar --//
+//--- Inputbar --// 
+//--- Desactived --//
 inputbar {
     orientation: horizontal;
     enabled:                     true;
@@ -107,8 +108,9 @@ inputbar {
 }
 
 textbox-prompt-colon {
+  enabled: true;
   expand: false;
-  padding: 3px 18px;
+  padding: 12;
   border-radius: 1em;
   str: " "; /* */
 }
