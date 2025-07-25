@@ -26,10 +26,10 @@ Star the repo to keep up with the latest updates and improvements
 
 <h1 align=center>Requeriments</h1>
 
-- Hyprland — [hyprland.org](https://hyprland.org/)
-- Waybar — [GitHub](https://github.com/Alexays/Waybar)
+- Hyprland 🦇 — [hyprland.org](https://hyprland.org/)
+- Waybar 🦇 — [GitHub](https://github.com/Alexays/Waybar)
 - Rofi (Wayland) — [GitHub](https://github.com/lbonn/rofi)
-- Kitty — [sw.kovidgoyal.net/kitty](https://sw.kovidgoyal.net/kitty/)
+- Kitty 🦇 — [sw.kovidgoyal.net/kitty](https://sw.kovidgoyal.net/kitty/)
 - Zsh — [www.zsh.org](https://www.zsh.org/)
 - SwayOSD — [GitHub](https://github.com/ErikReider/SwayOSD)
 - SwayNC — [GitHub](https://github.com/ErikReider/SwayNotificationCenter)
