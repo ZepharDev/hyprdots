@@ -1,1 +1,27 @@
-**THE INSTALLATION SCRIPT IS STILL UNDER DEVELOPMENT, SO I DO NOT RECOMMEND USING IT. IF YOU WANT TO TEST THE SETTINGS, USE THE SCRIPT, BUT NOT THE OPTION THAT SAYS FULL SETUP, CHOOSE THE MANUAL SELECTION OPTION, THERE YOU CAN SELECT WHAT TO INSTALL, WHETHER WAYBAR, NVIM, ETC. IF YOU WANT MORE INFORMATION, YOU CAN CONTACT ME VIA REDDIT OR MAIL, THE "UNINSTALL, RESCUE" OPTIONS STILL DO NOT WORK COMPLETELY, PLEASE DO NOT RUN THE CODE WITHOUT KNOWING WHAT IT DOES, IF YOU FIND AN ERROR, YOU CAN NOTIFY ME IN THE EMAIL. These are my personal settings, so everything is set to the most comfortable fit for me. Thank you. **
+<h1 align="center">Advertence</h1>
+
+This is my personal configuration, so that's why you see LibreWolf in keybinds and myprograms. For example, $browser = librewolf. If you want to use Firefox instead, you'll have to manually modify the file. However, if you give me some time to further develop the script, I could make that easier.
+
+Still, the absolute path where you can set Firefox (or any browser you want) is:
+~/.config/hypr/core/myprograms.conf
+
+You can access it in several ways, like the one shown below. You can edit it with nvim (I hope you do), or with nano. 
+
+```bash
+nvim ~/.config/hypr/core/myprograms.conf
+```
+
+If you've already applied the configurations, you can access it via zsh using nn. You would just need to change:
+$browser = librewolf
+to:
+$browser = firefox
+(Just to clarify, you can use any browser you prefer.)
+
+I'm improving the configurations—menu updates are coming soon, so please be patient...
+
+<h1 align="center">windowrulev2</h1>
+
+Window rules are applied in the way that feels right, if there is a window that you would like to add rules to, the command
+
+```bash
+windowrulev2 = float, class
