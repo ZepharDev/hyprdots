@@ -89,6 +89,8 @@
 | `XF86AudioPlay` | Play/Pause |
 | `XF86AudioPrev` | Previous Track |
 
+--
+
 <div align="center">
   <p>
     <img src="https://img.shields.io/badge/Built_with-Hyprland-cba6f7?style=for-the-badge&logo=hyprland&logoColor=white&labelColor=1e1e2e" />
