@@ -21,6 +21,48 @@
 
 ---
 
+
+div align="center">
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:center; padding:10px;">Key</th>
+      <th style="text-align:center; padding:10px;">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>D</kbd></td>
+      <td align="center">Open Terminal</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>Q</kbd></td>
+      <td align="center">Kill Focused Window</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>M</kbd></td>
+      <td align="center">Exit Hyprland Session</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>L</kbd></td>
+      <td align="center">Lock Screen</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd></td>
+      <td align="center">Toggle Fullscreen</td>
+    </tr>
+    <tr>
+      <td align="center"><kbd>SUPER</kbd> + <kbd>F</kbd></td>
+      <td align="center">Toggle Floating</td>
+    </tr>
+  </tbody>
+</table>
+
+</div>
+
+
+
 ## 🍁 Core Actions
 
 | Keys                                | Action                          |
