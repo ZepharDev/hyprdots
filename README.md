@@ -26,29 +26,41 @@ Star the repo to keep up with the latest updates and improvements
 
 <h1 align=center>Requeriments</h1>
 
-- Hyprland 🦇 — [hyprland.org](https://hyprland.org/)
-- Waybar 🦇 — [GitHub](https://github.com/Alexays/Waybar)
-- Rofi (Wayland) — [GitHub](https://github.com/lbonn/rofi)
-- Kitty 🦇 — [sw.kovidgoyal.net/kitty](https://sw.kovidgoyal.net/kitty/)
-- Zsh — [www.zsh.org](https://www.zsh.org/)
-- SwayOSD — [GitHub](https://github.com/ErikReider/SwayOSD)
-- SwayNC — [GitHub](https://github.com/ErikReider/SwayNotificationCenter)
-- Hyprlock — [GitHub](https://github.com/hyprwm/Hyprlock)
-- btop — [GitHub](https://github.com/aristocratos/btop)
-- NetworkManager — [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager)
-- Dmenu — [tools.suckless.org](https://tools.suckless.org/dmenu/)
-- nvim — [neovim.io](https://neovim.io/)
-- wlogout — [GitHub](https://github.com/ArtsyMacaw/wlogout)
-- dunst — [GitHub](https://github.com/dunst-project/dunst)
-- yay — [GitHub](https://github.com/Jguer/yay)
-- FastFetch — [GitHub](https://github.com/fastfetch-cli/fastfetch)
-- cava — [GitHub](https://github.com/karlstav/cava)
-- hypridle — [GitHub](https://github.com/hyprwm/hypridle)
-- clipse — [Github](https://github.com/savedra1/clipse)
-- Pipewire — [pipewire.org](https://pipewire.org/)
-- nm-applet — [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager#nm-applet)
-- hyprshot — [GitHub](https://github.com/HyprWM/hyprshot)
-- hyprpaper 🕸️— [GitHub](https://github.com/hyprwm/hyprpaper)
+## 🗝️ Core Environment
+
+- Hyprland ✦ — [hyprland.org](https://hyprland.org)
+- Waybar ──╼ [GitHub](https://github.com/Alexays/Waybar)
+- Rofi (Wayland) ╰─▶ [GitHub](https://github.com/lbonn/rofi)
+- Kitty Terminal ≡ [Kitty](https://sw.kovidgoyal.net/kitty/)
+- Zsh ⇌ [www.zsh.org](https://www.zsh.org/)
+
+---
+
+## 🗂️ System & Widgets
+
+- SwayOSD ⇢ [GitHub](https://github.com/ErikReider/SwayOSD)
+- SwayNC ⇢ [GitHub](https://github.com/ErikReider/SwayNotificationCenter)
+- Hyprlock ⇢ [GitHub](https://github.com/hyprwm/Hyprlock)
+- hypridle ⇢ [GitHub](https://github.com/hyprwm/hypridle)
+- hyprpaper ⇢ [GitHub](https://github.com/hyprwm/hyprpaper)
+- hyprshot ⇢ [GitHub](https://github.com/HyprWM/hyprshot)
+- wlogout ⇢ [GitHub](https://github.com/ArtsyMacaw/wlogout)
+
+---
+
+## ⚙️ Utilities & Tools
+
+- btop ✧ [GitHub](https://github.com/aristocratos/btop)
+- FastFetch ✧ [GitHub](https://github.com/fastfetch-cli/fastfetch)
+- cava ✧ [GitHub](https://github.com/karlstav/cava)
+- clipse ✧ [GitHub](https://github.com/savedra1/clipse)
+- yay ✧ [GitHub](https://github.com/Jguer/yay)
+- Dmenu ✧ [tools.suckless.org](https://tools.suckless.org/dmenu/)
+- nvim ✧ [neovim.io](https://neovim.io/)
+- Pipewire ✧ [pipewire.org](https://pipewire.org/)
+- NetworkManager ✧ [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager)
+- nm-applet ✧ [wiki.archlinux.org](https://wiki.archlinux.org/title/NetworkManager#nm-applet)
+- dunst ✧ [GitHub](https://github.com/dunst-project/dunst)
 
 <h1 align="center">Installation</h1>
 
