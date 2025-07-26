@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-# Catppuccin Mocha color palette
+# Defining Catppuccin Mocha colors in ANSI escape format
 mocha_rosewater="\e[38;2;245;224;220m"
 mocha_flamingo="\e[38;2;242;205;205m"
 mocha_pink="\e[38;2;245;194;231m"
@@ -24,374 +24,394 @@ mocha_surface0="\e[38;2;49;50;68m"
 mocha_base="\e[38;2;30;30;46m"
 mocha_mantle="\e[38;2;24;24;37m"
 mocha_crust="\e[38;2;17;17;27m"
+
+# Setting up TUI styles
+bold=$(tput bold)
 reset="\e[0m"
+underline=$(tput smul)
 
-# Formatted print functions with enhanced styling
-print_info() { printf "${mocha_teal}[*] %s${reset}\n" "$1"; }
-print_success() { printf "${mocha_green}[+] %s${reset}\n" "$1"; }
-print_error() { printf "${mocha_red}[-] %s${reset}\n" "$1"; }
-print_warning() { printf "${mocha_yellow}[!] %s${reset}\n" "$1"; }
-print_title() { printf "${mocha_mauve}== %s ==${reset}\n" "$1"; }
-
-# Dependencies to check/install
-dependencies=("alacritty" "waybar" "rofi" "wlogout" "fastfetch" "kitty" "nvim" "cava" "btop" "swayosd" "swaync" "dunst")
-
-# Paths
-config_dir="$HOME/.config"
-backup_dir="$HOME/.hyprdots.bak"
-local_share_dir="$HOME/.local/share"
+# Defining repository details
+repo_url="https://github.com/zephardev/hyprdots.git"
 repo_dir="$HOME/hyprdots"
+backup_dir="$HOME/.hyprdots.bak"
+config_src="$repo_dir/config"
+local_src="$repo_dir/local/share"
+config_dest="$HOME/.config"
+local_dest="$HOME/.local/share"
 
-# Check if running as root
-check_root() {
-    if [ "$(id -u)" -eq 0 ]; then
-        print_error "This script must not be run as root."
-        exit 1
-    fi
+# Defining components for selective installation
+components=(
+  "alacritty"
+  "waybar"
+  "rofi"
+  "wlogout"
+  "fastfetch"
+  "kitty"
+  "nvim"
+  "cava"
+  "btop"
+  "swayosd"
+  "swaync"
+  "dunst"
+  "hypr"
+)
+
+# Function to display the header
+display_header() {
+  clear
+  echo -e "${bold}${mocha_mauve}============================================================${reset}"
+  echo -e "${bold}${mocha_rosewater}       Hyprdots Zephardev - Installation Script${reset}"
+  echo -e "${bold}${mocha_mauve}============================================================${reset}"
+  echo -e "${mocha_yellow}Warning: This script may overwrite existing configurations.${reset}"
+  echo -e "${mocha_yellow}A backup will be created at ~/.hyprdots.bak${reset}"
+  echo -e "${mocha_overlay2}Please select an option below:${reset}\n"
 }
 
-# Check if git is installed
-check_git() {
-    if ! command -v git &>/dev/null; then
-        print_error "Git is required but not installed. Please install git."
-        exit 1
-    fi
+# Function to display the menu
+display_menu() {
+  echo -e "${bold}${mocha_lavender}1) Install Setup${reset} - Full installation with backup"
+  echo -e "${bold}${mocha_blue}2) Check Dependencies${reset} - Verify required packages"
+  echo -e "${bold}${mocha_peach}3) Install Manual${reset} - Select specific components"
+  echo -e "${bold}${mocha_green}4) Backup Selective${reset} - Backup specific configurations"
+  echo -e "${bold}${mocha_red}5) Uninstall${reset} - Remove Hyprdots and restore backup"
+  echo -e "${bold}${mocha_teal}6) Help${reset} - Display help information"
+  echo -e "${bold}${mocha_flamingo}7) Rescue${reset} - Restore from backup in case of failure"
+  echo -e "${bold}${mocha_pink}8) Exit${reset} - Exit the installer\n"
+  echo -e "${mocha_subtext1}Enter your choice (1-8): ${reset}"
 }
 
-# Clone repository if not present
-clone_repository() {
-    print_title "Repository Setup"
-    if [ ! -d "$repo_dir" ]; then
-        print_info "Cloning zephardev/hyprdots repository..."
-        if ! git clone https://github.com/zephardev/hyprdots.git "$repo_dir"; then
-            print_error "Failed to clone repository."
-            exit 1
-        fi
-        print_success "Repository cloned to $repo_dir."
-    else
-        print_info "Repository already exists at $repo_dir."
-    fi
-}
-
-# Create backup of existing configurations
-create_backup() {
-    print_title "Creating Backup"
-    print_info "Backing up existing configurations to $backup_dir..."
-    if [ -d "$backup_dir" ]; then
-        print_warning "Backup directory exists. Overwriting..."
-        rm -rf "$backup_dir" || { print_error "Failed to remove old backup."; exit 1; }
-    fi
-    mkdir -p "$backup_dir" || { print_error "Failed to create backup directory."; exit 1; }
-
-    for dep in "${dependencies[@]}" hypr; do
-        if [ -d "$config_dir/$dep" ]; then
-            cp -r "$config_dir/$dep" "$backup_dir/" || { print_error "Failed to backup $dep config."; exit 1; }
-            print_success "$dep configuration backed up."
-        fi
-    done
-
-    if [ -d "$local_share_dir" ]; then
-        cp -r "$local_share_dir" "$backup_dir/local_share" || { print_error "Failed to backup local/share."; exit 1; }
-        print_success "local/share backed up."
-    fi
-}
-
-# Check if dependencies are installed
+# Function to check dependencies
 check_dependencies() {
-    print_title "Dependency Check"
-    local missing_deps=()
+  local deps=("git" "hyprland" "alacritty" "waybar" "rofi" "wlogout" "fastfetch" "kitty" "nvim" "cava" "btop" "swayosd" "swaync" "dunst")
+  local missing=()
 
-    for dep in "${dependencies[@]}"; do
-        if ! command -v "$dep" &>/dev/null; then
-            missing_deps+=("$dep")
-        else
-            print_success "$dep is installed."
-        fi
+  echo -e "${bold}${mocha_blue}Checking dependencies...${reset}"
+  for dep in "${deps[@]}"; do
+    if ! command -v "$dep" &>/dev/null; then
+      missing+=("$dep")
+    fi
+  done
+
+  if [ ${#missing[@]} -eq 0 ]; then
+    echo -e "${mocha_green}All dependencies are installed!${reset}"
+  else
+    echo -e "${mocha_red}Missing dependencies:${reset}"
+    for dep in "${missing[@]}"; do
+      echo -e "${mocha_overlay0} - $dep${reset}"
     done
+    echo -e "${mocha_yellow}Please install the missing dependencies and try again.${reset}"
+    return 1
+  fi
+  read -p "Press Enter to continue..."
+  return 0
+}
 
-    if [ ${#missing_deps[@]} -ne 0 ]; then
-        print_warning "Missing dependencies: ${missing_deps[*]}"
+# Function to install .local/share contents (wallpapers and Catppuccin themes)
+install_local() {
+  echo -e "${bold}${mocha_overlay2}Installing .local/share contents...${reset}"
+  if [ -d "$local_src" ]; then
+    mkdir -p "$local_dest"
+    # Copy wallpapers and Catppuccin themes
+    for item in wallpapers catppuccin; do
+      if [ -d "$local_src/$item" ]; then
+        cp -r "$local_src/$item" "$local_dest/"
+        echo -e "${mocha_green}Installed $item to $local_dest/$item${reset}"
+      else
+        echo -e "${mocha_red}Source directory $local_src/$item not found${reset}"
+      fi
+    done
+  else
+    echo -e "${mocha_red}Source directory $local_src not found${reset}"
+    return 1
+  fi
+  return 0
+}
+
+# Function to create backup
+create_backup() {
+  local backup_target="$backup_dir/$(date +%F_%H-%M-%S)"
+  
+  echo -e "${bold}${mocha_green}Creating backup at $backup_target...${reset}"
+  mkdir -p "$backup_target"
+  
+  # Backup .config components
+  for component in "${components[@]}"; do
+    if [ -d "$config_dest/$component" ]; then
+      cp -r "$config_dest/$component" "$backup_target/"
+      echo -e "${mocha_overlay2}Backed up $component${reset}"
+    fi
+  done
+  return 0
+}
+
+# Function to perform full installation
+install_setup() {
+  echo -e "${bold}${mocha_lavender}Starting full installation...${reset}"
+  
+  # Check dependencies first
+  if ! check_dependencies; then
+    echo -e "${mocha_red}Installation aborted due to missing dependencies.${reset}"
+    read -p "Press Enter to continue..."
+    return 1
+  fi
+
+  # Clone repository if not exists
+  if [ ! -d "$repo_dir" ]; then
+    echo -e "${mocha_overlay2}Cloning repository...${reset}"
+    if ! git clone "$repo_url" "$repo_dir" 2>/dev/null; then
+      echo -e "${mocha_red}Failed to clone repository. Check your internet connection or permissions.${reset}"
+      read -p "Press Enter to continue..."
+      return 1
+    fi
+  fi
+  
+  # Create backup
+  if ! create_backup; then
+    echo -e "${mocha_red}Backup failed. Aborting installation to prevent data loss.${reset}"
+    read -p "Press Enter to continue..."
+    return 1
+  fi
+  
+  # Copy configurations
+  echo -e "${mocha_overlay2}Installing configurations...${reset}"
+  for component in "${components[@]}"; do
+    if [ -d "$config_src/$component" ]; then
+      mkdir -p "$config_dest"
+      if cp -r "$config_src/$component" "$config_dest/" 2>/dev/null; then
+        echo -e "${mocha_green}Installed $component${reset}"
+      else
+        echo -e "${mocha_red}Failed to install $component${reset}"
+        rescue
         return 1
+      fi
     fi
-    print_success "All dependencies are installed."
-    return 0
+  done
+
+  # Install .local/share contents
+  if ! install_local; then
+    echo -e "${mocha_red}Failed to install .local/share contents${reset}"
+    rescue
+    return 1
+  fi
+
+  echo -e "${bold}${mocha_green}Installation complete!${reset}"
+  read -p "Press Enter to continue..."
+  return 0
 }
 
-# Install dependencies using package manager
-install_dependencies() {
-    print_title "Installing Dependencies"
-    local pkg_manager=""
-
-    if command -v pacman &>/dev/null; then
-        pkg_manager="pacman"
-    elif command -v apt &>/dev/null; then
-        pkg_manager="apt"
-    else
-        print_error "No supported package manager found (pacman or apt)."
-        exit 1
-    fi
-
-    for dep in "${dependencies[@]}"; do
-        if ! command -v "$dep" &>/dev/null; then
-            print_info "Installing $dep..."
-            if [ "$pkg_manager" = "pacman" ]; then
-                sudo pacman -S --noconfirm "$dep" || print_error "Failed to install $dep."
-            elif [ "$pkg_manager" = "apt" ]; then
-                sudo apt install -y "$dep" || print_error "Failed to install $dep."
-            fi
-        fi
-    done
-}
-
-# Install configurations
-install_configurations() {
-    create_backup
-    print_title "Installing Configurations"
-
-    for dep in "${dependencies[@]}" hypr; do
-        if [ -d "$repo_dir/.config/$dep" ]; then
-            mkdir -p "$config_dir/$dep" || { print_error "Failed to create directory $config_dir/$dep."; exit 1; }
-            cp -r "$repo_dir/.config/$dep/"* "$config_dir/$dep/" || { print_error "Failed to copy $dep config."; exit 1; }
-            print_success "$dep configuration installed."
-        fi
-    done
-
-    if [ -d "$repo_dir/.local/share" ]; then
-        mkdir -p "$local_share_dir" || { print_error "Failed to create directory $local_share_dir."; exit 1; }
-        cp -r "$repo_dir/.local/share/"* "$local_share_dir/" || { print_error "Failed to copy local/share files."; exit 1; }
-        print_success "local/share files installed."
-    fi
-
-    print_success "Installation completed successfully."
-}
-
-# Manual installation menu
-manual_installation() {
-    while true; do
-        clear
-        print_title "Manual Installation"
-        printf "${mocha_text}Select components to install:${reset}\n"
-        for i in "${!dependencies[@]}"; do
-            printf "${mocha_lavender}%2d) %s${reset}\n" "$((i+1))" "${dependencies[$i]}"
-        done
-        printf "${mocha_lavender}%2d) Hyprland configuration${reset}\n" "$(( ${#dependencies[@]} + 1 ))"
-        printf "${mocha_pink}%2d) Back${reset}\n" "$(( ${#dependencies[@]} + 2 ))"
-        printf "${mocha_rosewater}Enter choice: ${reset}"
-        read -r choice
-
-        if [ "$choice" -eq "$(( ${#dependencies[@]} + 2 ))" ]; then
-            break
-        elif [ "$choice" -ge 1 ] && [ "$choice" -le "${#dependencies[@]}" ]; then
-            dep=${dependencies[$((choice-1))]}
-            print_info "Installing $dep configuration..."
-            if [ -d "$repo_dir/.config/$dep" ]; then
-                mkdir -p "$backup_dir/$dep" || { print_error "Failed to create backup directory."; exit 1; }
-                [ -d "$config_dir/$dep" ] && cp -r "$config_dir/$dep" "$backup_dir/" || true
-                mkdir -p "$config_dir/$dep" || { print_error "Failed to create directory $config_dir/$dep."; exit 1; }
-                cp -r "$repo_dir/.config/$dep/"* "$config_dir/$dep/" || { print_error "Failed to install $dep config."; exit 1; }
-                print_success "$dep configuration installed."
-            else
-                print_error "Configuration for $dep not found in repository."
-            fi
-        elif [ "$choice" -eq "$(( ${#dependencies[@]} + 1 ))" ]; then
-            print_info "Installing Hyprland configuration..."
-            mkdir -p "$backup_dir/hypr" || { print_error "Failed to create backup directory."; exit 1; }
-            [ -d "$config_dir/hypr" ] && cp -r "$config_dir/hypr" "$backup_dir/" || true
-            mkdir -p "$config_dir/hypr" || { print_error "Failed to create directory $config_dir/hypr."; exit 1; }
-            cp -r "$repo_dir/.config/hypr/"* "$config_dir/hypr/" || { print_error "Failed to install Hyprland config."; exit 1; }
-            print_success "Hyprland configuration installed."
-        else
-            print_error "Invalid choice."
-        fi
-        read -p "${mocha_rosewater}Press Enter to continue...${reset}"
-    done
-}
-
-# Selective backup and restore
-selective_backup_restore() {
-    while true; do
-        clear
-        print_title "Selective Backup/Restore"
-        printf "${mocha_text}1) Create selective backup${reset}\n"
-        printf "${mocha_text}2) Restore selective backup${reset}\n"
-        printf "${mocha_pink}3) Back${reset}\n"
-        printf "${mocha_rosewater}Enter choice: ${reset}"
-        read -r choice
-
-        case $choice in
-            1)
-                clear
-                print_title "Selective Backup"
-                printf "${mocha_text}Select configurations to backup:${reset}\n"
-                for i in "${!dependencies[@]}"; do
-                    printf "${mocha_lavender}%2d) %s${reset}\n" "$((i+1))" "${dependencies[$i]}"
-                done
-                printf "${mocha_lavender}%2d) Hyprland configuration${reset}\n" "$(( ${#dependencies[@]} + 1 ))"
-                printf "${mocha_rosewater}Enter choices (space-separated): ${reset}"
-                read -r -a selections
-
-                mkdir -p "$backup_dir" || { print_error "Failed to create backup directory."; exit 1; }
-                for sel in "${selections[@]}"; do
-                    if [ "$sel" -ge 1 ] && [ "$sel" -le "${#dependencies[@]}" ]; then
-                        dep=${dependencies[$((sel-1))]}
-                        if [ -d "$config_dir/$dep" ]; then
-                            cp -r "$config_dir/$dep" "$backup_dir/" || print_error "Failed to backup $dep."
-                            print_success "$dep configuration backed up."
-                        fi
-                    elif [ "$sel" -eq "$(( ${#dependencies[@]} + 1 ))" ]; then
-                        if [ -d "$config_dir/hypr" ]; then
-                            cp -r "$config_dir/hypr" "$backup_dir/" || print_error "Failed to backup Hyprland config."
-                            print_success "Hyprland configuration backed up."
-                        fi
-                    else
-                        print_error "Invalid selection: $sel"
-                    fi
-                done
-                ;;
-            2)
-                if [ ! -d "$backup_dir" ]; then
-                    print_error "No backup directory found at $backup_dir."
-                    read -p "${mocha_rosewater}Press Enter to continue...${reset}"
-                    continue
-                fi
-                clear
-                print_title "Selective Restore"
-                printf "${mocha_text}Select configurations to restore:${reset}\n"
-                local backups=($(ls "$backup_dir"))
-                for i in "${!backups[@]}"; do
-                    printf "${mocha_lavender}%2d) %s${reset}\n" "$((i+1))" "${backups[$i]}"
-                done
-                printf "${mocha_rosewater}Enter choices (space-separated): ${reset}"
-                read -r -a selections
-
-                for sel in "${selections[@]}"; do
-                    if [ "$sel" -ge 1 ] && [ "$sel" -le "${#backups[@]}" ]; then
-                        item=${backups[$((sel-1))]}
-                        mkdir -p "$config_dir/$item" || { print_error "Failed to create directory $config_dir/$item."; exit 1; }
-                        cp -r "$backup_dir/$item/"* "$config_dir/$item/" || print_error "Failed to restore $item."
-                        print_success "$item configuration restored."
-                    else
-                        print_error "Invalid selection: $sel"
-                    fi
-                done
-                ;;
-            3)
-                break
-                ;;
-            *)
-                print_error "Invalid choice."
-                ;;
-        esac
-        read -p "${mocha_rosewater}Press Enter to continue...${reset}"
-    done
-}
-
-# Uninstall configurations
-uninstall_configurations() {
-    print_title "Uninstalling Configurations"
-    if [ ! -d "$backup_dir" ]; then
-        print_error "No backup directory found at $backup_dir."
-        return 1
-    fi
-
-    print_info "Restoring configurations from backup..."
-    for dep in "${dependencies[@]}" hypr; do
-        if [ -d "$config_dir/$dep" ]; then
-            rm -rf "$config_dir/$dep" || { print_error "Failed to remove $dep config."; exit 1; }
-            if [ -d "$backup_dir/$dep" ]; then
-                cp -r "$backup_dir/$dep" "$config_dir/" || print_error "Failed to restore $dep config."
-                print_success "$dep configuration restored."
-            fi
-        fi
-    done
-
-    if [ -d "$backup_dir/local_share" ]; then
-        rm -rf "$local_share_dir" || { print_error "Failed to remove local/share."; exit 1; }
-        cp -r "$backup_dir/local_share" "$local_share_dir" || print_error "Failed to restore local/share."
-        print_success "local/share restored."
-    fi
-
-    print_success "Uninstallation completed. Original configurations restored."
-}
-
-# Display help
-display_help() {
+# Function to display manual installation menu
+manual_install_menu() {
+  while true; do
     clear
-    print_title "Hyprdots Installation Script Help"
-    printf "${mocha_text}Welcome to the Hyprdots installation script!${reset}\n"
-    printf "${mocha_subtext1}This script simplifies the installation and management of zephardev/hyprdots configurations.${reset}\n\n"
-    printf "${mocha_lavender}Available Options:${reset}\n"
-    printf "${mocha_blue}  1) Install configuration:${reset} Installs all configurations to ~/.config and ~/.local/share, with a backup at ~/.hyprdots.bak.\n"
-    printf "${mocha_blue}  2) Check dependencies:${reset} Verifies if required dependencies (alacritty, waybar, etc.) are installed.\n"
-    printf "${mocha_blue}  3) Manual installation:${reset} Install individual component configurations selectively.\n"
-    printf "${mocha_blue}  4) Selective backup/restore:${reset} Backup or restore specific configurations.\n"
-    printf "${mocha_blue}  5) Uninstall:${reset} Removes installed configurations and restores from backup.\n"
-    printf "${mocha_blue}  6) Help:${reset} Displays this help message.\n"
-    printf "${mocha_blue}  7) Exit:${reset} Exits the script.\n\n"
-    printf "${mocha_rosewater}Notes:${reset}\n"
-    printf "${mocha_subtext0}- Ensure git is installed and you have appropriate permissions.${reset}\n"
-    printf "${mocha_subtext0}- Backups are stored in ~/.hyprdots.bak for safety.${reset}\n"
-    printf "${mocha_subtext0}- Use the selective backup/restore option to manage specific configurations.${reset}\n"
-    read -p "${mocha_rosewater}Press Enter to return to the main menu...${reset}"
-}
-
-# Main menu
-main_menu() {
-    check_root
-    check_git
-    clone_repository
-
-    while true; do
-        clear
-        printf "${mocha_mauve}┌──────────────────────────────┐${reset}\n"
-        printf "${mocha_mauve}│ Hyprdots Installation Script │${reset}\n"
-        printf "${mocha_mauve}└──────────────────────────────┘${reset}\n"
-        printf "${mocha_text}  1) Install configuration${reset}\n"
-        printf "${mocha_text}  2) Check dependencies${reset}\n"
-        printf "${mocha_text}  3) Manual installation${reset}\n"
-        printf "${mocha_text}  4) Selective backup/restore${reset}\n"
-        printf "${mocha_text}  5) Uninstall${reset}\n"
-        printf "${mocha_text}  6) Help${reset}\n"
-        printf "${mocha_pink}  7) Exit${reset}\n"
-        printf "${mocha_rosewater}Enter choice: ${reset}"
-        read -r choice
-
-        case $choice in
-            1)
-                install_configurations
-                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
-                ;;
-            2)
-                check_dependencies || install_dependencies
-                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
-                ;;
-            3)
-                manual_installation
-                ;;
-            4)
-                selective_backup_restore
-                ;;
-            5)
-                uninstall_configurations
-                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
-                ;;
-            6)
-                display_help
-                ;;
-            7)
-                print_success "Thank you for using the Hyprdots installer. Goodbye!"
-                exit 0
-                ;;
-            *)
-                print_error "Invalid choice. Please select 1-7."
-                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
-                ;;
-        esac
+    display_header
+    echo -e "${bold}${mocha_peach}Manual Installation - Select Components${reset}"
+    for i in "${!components[@]}"; do
+      echo -e "${bold}${mocha_blue}$((i+1))) ${components[i]}${reset}"
     done
+    echo -e "${bold}${mocha_pink}$(( ${#components[@]} + 1 ))) Back${reset}\n"
+    echo -e "${mocha_subtext1}Enter component number (1-$(( ${#components[@]} + 1 ))): ${reset}"
+    
+    read choice
+    if [ "$choice" -eq $(( ${#components[@]} + 1 )) ]; then
+      break
+    elif [ "$choice" -ge 1 ] && [ "$choice" -le ${#components[@]} ]; then
+      component=${components[$((choice-1))]}
+      echo -e "${mocha_overlay2}Installing $component...${reset}"
+      if [ -d "$config_src/$component" ]; then
+        # Create backup for this specific component
+        backup_target="$backup_dir/$(date +%F_%H-%M-%S)/$component"
+        if [ -d "$config_dest/$component" ]; then
+          mkdir -p "$(dirname "$backup_target")"
+          cp -r "$config_dest/$component" "$backup_target"
+          echo -e "${mocha_overlay2}Backed up $component${reset}"
+        fi
+        mkdir -p "$config_dest"
+        if cp -r "$config_src/$component" "$config_dest/" 2>/dev/null; then
+          echo -e "${mocha_green}Installed $component${reset}"
+        else
+          echo -e "${mocha_red}Failed to install $component${reset}"
+          rescue
+        fi
+      else
+        echo -e "${mocha_red}Component $component not found in repository${reset}"
+      fi
+      read -p "Press Enter to continue..."
+    else
+      echo -e "${mocha_red}Invalid choice${reset}"
+      read -p "Press Enter to continue..."
+    fi
+  done
 }
 
-# Trap errors and provide rescue option
-trap 'print_error "An error occurred. Restore from backup? (y/n)"; read -r ans; if [[ $ans == "y" || $ans == "Y" ]]; then uninstall_configurations; fi; exit 1' ERR
+# Function to perform selective backup
+backup_selective() {
+  while true; do
+    clear
+    display_header
+    echo -e "${bold}${mocha_green}Selective Backup - Select Components${reset}"
+    for i in "${!components[@]}"; do
+      echo -e "${bold}${mocha_blue}$((i+1))) ${components[i]}${reset}"
+    done
+    echo -e "${bold}${mocha_pink}$(( ${#components[@]} + 1 ))) Back${reset}\n"
+    echo -e "${mocha_subtext1}Enter component number (1-$(( ${#components[@]} + 1 ))): ${reset}"
+    
+    read choice
+    if [ "$choice" -eq $(( ${#components[@]} + 1 )) ]; then
+      break
+    elif [ "$choice" -ge 1 ] && [ "$choice" -le ${#components[@]} ]; then
+      component=${components[$((choice-1))]}
+      backup_target="$backup_dir/$(date +%F_%H-%M-%S)/$component"
+      if [ -d "$config_dest/$component" ]; then
+        mkdir -p "$(dirname "$backup_target")"
+        if cp -r "$config_dest/$component" "$backup_target" 2>/dev/null; then
+          echo -e "${mocha_green}Backed up $component to $backup_target${reset}"
+        else
+          echo -e "${mocha_red}Failed to backup $component${reset}"
+        fi
+      else
+        echo -e "${mocha_red}Component $component not found in $config_dest${reset}"
+      fi
+      read -p "Press Enter to continue..."
+    else
+      echo -e "${mocha_red}Invalid choice${reset}"
+      read -p "Press Enter to continue..."
+    fi
+  done
+}
 
-# Start the script
-main_menu
+# Function to uninstall
+uninstall() {
+  echo -e "${bold}${mocha_red}Starting uninstallation...${reset}"
+  
+  # Find latest backup
+  latest_backup=$(ls -td "$backup_dir"/* 2>/dev/null | head -n 1)
+  if [ -z "$latest_backup" ]; then
+    echo -e "${mocha_yellow}No backup found. Removing configurations without restoring.${reset}"
+  else
+    echo -e "${mocha_overlay2}Restoring from $latest_backup...${reset}"
+    for component in "${components[@]}"; do
+      if [ -d "$latest_backup/$component" ]; then
+        if cp -r "$latest_backup/$component" "$config_dest/" 2>/dev/null; then
+          echo -e "${mocha_green}Restored $component${reset}"
+        else
+          echo -e "${mocha_red}Failed to restore $component${reset}"
+        fi
+      fi
+    done
+  fi
+  
+  # Remove configurations
+  for component in "${components[@]}"; do
+    if [ -d "$config_dest/$component" ]; then
+      if rm -rf "$config_dest/$component" 2>/dev/null; then
+        echo -e "${mocha_overlay2}Removed $component${reset}"
+      else
+        echo -e "${mocha_red}Failed to remove $component${reset}"
+      fi
+    fi
+  done
+  
+  # Remove .local/share contents (wallpapers and Catppuccin themes)
+  for item in wallpapers catppuccin; do
+    if [ -d "$local_dest/$item" ]; then
+      if rm -rf "$local_dest/$item" 2>/dev/null; then
+        echo -e "${mocha_overlay2}Removed $item${reset}"
+      else
+        echo -e "${mocha_red}Failed to remove $item${reset}"
+      fi
+    fi
+  done
+  
+  echo -e "${bold}${mocha_green}Uninstallation complete!${reset}"
+  read -p "Press Enter to continue..."
+}
+
+# Function to display help
+display_help() {
+  clear
+  display_header
+  echo -e "${bold}${mocha_teal}Help - Hyprdots Zephardev Installer${reset}"
+  echo -e "${mocha_text}This script helps you install and manage Hyprdots configurations."
+  echo -e "Options:"
+  echo -e "${mocha_lavender}Install Setup:${reset} Performs a full installation with backup"
+  echo -e "${mocha_blue}Check Dependencies:${reset} Verifies required packages"
+  echo -e "${mocha_peach}Install Manual:${reset} Allows selective component installation"
+  echo -e "${mocha_green}Backup Selective:${reset} Backs up specific configurations"
+  echo -e "${mocha_red}Uninstall:${reset} Removes configurations and restores backup"
+  echo -e "${mocha_flamingo}Rescue:${reset} Restores configurations from latest backup"
+  echo -e "${mocha_pink}Exit:${reset} Exits the installer\n"
+  echo -e "${mocha_yellow}Note: Ensure you have git and required dependencies installed."
+  echo -e "Repository: $repo_url${reset}"
+  echo -e "${mocha_yellow}Configuration source: $config_src${reset}"
+  echo -e "${mocha_yellow}Local share source: $local_src (wallpapers and Catppuccin themes)${reset}"
+  read -p "Press Enter to continue..."
+}
+
+# Function to perform rescue
+rescue() {
+  echo -e "${bold}${mocha_flamingo}Starting rescue operation...${reset}"
+  
+  latest_backup=$(ls -td "$backup_dir"/* 2>/dev/null | head -n 1)
+  if [ -z "$latest_backup" ]; then
+    echo -e "${mocha_red}No backup found. Cannot perform rescue.${reset}"
+  else
+    echo -e "${mocha_overlay2}Restoring from $latest_backup...${reset}"
+    for component in "${components[@]}"; do
+      if [ -d "$latest_backup/$component" ]; then
+        if cp -r "$latest_backup/$component" "$config_dest/" 2>/dev/null; then
+          echo -e "${mocha_green}Restored $component${reset}"
+        else
+          echo -e "${mocha_red}Failed to restore $component${reset}"
+        fi
+      fi
+    done
+    echo -e "${bold}${mocha_green}Rescue complete!${reset}"
+  fi
+  read -p "Press Enter to continue..."
+}
+
+# Check for root privileges
+if [ "$EUID" -eq 0 ]; then
+  echo -e "${mocha_red}This script should not be run as root. Please run as a regular user.${reset}"
+  exit 1
+fi
+
+# Main loop
+while true; do
+  clear
+  display_header
+  display_menu
+  read choice
+  
+  case $choice in
+    1)
+      install_setup
+      ;;
+    2)
+      check_dependencies
+      ;;
+    3)
+      manual_install_menu
+      ;;
+    4)
+      backup_selective
+      ;;
+    5)
+      uninstall
+      ;;
+    6)
+      display_help
+      ;;
+    7)
+      rescue
+      ;;
+    8)
+      echo -e "${bold}${mocha_pink}Exiting installer...${reset}"
+      exit 0
+      ;;
+    *)
+      echo -e "${mocha_red}Invalid choice. Please select 1-8.${reset}"
+      read -p "Press Enter to continue..."
+      ;;
+  esac
+done
