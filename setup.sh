@@ -1,76 +1,84 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-# catppuccin mocha color palette
-color_base="1E1E2E"  # base
-color_text="CDD6F4"  # text
-color_rosewater="F5E0DC"  # rosewater
-color_flamingo="F2CDCD"  # flamingo
-color_pink="F5C2E7"    # pink
-color_mauve="CBA6F7"   # mauve
-color_red="F38BA8"     # red
-color_maroon="EBA0AC"  # maroon
-color_peach="FAB387"   # peach
-color_yellow="F9E2AF"  # yellow
-color_green="A6E3A1"   # green
-color_teal="94E2D5"    # teal
-color_sky="89DCEB"     # sky
-color_sapphire="74C7EC" # sapphire
-color_blue="89B4FA"    # blue
-color_lavender="B4BEFE" # lavender
+# Catppuccin Mocha color palette
+mocha_rosewater="\e[38;2;245;224;220m"
+mocha_flamingo="\e[38;2;242;205;205m"
+mocha_pink="\e[38;2;245;194;231m"
+mocha_mauve="\e[38;2;203;166;247m"
+mocha_red="\e[38;2;243;139;168m"
+mocha_peach="\e[38;2;250;179;135m"
+mocha_yellow="\e[38;2;249;226;175m"
+mocha_green="\e[38;2;166;227;161m"
+mocha_teal="\e[38;2;148;226;213m"
+mocha_blue="\e[38;2;137;180;250m"
+mocha_lavender="\e[38;2;180;190;254m"
+mocha_text="\e[38;2;205;214;244m"
+mocha_subtext1="\e[38;2;186;200;222m"
+mocha_subtext0="\e[38;2;147;153;178m"
+mocha_overlay2="\e[38;2;147;153;178m"
+mocha_overlay1="\e[38;2;127;132;156m"
+mocha_overlay0="\e[38;2;108;112;134m"
+mocha_surface2="\e[38;2;88;91;112m"
+mocha_surface1="\e[38;2;69;71;90m"
+mocha_surface0="\e[38;2;49;50;68m"
+mocha_base="\e[38;2;30;30;46m"
+mocha_mantle="\e[38;2;24;24;37m"
+mocha_crust="\e[38;2;17;17;27m"
+reset="\e[0m"
 
-# reset color
-reset="\033[0m"
+# Formatted print functions with enhanced styling
+print_info() { printf "${mocha_teal}[*] %s${reset}\n" "$1"; }
+print_success() { printf "${mocha_green}[+] %s${reset}\n" "$1"; }
+print_error() { printf "${mocha_red}[-] %s${reset}\n" "$1"; }
+print_warning() { printf "${mocha_yellow}[!] %s${reset}\n" "$1"; }
+print_title() { printf "${mocha_mauve}== %s ==${reset}\n" "$1"; }
 
-# formatted print functions
-print_info() { printf "\033[38;2;${color_text}m[*] %s${reset}\n" "$1"; }
-print_success() { printf "\033[38;2;${color_green}m[+] %s${reset}\n" "$1"; }
-print_error() { printf "\033[38;2;${color_red}m[-] %s${reset}\n" "$1"; }
-print_warning() { printf "\033[38;2;${color_yellow}m[!] %s${reset}\n" "$1"; }
-
-# dependencies to check/install
+# Dependencies to check/install
 dependencies=("alacritty" "waybar" "rofi" "wlogout" "fastfetch" "kitty" "nvim" "cava" "btop" "swayosd" "swaync" "dunst")
 
-# paths
+# Paths
 config_dir="$HOME/.config"
 backup_dir="$HOME/.hyprdots.bak"
 local_share_dir="$HOME/.local/share"
 repo_dir="$HOME/hyprdots"
 
-# check if running as root
+# Check if running as root
 check_root() {
     if [ "$(id -u)" -eq 0 ]; then
-        print_error "This script should not be run as root."
+        print_error "This script must not be run as root."
         exit 1
     fi
 }
 
-# check if git is installed
+# Check if git is installed
 check_git() {
     if ! command -v git &>/dev/null; then
-        print_error "Git is not installed. Please install git first."
+        print_error "Git is required but not installed. Please install git."
         exit 1
     fi
 }
 
-# clone repository if not present
+# Clone repository if not present
 clone_repository() {
+    print_title "Repository Setup"
     if [ ! -d "$repo_dir" ]; then
         print_info "Cloning zephardev/hyprdots repository..."
-        if ! git clone https://github.com/ZepharDev/hyprdots.git "$repo_dir"; then
+        if ! git clone https://github.com/zephardev/hyprdots.git "$repo_dir"; then
             print_error "Failed to clone repository."
             exit 1
         fi
-        print_success "Repository cloned successfully."
+        print_success "Repository cloned to $repo_dir."
     else
         print_info "Repository already exists at $repo_dir."
     fi
 }
 
-# create backup of existing configurations
+# Create backup of existing configurations
 create_backup() {
-    print_info "Creating backup of existing configurations..."
+    print_title "Creating Backup"
+    print_info "Backing up existing configurations to $backup_dir..."
     if [ -d "$backup_dir" ]; then
-        print_warning "Backup directory already exists. Overwriting..."
+        print_warning "Backup directory exists. Overwriting..."
         rm -rf "$backup_dir" || { print_error "Failed to remove old backup."; exit 1; }
     fi
     mkdir -p "$backup_dir" || { print_error "Failed to create backup directory."; exit 1; }
@@ -78,18 +86,19 @@ create_backup() {
     for dep in "${dependencies[@]}" hypr; do
         if [ -d "$config_dir/$dep" ]; then
             cp -r "$config_dir/$dep" "$backup_dir/" || { print_error "Failed to backup $dep config."; exit 1; }
+            print_success "$dep configuration backed up."
         fi
     done
 
     if [ -d "$local_share_dir" ]; then
         cp -r "$local_share_dir" "$backup_dir/local_share" || { print_error "Failed to backup local/share."; exit 1; }
+        print_success "local/share backed up."
     fi
-    print_success "Backup created at $backup_dir."
 }
 
-# check if dependencies are installed
+# Check if dependencies are installed
 check_dependencies() {
-    print_info "Checking dependencies..."
+    print_title "Dependency Check"
     local missing_deps=()
 
     for dep in "${dependencies[@]}"; do
@@ -108,9 +117,9 @@ check_dependencies() {
     return 0
 }
 
-# install dependencies using package manager
+# Install dependencies using package manager
 install_dependencies() {
-    print_info "Attempting to install missing dependencies..."
+    print_title "Installing Dependencies"
     local pkg_manager=""
 
     if command -v pacman &>/dev/null; then
@@ -134,12 +143,11 @@ install_dependencies() {
     done
 }
 
-# install configurations
+# Install configurations
 install_configurations() {
     create_backup
-    print_info "Installing configurations..."
+    print_title "Installing Configurations"
 
-    # copy config files
     for dep in "${dependencies[@]}" hypr; do
         if [ -d "$repo_dir/.config/$dep" ]; then
             mkdir -p "$config_dir/$dep" || { print_error "Failed to create directory $config_dir/$dep."; exit 1; }
@@ -148,28 +156,27 @@ install_configurations() {
         fi
     done
 
-    # copy local/share files
     if [ -d "$repo_dir/.local/share" ]; then
         mkdir -p "$local_share_dir" || { print_error "Failed to create directory $local_share_dir."; exit 1; }
         cp -r "$repo_dir/.local/share/"* "$local_share_dir/" || { print_error "Failed to copy local/share files."; exit 1; }
         print_success "local/share files installed."
     fi
 
-    print_success "All configurations installed successfully."
+    print_success "Installation completed successfully."
 }
 
-# manual installation menu
+# Manual installation menu
 manual_installation() {
     while true; do
         clear
-        printf "\033[38;2;${color_mauve}m=== Manual Installation Menu ===${reset}\n"
-        printf "\033[38;2;${color_text}mSelect components to install:${reset}\n"
+        print_title "Manual Installation"
+        printf "${mocha_text}Select components to install:${reset}\n"
         for i in "${!dependencies[@]}"; do
-            printf "\033[38;2;${color_blue}m%d) %s${reset}\n" "$((i+1))" "${dependencies[$i]}"
+            printf "${mocha_lavender}%2d) %s${reset}\n" "$((i+1))" "${dependencies[$i]}"
         done
-        printf "\033[38;2;${color_blue}m%d) Hyprland configuration${reset}\n" "$(( ${#dependencies[@]} + 1 ))"
-        printf "\033[38;2;${color_pink}m%d) Back${reset}\n" "$(( ${#dependencies[@]} + 2 ))"
-        printf "\033[38;2;${color_rosewater}mEnter choice (1-%d): ${reset}" "$(( ${#dependencies[@]} + 2 ))"
+        printf "${mocha_lavender}%2d) Hyprland configuration${reset}\n" "$(( ${#dependencies[@]} + 1 ))"
+        printf "${mocha_pink}%2d) Back${reset}\n" "$(( ${#dependencies[@]} + 2 ))"
+        printf "${mocha_rosewater}Enter choice: ${reset}"
         read -r choice
 
         if [ "$choice" -eq "$(( ${#dependencies[@]} + 2 ))" ]; then
@@ -196,30 +203,31 @@ manual_installation() {
         else
             print_error "Invalid choice."
         fi
-        read -p "Press Enter to continue..."
+        read -p "${mocha_rosewater}Press Enter to continue...${reset}"
     done
 }
 
-# selective backup and restore
+# Selective backup and restore
 selective_backup_restore() {
     while true; do
         clear
-        printf "\033[38;2;${color_mauve}m=== Selective Backup/Restore Menu ===${reset}\n"
-        printf "\033[38;2;${color_text}m1) Create selective backup${reset}\n"
-        printf "\033[38;2;${color_text}m2) Restore selective backup${reset}\n"
-        printf "\033[38;2;${color_pink}m3) Back${reset}\n"
-        printf "\033[38;2;${color_rosewater}mEnter choice (1-3): ${reset}"
+        print_title "Selective Backup/Restore"
+        printf "${mocha_text}1) Create selective backup${reset}\n"
+        printf "${mocha_text}2) Restore selective backup${reset}\n"
+        printf "${mocha_pink}3) Back${reset}\n"
+        printf "${mocha_rosewater}Enter choice: ${reset}"
         read -r choice
 
         case $choice in
             1)
                 clear
-                printf "\033[38;2;${color_mauve}m=== Select configurations to backup ===${reset}\n"
+                print_title "Selective Backup"
+                printf "${mocha_text}Select configurations to backup:${reset}\n"
                 for i in "${!dependencies[@]}"; do
-                    printf "\033[38;2;${color_blue}m%d) %s${reset}\n" "$((i+1))" "${dependencies[$i]}"
+                    printf "${mocha_lavender}%2d) %s${reset}\n" "$((i+1))" "${dependencies[$i]}"
                 done
-                printf "\033[38;2;${color_blue}m%d) Hyprland configuration${reset}\n" "$(( ${#dependencies[@]} + 1 ))"
-                printf "\033[38;2;${color_rosewater}mEnter choices (space-separated, e.g., 1 2 3): ${reset}"
+                printf "${mocha_lavender}%2d) Hyprland configuration${reset}\n" "$(( ${#dependencies[@]} + 1 ))"
+                printf "${mocha_rosewater}Enter choices (space-separated): ${reset}"
                 read -r -a selections
 
                 mkdir -p "$backup_dir" || { print_error "Failed to create backup directory."; exit 1; }
@@ -243,16 +251,17 @@ selective_backup_restore() {
             2)
                 if [ ! -d "$backup_dir" ]; then
                     print_error "No backup directory found at $backup_dir."
-                    read -p "Press Enter to continue..."
+                    read -p "${mocha_rosewater}Press Enter to continue...${reset}"
                     continue
                 fi
                 clear
-                printf "\033[38;2;${color_mauve}m=== Select configurations to restore ===${reset}\n"
+                print_title "Selective Restore"
+                printf "${mocha_text}Select configurations to restore:${reset}\n"
                 local backups=($(ls "$backup_dir"))
                 for i in "${!backups[@]}"; do
-                    printf "\033[38;2;${color_blue}m%d) %s${reset}\n" "$((i+1))" "${backups[$i]}"
+                    printf "${mocha_lavender}%2d) %s${reset}\n" "$((i+1))" "${backups[$i]}"
                 done
-                printf "\033[38;2;${color_rosewater}mEnter choices (space-separated, e.g., 1 2 3): ${reset}"
+                printf "${mocha_rosewater}Enter choices (space-separated): ${reset}"
                 read -r -a selections
 
                 for sel in "${selections[@]}"; do
@@ -273,18 +282,19 @@ selective_backup_restore() {
                 print_error "Invalid choice."
                 ;;
         esac
-        read -p "Press Enter to continue..."
+        read -p "${mocha_rosewater}Press Enter to continue...${reset}"
     done
 }
 
-# uninstall configurations
+# Uninstall configurations
 uninstall_configurations() {
+    print_title "Uninstalling Configurations"
     if [ ! -d "$backup_dir" ]; then
         print_error "No backup directory found at $backup_dir."
         return 1
     fi
 
-    print_info "Uninstalling configurations and restoring from backup..."
+    print_info "Restoring configurations from backup..."
     for dep in "${dependencies[@]}" hypr; do
         if [ -d "$config_dir/$dep" ]; then
             rm -rf "$config_dir/$dep" || { print_error "Failed to remove $dep config."; exit 1; }
@@ -301,27 +311,31 @@ uninstall_configurations() {
         print_success "local/share restored."
     fi
 
-    print_success "Uninstallation complete. All configurations restored from backup."
+    print_success "Uninstallation completed. Original configurations restored."
 }
 
-# display help
+# Display help
 display_help() {
     clear
-    printf "\033[38;2;${color_mauve}m=== Hyprdots Installation Script Help ===${reset}\n"
-    printf "\033[38;2;${color_text}mThis script manages the installation of zephardev/hyprdots configurations.${reset}\n\n"
-    printf "\033[38;2;${color_lavender}mOptions:${reset}\n"
-    printf "\033[38;2;${color_blue}m1) Install configuration:${reset} Installs all configurations from the repository to ~/.config and ~/.local/share, creating a backup at ~/.hyprdots.bak.\n"
-    printf "\033[38;2;${color_blue}m2) Check dependencies:${reset} Verifies if required dependencies (alacritty, waybar, rofi, etc.) are installed.\n"
-    printf "\033[38;2;${color_blue}m3) Manual installation:${reset} Allows selective installation of individual component configurations.\n"
-    printf "\033[38;2;${color_blue}m4) Selective backup/restore:${reset} Backs up or restores specific configurations.\n"
-    printf "\033[38;2;${color_blue}m5) Uninstall:${reset} Removes installed configurations and restores from backup.\n"
-    printf "\033[38;2;${color_blue}m6) Help:${reset} Displays this help message.\n"
-    printf "\033[38;2;${color_blue}m7) Exit:${reset} Exits the script.\n\n"
-    printf "\033[38;2;${color_rosewater}mNote:${reset} Ensure you have git installed and sufficient permissions. Backups are stored in ~/.hyprdots.bak.\n"
-    read -p "Press Enter to return to the main menu..."
+    print_title "Hyprdots Installation Script Help"
+    printf "${mocha_text}Welcome to the Hyprdots installation script!${reset}\n"
+    printf "${mocha_subtext1}This script simplifies the installation and management of zephardev/hyprdots configurations.${reset}\n\n"
+    printf "${mocha_lavender}Available Options:${reset}\n"
+    printf "${mocha_blue}  1) Install configuration:${reset} Installs all configurations to ~/.config and ~/.local/share, with a backup at ~/.hyprdots.bak.\n"
+    printf "${mocha_blue}  2) Check dependencies:${reset} Verifies if required dependencies (alacritty, waybar, etc.) are installed.\n"
+    printf "${mocha_blue}  3) Manual installation:${reset} Install individual component configurations selectively.\n"
+    printf "${mocha_blue}  4) Selective backup/restore:${reset} Backup or restore specific configurations.\n"
+    printf "${mocha_blue}  5) Uninstall:${reset} Removes installed configurations and restores from backup.\n"
+    printf "${mocha_blue}  6) Help:${reset} Displays this help message.\n"
+    printf "${mocha_blue}  7) Exit:${reset} Exits the script.\n\n"
+    printf "${mocha_rosewater}Notes:${reset}\n"
+    printf "${mocha_subtext0}- Ensure git is installed and you have appropriate permissions.${reset}\n"
+    printf "${mocha_subtext0}- Backups are stored in ~/.hyprdots.bak for safety.${reset}\n"
+    printf "${mocha_subtext0}- Use the selective backup/restore option to manage specific configurations.${reset}\n"
+    read -p "${mocha_rosewater}Press Enter to return to the main menu...${reset}"
 }
 
-# main menu
+# Main menu
 main_menu() {
     check_root
     check_git
@@ -329,27 +343,27 @@ main_menu() {
 
     while true; do
         clear
-        printf "\033[38;2;${color_mauve}m=====================================${reset}\n"
-        printf "\033[38;2;${color_mauve}m Hyprdots Installation Script${reset}\n"
-        printf "\033[38;2;${color_mauve}m=====================================${reset}\n"
-        printf "\033[38;2;${color_text}m1) Install configuration${reset}\n"
-        printf "\033[38;2;${color_text}m2) Check dependencies${reset}\n"
-        printf "\033[38;2;${color_text}m3) Manual installation${reset}\n"
-        printf "\033[38;2;${color_text}m4) Selective backup/restore${reset}\n"
-        printf "\033[38;2;${color_text}m5) Uninstall${reset}\n"
-        printf "\033[38;2;${color_text}m6) Help${reset}\n"
-        printf "\033[38;2;${color_pink}m7) Exit${reset}\n"
-        printf "\033[38;2;${color_rosewater}mEnter choice (1-7): ${reset}"
+        printf "${mocha_mauve}┌──────────────────────────────┐${reset}\n"
+        printf "${mocha_mauve}│ Hyprdots Installation Script │${reset}\n"
+        printf "${mocha_mauve}└──────────────────────────────┘${reset}\n"
+        printf "${mocha_text}  1) Install configuration${reset}\n"
+        printf "${mocha_text}  2) Check dependencies${reset}\n"
+        printf "${mocha_text}  3) Manual installation${reset}\n"
+        printf "${mocha_text}  4) Selective backup/restore${reset}\n"
+        printf "${mocha_text}  5) Uninstall${reset}\n"
+        printf "${mocha_text}  6) Help${reset}\n"
+        printf "${mocha_pink}  7) Exit${reset}\n"
+        printf "${mocha_rosewater}Enter choice: ${reset}"
         read -r choice
 
         case $choice in
             1)
                 install_configurations
-                read -p "Press Enter to continue..."
+                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
                 ;;
             2)
                 check_dependencies || install_dependencies
-                read -p "Press Enter to continue..."
+                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
                 ;;
             3)
                 manual_installation
@@ -359,25 +373,25 @@ main_menu() {
                 ;;
             5)
                 uninstall_configurations
-                read -p "Press Enter to continue..."
+                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
                 ;;
             6)
                 display_help
                 ;;
             7)
-                print_success "Exiting script."
+                print_success "Thank you for using the Hyprdots installer. Goodbye!"
                 exit 0
                 ;;
             *)
                 print_error "Invalid choice. Please select 1-7."
-                read -p "Press Enter to continue..."
+                read -p "${mocha_rosewater}Press Enter to continue...${reset}"
                 ;;
         esac
     done
 }
 
-# trap errors and provide rescue option
-trap 'print_error "An error occurred. Do you want to restore from backup? (y/n)"; read -r ans; if [[ $ans == "y" || $ans == "Y" ]]; then uninstall_configurations; fi; exit 1' ERR
+# Trap errors and provide rescue option
+trap 'print_error "An error occurred. Restore from backup? (y/n)"; read -r ans; if [[ $ans == "y" || $ans == "Y" ]]; then uninstall_configurations; fi; exit 1' ERR
 
-# start the script
+# Start the script
 main_menu
