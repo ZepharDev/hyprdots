@@ -155,7 +155,6 @@
   },
 
   "network": {
-//    "interface": "wlp2*", // (Optional) To force the use of this interface
     "interval": 3,
     "format-wifi": "  {bandwidthTotalBytes:>2}", //({essid} {signalStrength}%)
     "format-ethernet": "{ipaddr}/{cidr} ",
@@ -166,7 +165,6 @@
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
   },
   "pulseaudio": {
-    // "scroll-step": 1, // %, can be a float
     "format": "{icon} {volume}%", //{format_source}",
     "format-bluetooth": "{icon} {volume}% 󰂯", //{format_source}",
     "format-bluetooth-muted": "󰖁 {icon} 󰂯", //{format_source}",
@@ -193,10 +191,8 @@
     "format-icons": ["", "", ""],
   },
 
-  // This waybar build doesn't have support for cava.
-  // Need to edit the PKGBUILD and rebuild with -Dcava=enabled flag
   "cava": {
-    "cava_config": "/home/zephar/Documents/cava/config",
+    "cava_config": "~/.config/cava/config",
     "framerate": 30,
     "autosens": 0,
     "sensitivity": 7,
