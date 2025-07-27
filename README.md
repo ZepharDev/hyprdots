@@ -69,13 +69,17 @@ An automated script with multiple options to install the configurations. I don't
 
 the installation script is still under development, so i do not recommend using it. if you want to test the settings, use the script, but not the option that says full setup, choose the manual selection option, there you can select what to install, whether waybar, nvim, etc. if you want more information, you can contact me via reddit or mail, the "uninstall, rescue" options still do not work completely, please do not run the code without knowing what it does, if you find an error, you can notify me in the email. these are my personal settings, so everything is set to the most comfortable fit for me. thank you.
 
-<h2 align=center>Automatic installation</h2>
+<h2 align="left">Automatic installation</h2>
 
 ```bash
 git clone https://github.com/ZepharDev/hyprdots.git && cd ~/hyprdots && bash setup-v1.sh
 ```
 
 I can't guarantee that the script will work at all; it may have bugs. Please be careful. I'll be improving it and releasing versions. There are multiple options. 
+
+# Issues
+
+The code doesn't work at all, so as stated before, use the manual application, don't use the script, thanks. 
 
 ---
 
