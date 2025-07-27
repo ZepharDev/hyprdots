@@ -37,7 +37,7 @@ backup_dir="$HOME/.hyprdots.bak"
 config_src="$repo_dir/configs/config"
 local_dest="$HOME/.local" 
 config_dest="$HOME/.config"
-local_src="$repo_dir/config/local"
+local_src="$repo_dir/configs/local"
 
 # Defining components for selective installation
 components=(
