@@ -71,3 +71,35 @@
     <sub>Code and craft — for Christ alone. YHWH reigns.</sub>
   </p>
 </div>
+
+<details>
+  <summary><strong>🖼️ Showcase Gallery</strong></summary>
+
+  <h1 align="center">🍂 Wlogout</h1>
+  <img width="1366" height="768" alt="2025-07-20-163910_hyprshot" src="https://github.com/user-attachments/assets/d08b163a-07e7-4ea1-8896-c77a302dd92c" />
+
+  <h1 align="center">🌴 Rofi</h1>
+  <img width="1366" height="768" alt="2025-07-17-203951_hyprshot" src="https://github.com/user-attachments/assets/11d291ae-f510-4306-9434-11ac7c1868d3" />
+
+  <h1 align="center">🍁 Cava & Peaclock</h1>
+  <img width="1366" height="768" alt="2025-07-22-213450_hyprshot" src="https://github.com/user-attachments/assets/7d1941cf-213f-49c0-97a0-96af894a63ac" />
+
+  <h1 align="center">🗝️ Music Player Menu (Rofi)</h1>
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/cbbe8f2d-2f13-40d9-a99c-17b13356366e" />
+
+  <h1 align="center">🌻 Hyprlock</h1>
+  <img width="854" height="475" alt="2025-07-19-112108_hyprshot" src="https://github.com/user-attachments/assets/cf2569ca-99c2-42d1-b28d-f2f13c2db7ca" />
+
+  <h1 align="center">☃️ FastFetch</h1>
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/2f45dce9-1c62-457f-a8e4-4af6e78caf93" />
+
+  <h1 align="center">❄️ Hyprshot Menu</h1>
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/a015aabd-07ad-46de-bdfa-51933d2d29e1" />
+
+  <h1 align="center">🌊 SwayNC</h1>
+  <img width="1366" height="768" alt="2025-07-13-111730_hyprshot" src="https://github.com/user-attachments/assets/eaf172b5-0474-40c1-913b-f3588b5c928f" />
+
+  <h1 align="center">🌪️ Power Menu</h1>
+  <img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/7179b1c7-1f93-4c18-a135-6b9d59ba2b15" />
+
+</details>
