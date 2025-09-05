@@ -83,12 +83,6 @@ I can't guarantee that the script will work at all; it may have bugs. Please be 
 
 The code doesn't work at all, so as stated before, use the manual application, don't use the script, thanks. 
 
----
-
-<h1 align="center" style="color:#cba6f7; margin-bottom:0.2em;">
-  Keybinds - ⚔️ Setup keybinds ⚔️
-</h1>
-
 
 <h1 align="center">Hyprdots • Keybinds 🍂</h1>
 
