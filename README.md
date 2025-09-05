@@ -161,8 +161,7 @@ The code doesn't work at all, so as stated before, use the manual application, d
 | `XF86AudioPause` | Play/Pause |
 | `XF86AudioPlay` | Play/Pause |
 | `XF86AudioPrev` | Previous Track |
-
----
+------------------------------------
 
 
 <div align="center">
